@@ -224,6 +224,41 @@ N>  `fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection
 
 {% endhighlight %} 
 
+## Adding Filters
+
+Filters allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the filters collection. To enable filtering, define `filterSettings` collection with display `text` and [`ej.Query`](http://help.syncfusion.com/js/datamanager/query).
+ 
+{% highlight html %}
+         <body>
+            <?php 
+			require_once 'EJ\AutoLoad.php';
+			$dataManager= new EJ\DataManager();
+            $dataManager->url('http://mvc.syncfusion.com/Services/Northwnd.svc/Tasks')->offline(false);
+            $kanban = new EJ\Kanban("defaultKanban");    
+            $column = new EJ\Kanban\Column();
+            $column ->key("Open")->headerText("Backlog");    
+            $column1 = new EJ\Kanban\Column();
+            $column1 ->key("InProgress")->headerText("In Progress"); 
+            $column2 = new EJ\Kanban\Column();
+            $column2 ->key("Close")->headerText("Done");      
+            $fields = new EJ\Kanban\Field();
+            $fields ->content("Summary")->primaryKey("Id")->swimlaneKey("Assignee");
+            $columns = array( 
+             $column,$column1,$column2
+            );    
+            $filterQuery = new EJ\Query();
+			$filterQuery->where("'Assignee','equal','Janet Leverling'");
+            $filterQuery1 = new EJ\Query();
+	        $filterQuery1->where("'Status','equal','Open'");
+            $filter = new EJ\Kanban\FilterSetting();
+            $filter->text("Janet Issues")->query($filterQuery)->description("Displays issues which matches the assignee as Janet Leverling");
+            $filter1 = new EJ\Kanban\FilterSetting();
+            $filter1->text("Backlog Issues")->query($filterQuery1)->description("Display the issues of 'Backlog'");
+            echo $kanban ->columns($columns)->dataSource($dataManager)->fields($fields)->filterSettings(array($filter,$filter1))->keyField("Status")->render();
+           ?>
+        </body>
+{% endhighlight %} 
+
 ## Running the PHP file
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image - 
@@ -241,5 +276,7 @@ The following Kanban output shows up on the browser, when you type http://localh
 ![](/php/kanban/getting-started_images/getting-started_img4.png)
 
 ![](/php/kanban/getting-started_images/getting-started_img5.png)
+
+![](/php/kanban/getting-started_images/getting-started_img6.png)
 
 N> In case, if you face any problem with default port 80 while running your sample, make the Apache to listen on some other different ports. The port number changes needs to be done on both the `httpd.conf` and `httpd-ssl.conf` files, in order to get rid of this problem.(Refer [here](http://stackoverflow.com/questions/20558410/xampp-port-80-in-use-by-unable-to-open-process-with-pid-4-12)) 
