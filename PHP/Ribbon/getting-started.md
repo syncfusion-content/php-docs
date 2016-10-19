@@ -65,7 +65,7 @@ Also Ribbon have internal dependencies which includes `ej.core` libraries and [`
 
 Add the specific theme reference to your HTML file by referring the appropriate `ej.web.all.min.css` which contains `ej.widgets.core.min.css` (layout related CSS) and `ej.theme.min.css` (theme related CSS) for all the Syncfusion controls.
 
-Refer the required scripts and CSS files in your PHP page as mentioned below in order to render the Kanban control - 
+Refer the required scripts and CSS files in your PHP page as mentioned below in order to render the Ribbon control - 
 
 {% highlight html %}
 
