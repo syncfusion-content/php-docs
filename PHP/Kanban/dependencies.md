@@ -13,7 +13,6 @@ The Kanban control has the following list of external JavaScript dependencies.
 
 * [`jQuery 1.7.1`](http://jquery.com) and later versions
 * [`jsRender`](https://github.com/borismoore/jsrender) - to render the templates
-* [`jQuery.easing`](http://gsgd.co.uk/sandbox/jquery/easing) - to support animation effects in the components
 
 Refer to the internal dependencies in the following table.
 
@@ -52,10 +51,20 @@ Refer to the internal dependencies in the following table.
    </tr>
    <tr>
       <td>
+        ej.draggable.min.js 
+      </td>
+      <td>
+          It is referred when using drag and drop in Kanban.
+      </td>
+   </tr>
+   <tr>
+      <td>
         ej.kanban.min.js
       </td>
       <td>
-        The Kanban’s main file.
+        Kanban core script file which includes kanban related scripts files such as ej.kanban.base.js,
+        ej.kanban.common.js,ej.kanban.dragAndDrop.js,ej.kanban.edit.js,ej.kanban.adaptive.js,ej.kanban.filter.js,
+        ej.kanban.scroller.js,ej.kanban.selection.js,ej.kanban.swimlane.js and ej.kanban.context.js
       </td>
    </tr>
    <tr>
