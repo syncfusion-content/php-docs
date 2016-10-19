@@ -285,7 +285,7 @@ The above created sample is now ready to run. Therefore, open the **XAMPP contro
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, say if the Apache is configured to listen on port 7777, then type http://localhost:7777/ on your browser and press enter. Also, make sure that your sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
-The following Ribbon output shows up on the browser, when you type http://localhost:7777/RibbonTutorial/index.php and press enter - 
+The following Ribbon output shows up on the browser, when you type http://localhost:7777/RibbonPHP/index.php and press enter - 
 
 ![](getting-started_images/getting-started_img4.png)
 
