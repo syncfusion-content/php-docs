@@ -38,12 +38,12 @@ This will render an empty RadialMenu control on executing.
 
 ## Configure Items
 
-For adding items to RadialMenu, create an object for **EJ\RadialMenu\Item()** class. You can set the images for each item by giving the image **URL** with the **imageUrl** attribute in the inner list element and text with **text** attribute for the Item object. In order to display items in RadialMenu control, you need to map the items fields to RadialMenu items array. The required mapping field are listed as follows. 
+For adding items to RadialMenu, create an object for **EJ\RadialMenu\Item()** class. You can set the images for each item by giving the image URL in the **imageUrl** property and text to **text** property for the Item object. In order to display items in RadialMenu control, you need to map the items fields to RadialMenu items array. The required mapping field are listed as follows. 
 
     * `text` - Map the item name to use as `text` values to items.
     * `imageUrl` - Map the image for items to use as image to items within `Field` object.
 
-In order to display items in RadialMenu control, you need to use **items** class of **EJ\RadialMenu** object.
+In order to display items in RadialMenu control, you need to use **Item** class of **EJ\RadialMenu** object.
 
 Refer to the following code example. Initialize Radial Menu control with items and set its target content as follows.
 
@@ -94,12 +94,6 @@ Add the following styles in your code.
 
 {% highlight css %}
 
-    .cols-sample-area
-        {
-            width: 700px;
-            margin: 0 auto;
-            float: none;
-        }
     .e-radialmenu .imageclass {
                 background-image: url(content/images/RadialMenu/settings.png);
         }

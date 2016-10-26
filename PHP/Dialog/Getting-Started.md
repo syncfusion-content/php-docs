@@ -18,14 +18,10 @@ The following steps guide you to add a Dialog control.
 Refer the common PHP Getting Started Documentation to create a PHP application and add necessary scripts and styles for rendering Essential PHP controls.
 
 Create a simple Dialog object by referring the below code,**EJ\Dialog** object is created by using ‘new’ keyword. Define its properties and use **render()** method for rendering the control. We need to call the rendering element in echo statement. 
-
 {% highlight php %}
 
         <?php
-        $dialog = new  \EJ\Dialog("dialog");        
-        ?>
-            
-        <?php    
+        $dialog = new  \EJ\Dialog("dialog");           
             echo $dialog->render();
         ?>
 
