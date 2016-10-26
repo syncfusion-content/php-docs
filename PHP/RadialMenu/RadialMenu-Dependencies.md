@@ -37,9 +37,7 @@ For providing touch support.</td></tr>
 ej.radialmenu.min.js</td><td>
 This is the main source file specific for rendering RadialMenu.</td></tr>
 </table>
-
->Note: RadialMenu uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
-
+ 
 To get the real appearance of the RadialMenu, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the controls) should also needs to be referred.
 
 >Note: Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com/).
