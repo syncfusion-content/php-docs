@@ -86,6 +86,43 @@ First specify the tree data source in array format then map the data source item
 
     {% endhighlight %}
 
+
+
+**Render TreeView using JSON file data**
+
+You can get and decode the JSON file content using "**file_get_contents**" and "**json_decode**" methods respectively and then assign the decoded data to the “**datasource**” field of TreeView control. Please refer the below code example.
+
+    {% highlight php %}
+
+    <?php
+        $Json = json_decode(file_get_contents("Data.json"), true);
+        $treeview = new \EJ\TreeView("localData");
+        $fields = new EJ\TreeView\Field();
+        $fields->id("id")->text("name")->parentId("pid")->hasChild("hasChild")->dataSource($Json)->expanded("expanded")->isChecked("isChecked");
+        echo $treeview->fields($fields)->render();
+    ?>
+
+    {% endhighlight %}
+
+JSON file content
+ 
+    {% highlight json %}
+        
+        [
+        { "id": 1, "name": "Discover Music", "hasChild": true, "expanded": true },
+        { "id": 2, "pid": 1, "name": "Hot Singles" },
+        { "id": 3, "pid": 1, "name": "Rising Artists" },
+        { "id": 4, "pid": 1, "name": "Live Music" },
+        { "id": 6, "pid": 1, "name": "Best of 2013 So Far" },
+        { "id": 7, "name": "Sales and Events", "hasChild": true, "expanded": true },
+        { "id": 8, "pid": 7, "name": "100 Albums - $5 Each" },
+        { "id": 9, "pid": 7, "name": "Hip-Hop and R&B Sale" },
+        { "id": 10, "pid": 7, "name": "CD Deals" }
+        ]
+
+
+    {% endhighlight %}
+
 **Render TreeView with remote data source**
 
 Specify the remote data source URL and query in corresponding “dataSource” and “query” properties of TreeView.
