@@ -13,7 +13,7 @@ The **Essential PHP ListView** widget builds an interactive list view interf
 
 Using the following steps, we can create a PHP ListView control. The basic rendering of PHP ListView is achieved with default functionality. The following screenshot illustrates the output of a ListView in PHP.
 
-![](gettingstarted_images\gettingstarted_img1.png)
+![](Getting_Started_images\gettingstarted_img1.png)
 
 ### Create ListView Widget  
 
