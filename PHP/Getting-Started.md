@@ -24,10 +24,10 @@ To work with PHP, you need install PHP on your machine
 
 Downloaded package contains the following directories.
 
-1. /Src - PHP files required to use Essential PHP.
+1. /Src - Comprises of required PHP class files to use Essential PHP.
 2. /Samples - Sample PHP Web Site.
-3. /Samples/Scripts - Minified EJ and external JavaScript files.
-4. /Samples/Content - Minified EJ & external CSS files and background images used by the themes.
+3. /Samples/scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential PHP components. Also contains external dependency files such as jQuery, jsRender etc.
+4. /Samples/themes - Contains the style sheets for web components.
 
 
 ### Create a simple PHP Application
