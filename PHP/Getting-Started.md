@@ -26,8 +26,8 @@ Downloaded package contains the following directories.
 
 1. /Src - Comprises of required PHP class files to use Essential PHP.
 2. /Samples - Sample PHP Web Site.
-3. /Samples/scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential PHP components. Also contains external dependency files such as jQuery, jsRender etc.
-4. /Samples/themes - Contains the style sheets for web components.
+3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential PHP components. Also contains external dependency files such as jQuery, jsRender etc.
+4. /themes - Contains the style sheets for web components.
 
 
 ### Create a simple PHP Application
