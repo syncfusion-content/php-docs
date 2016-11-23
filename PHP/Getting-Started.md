@@ -33,25 +33,23 @@ Downloaded package contains the following directories.
 
 ### Run the Essential PHP demo web site
 
-* Run the RunSample.bat file from the /Samples directory.
-* Enter the directory path of the unzipped PHP folder (which contains PHP web server for Windows) on your machine. For example `C:\php-5.5.38-nts-Win32-VC11-x86` (unzipped directory).
-* Now Essential PHP demo site will be successfully launched.
+To run the Essential PHP demo site, kindly refer the ReadMe.html file in `/Samples` location.
 
 ### Create a simple PHP Application
 
-To use Essential PHP in your PHP web site, follow the steps below:
+To use Essential PHP in your PHP web site, follow the below steps:
 
-1. Copy Essential JavaScript and CSS files from /Samples/Scripts and /Samples/Content to your web site root. And include this files in your PHP page.
+1. Copy Essential JavaScript and CSS files from `/scripts` and `/themes` to your web site root. And include the necessary files in your PHP page.
 
 {% highlight html %}
     <head>
-        <link rel="stylesheet" href="Content/ejthemes/bootstrap-theme/ej.web.all.min.css" />
-		<script src="Scripts/jquery-3.0.0.min.js"></script> 
-		<script src="Scripts/ej.web.all.min.js"> </script>
+        <link rel="stylesheet" href="themes/bootstrap-theme/ej.web.all.min.css" />
+		<script src="scripts/external/jquery-3.1.1.min.js"></script> 
+		<script src="scripts/web/ej.web.all.min.js"> </script>
     </head>
 {% endhighlight %}
 
-2. Copy the individual component source files from /Src to your directory. Include the Essential PHP Autoload file available in the /Src directory. This file retreieves the required source files to render the specified controls.
+2. Copy the individual component source files from `/Src` to your directory. Include the Essential PHP Autoload file available in the `/Src` directory. This file automatically retreieves the required source class files to render the specified controls.
 
 {% highlight html %}
     <body>
