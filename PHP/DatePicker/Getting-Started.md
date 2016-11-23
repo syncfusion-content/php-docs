@@ -9,113 +9,85 @@ keywords: Datepicker getting started, php Datepicker
 
 # Getting Started
 
-To get start with the DatePicker control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
+This section explains briefly about the neccessary steps required to render and configure EJ DatePicker control using PHP wrapper classes.
 
-* [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
-* [Xampp](https://www.apachefriends.org/download.html)
+Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
 
-In this section, let's see how to create, deploy and run the DatePicker samples using Xampp server.
 
-## Creating a Sample Folder 
+## Create DatePicker
 
-Usually, the Xampp gets installed in **C:\\** drive. Now, create a new sample folder namely **DatePicker_PHP** within `C:\\xampp\\htdocs` and place all the below mentioned folders within it.
-You can create a PHP Project and add necessary scripts and styles with the help of the given PHP Getting Started Documentation.
-
-### Adding Scripts and CSS files
-
-The required scripts and CSS files can be copied into the above created sample folder namely **DatePicker_PHP** and then can be manually referred on the sample page or else the cdn links can be referred directly. In case, if you are manually referring the scripts and CSS files in your PHP sample, refer this [topic](https://help.syncfusion.com/js/control-initialization#manual-reference-of-scripts-and-style-sheets-in-a-html-page) to know how to copy the required scripts and CSS from the installed location.  
-
-### Adding PHP Class libraries
-
-Copy the PHP class libraries into your sample folder, which is a collection of PHP wrapper files created individually for all the controls in order to access and process its server-side values and then send it back to client-side. These libraries are available within the following installed location - 
-
-* **(Installed Location)\\Syncfusion\\Essential Studio\\{{ site.releaseversion }}\\PHP\\Src** 
-
-## Create a PHP file
-
-Create your first php file in the newly created folder **DatePicker_PHP** and name it with ".php" extension.
-
-You can either refer the `ej.web.all.min.js` file which inludes all the Syncfusion EJ controls or the DatePicker dependencies alone as given below.
-
-DatePicker control has the following internal and should be referred before `ej` script files.
-
-* [`jQuery`](http://jquery.com) 1.7.1 and later versions
-
-and the internal dependencies which includes `ej.core` and [`child controls`](https://help.syncfusion.com/api/js/ejdatepicker#requires)
-
-Refer the required script and CSS dependencies in your PHP page as show below to render the DatePicker control.
+Create a DatePicker control by instantiating the PHP wrapper class available in EJ namespace as shown below.
 
 {% highlight html %}
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-                <title>Getting Started - DatePicker</title>
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-                <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-        </head>
-        <body>
-            <?php
-            ?>
-        </body>
-    </html>
+     <?php
+        $date = new EJ\DatePicker("datePicker");
+        echo $date->value(new DateTime())->render();
+    ?>
 
 {% endhighlight %}
 
-N> 1. In case if you don’t want to use `ej.web.all.min.js` file, you can use our [`custom script generator`](https://help.syncfusion.com/api/js/ejdatepicker#requires) to create custom script file with required controls and its dependencies alone.
+The following screenshot illustrates the output of above code.
 
-## AutoLoad file reference
+![](getting-started_images/datePicker.png) 
 
-Include the PHP AutoLoad file, which includes the necessary classes in the page on demand, within the `body` section of the PHP page.
+## Configuring DatePicker
 
-{% highlight html %}
+### Set minDate and maxDate 
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-                <title>Getting Started - DatePicker</title>
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
-                <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-        </head>
-        <body>
-            <?php require_once 'EJ\AutoLoad.php'; ?>
-        </body>
-    </html>
-
-{% endhighlight %} 
-
-## Control Initialization
-
-Create a DatePicker control by instantiating the DatePicker class available in EJ namespace using `new` keyword as given below.
-Store the instance in a variable and customize it (say, the initial value of the control) by calling the methods available in DatePicker class.
-Finally, to render the created instance on browser, call the **render method** as shown below.
-
-Return the created object by using `echo` function. 
+EJ DatePicker provides API through which you can set the maximum and minimum allowed date values. Min and Max date values can be set at initialization as show below.
 
 {% highlight html %}
 
     <?php
-        $date = new \EJ\DatePicker("datepicker");
-        echo $date->width("100%")->height("40px")->watermarkText("select a date")->value(new DateTime())->render();
+        $date = new EJ\DatePicker("datePicker");
+        echo $date->value(new DateTime())->minDate(new DateTime("11/1/2016"))->maxDate(new DateTime("11/24/2016"))->render();
     ?>
 
 {% endhighlight %} 
 
-Add the above code in the body section.
+The following screenshot illustrates the output of above code.
 
-## Running the PHP file
+![](getting-started_images/minmaxDate.png) 
 
-Open the **XAMPP control panel** and start the **Apache** module as shown in the below image. 
+## Blackout Dates
 
-![](getting-started_images/controlpanel.png)
+You can disable a set of Dates in Datepicker calendar by using this API. Refer the below code snippet.
 
-Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, say if the Apache is configured to listen on port 7777, then type http://localhost:7777/ on your browser and press enter. Also, make sure that your sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
+{% highlight html %}
 
-The following output shows up on the browser, when you type http://localhost:7777/DatePicker_PHP/index.php and press enter - 
+    <?php
+        $date_blackout = new EJ\DatePicker("datePicker_blackout");
+        echo $date_blackout->value(new DateTime())->blackoutDates(array(new DateTime("11/5/2016"), new DateTime("11/14/2016"), new DateTime("11/22/2016")))->render();
+    ?>
 
-![](getting-started_images/datepicker.png)
+{% endhighlight %} 
 
-N> In case, if you face any problem with default port 80 while running your sample, make the Apache to listen on some other available ports. The port number changes needs to be done on both the `httpd.conf` and `httpd-ssl.conf` files, in order to get rid of this problem.(Refer [here](http://stackoverflow.com/questions/20558410/xampp-port-80-in-use-by-unable-to-open-process-with-pid-4-12)) 
+The following screenshot illustrates the output of above code.
 
+![](getting-started_images/blackout.png) 
+
+## Special Dates
+
+You can format the appearance of certain days in the calendar popup to indicate special days using this API. Regere the below code snippet.
+
+{% highlight html %}
+
+    <?php 
+        $today = date("Y/m/d");
+        $special= array( array("date" => $today, "tooltip" => "In Australia", "iconClass"=> "flags sprite-Australia") ,
+                            array("date" => date('Y-m-d', strtotime($today. ' + 8 days')) , "tooltip"=>"In France", "iconClass"=> "flags sprite-France" ),
+                            array("date" => date('Y-m-d', strtotime($today. ' + 10 days')) , "tooltip"=>"In USA", "iconClass"=> "flags sprite-USA" ),
+                            array("date" => date('Y-m-d', strtotime($today. ' + 16 days')) , "tooltip"=>"In Germany", "iconClass"=> "flags sprite-Germany" ),
+                            array("date" => date('Y-m-d', strtotime($today. ' + 4 days')) , "tooltip"=>"In India", "iconClass"=> "flags sprite-India" ));
+        $date_special = new EJ\DatePicker("datePicker_special");
+        echo $date_special->value(new DateTime())->specialDates($special)->render();
+    ?>
+
+{% endhighlight %} 
+
+The fields API lets you customize the Special dates in calendar.
+
+The following screenshot illustrates the output of above code.
+
+![](getting-started_images/specialdates.png) 
