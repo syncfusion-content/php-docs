@@ -56,7 +56,7 @@ To use Essential PHP in your PHP web site, follow the steps below:
 
 {% highlight html %}
     <body>
-        <?php require_once 'Src\AutoLoad.php'; ?>
+        <?php require_once 'Src/AutoLoad.php'; ?>
         <!--Enter your code to render EJ controls -->
     </body>
 {% endhighlight %}
@@ -69,3 +69,7 @@ To use Essential PHP in your PHP web site, follow the steps below:
     echo $date->width("100%")->height("40px")->watermarkText("select a date")->render(); // configure the DatePicker using the fluent API and display the output
     ?>
 {% endhighlight %}
+
+4. Run the PHP web site, the DatePicker widget will be displayed as shown below,
+
+   ![](/PHP/Getting-Started_images/Getteing-Started_img1.JPG)
