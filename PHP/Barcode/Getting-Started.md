@@ -55,7 +55,7 @@ This section explains briefly about how to create a **Barcode** control in your 
         echo $barcode->symbologyType('qrbarcode')->text('http://www.syncfusion.com')->render();
     ?>
 </body>
-
+{% endhighlight %}
 
 The following screenshot illustrates the output of the above code example.
 
