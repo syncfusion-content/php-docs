@@ -18,6 +18,8 @@ To work with PHP, you need install PHP on your machine
 
 * PHP [5.3.3+ version](http://php.net/downloads.php).
 
+* Unzip the downloaded file and move the unzipped folder to the desired drive.
+
 #### Download
 
 * Download the setup file (.exe) of Essential Studio for Essential PHP product from this [link](https://www.syncfusion.com/downloads/php) with your Syncfusion account.
@@ -29,16 +31,13 @@ Downloaded package contains the following directories.
 3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential PHP components. Also contains external dependency files such as jQuery, jsRender etc.
 4. /themes - Contains the style sheets for web components.
 
+### Run the Essential PHP demo web site
+
+* Run the RunSample.bat file from the /Samples directory.
+* Enter the directory path of the unzipped PHP folder (which contains PHP web server for Windows) on your machine. For example `C:\php-5.5.38-nts-Win32-VC11-x86` (unzipped directory).
+* Now Essential PHP demo site will be successfully launched.
 
 ### Create a simple PHP Application
-
-
-#### Prerequisites
-
-You can find a sample PHP web site in the `/Samples` directory of the Essential PHP distribution. To run the web site, copy this directory to your web root. Then navigate to index.php.
-
-
-#### Configuration
 
 To use Essential PHP in your PHP web site, follow the steps below:
 
