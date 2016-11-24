@@ -9,7 +9,7 @@ keywords: Datepicker getting started, php Datepicker
 
 # Getting Started
 
-This section explains briefly about the neccessary steps required to render and configure EJ DatePicker control using PHP wrapper classes.
+This section explains briefly about the necessary steps required to render and configure EJ DatePicker control using PHP wrapper classes.
 
 Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
 
@@ -69,7 +69,7 @@ The following screenshot illustrates the output of above code.
 
 ## Special Dates
 
-You can format the appearance of certain days in the calendar popup to indicate special days using this API. Regere the below code snippet.
+You can format the appearance of certain days in the calendar popup to indicate special days using this API. Refer the below code snippet.
 
 {% highlight html %}
 
