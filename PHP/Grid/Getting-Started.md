@@ -405,7 +405,7 @@ We can edit the grid row by double clicking row or by selecting the required row
 
 We can enable editing property via `editSettings` property by enabling the required operation like `allowAdding`, `allowDeleting`, `allowEditing`.
 
-We can add `toolbarItems` via `toolbarSettings` by setting the `showToolbar` as a `true`. we can also include required items which wants to displayed in toolbar like `add`, `edit`, `delete`, `save`,`update` and `cancel` . 
+We can add `toolbarItems` via `toolbarSettings` by setting the `showToolbar` as a `true`. we can also include required items which wants to displayed in toolbar like `add`, `edit`, `delete`,`update` and `cancel` . 
 
 {% highlight php %}
 <?php
