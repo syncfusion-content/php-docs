@@ -9,7 +9,7 @@ keywords: Timepicker getting started, Timepicker features
 
 # Getting Started
 
-This section illustrates the details on to render and customize a TimePicker control using various methods available in PHP wrapper classes.
+This section illustrates the details on how to render and customize a TimePicker control using various methods available in PHP wrapper classes.
 
 Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
 
