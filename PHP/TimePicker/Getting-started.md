@@ -1,4 +1,5 @@
---
+﻿---
+layout: post
 title: Getting Started with TimePicker | TimePicker | PHP | Syncfusion
 description: Getting Started with TimePicker
 platform: php
@@ -34,7 +35,7 @@ The following screenshot illustrates the output of above code.
 
 ### Set MinTime and MaxTime
 
-EJ DatePicker provides API through which you can set the maximum and minimum allowed time values to be picked from the popup. Min and Max time values can be set at initialization as show below.
+EJ TimePicker provides API through which you can set the maximum and minimum allowed time values to be picked from the popup. Min and Max time values can be set at initialization as show below.
 
 {% highlight html %}
 
