@@ -68,4 +68,4 @@ With this API, you can disable a set of Time ranges to prevent the user from sel
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/disablerange.png)
+![](getting-started_images/disablerange.png) 
