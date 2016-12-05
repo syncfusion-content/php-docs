@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about the necessary steps required to render and configure EJ CheckBox control using PHP wrapper classes.
 
-Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
+Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started](https://help.syncfusion.com/php/getting-started) Documentation.
 
 CheckBox provides support for multiple selections, within your web page and allows you to specify an option from the list.
 
