@@ -11,7 +11,7 @@ keywords: Datetimepicker getting started, php datetimepicker
 
 This section illustrates the details on how to render and configure a DateTimePicker control using the methods available in PHP wrapper classes.
 
-Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
+Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started](https://help.syncfusion.com/php/getting-started) Documentation.
 
 ## Create DateTimePicker
 
