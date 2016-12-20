@@ -76,7 +76,7 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
       $sheets = array($sheet);
       $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');
 	                                        
-      echo $spreadsheet -> sheets($sheets)->scrollSettings($scroll)->loadComplete('loadComplete')->render();
+      echo $spreadsheet -> sheets($sheets)->loadComplete('loadComplete')->render();
     ?>
     <script>
     function loadComplete() {                
@@ -109,7 +109,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
       $exportSetting = new EJ\Spreadsheet\ExportSetting();
 	  $exportSetting->excelUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel')->csvUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv')->pdfUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf');
 
-      echo $spreadsheet -> sheets($sheets)->scrollSettings($scroll)->exportSettings($exportSetting)->render();
+      echo $spreadsheet -> sheets($sheets)->exportSettings($exportSetting)->render();
     ?>
 
 {% endhighlight %}
