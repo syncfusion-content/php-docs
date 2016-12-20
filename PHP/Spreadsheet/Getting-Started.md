@@ -67,8 +67,16 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 {% highlight html %}
 
     <?php
-    // ...                                        
-    echo $spreadsheet -> sheets($sheets)->scrollSettings($scroll)->loadComplete('loadComplete')->render();
+      $Json = json_decode(file_get_contents("Data.json"), true);
+      $rangeSetting = new EJ\Spreadsheet\RangeSetting();
+      $rangeSetting->dataSource($Json);
+      $rangeSettings = array($rangeSetting);
+      $sheet = new EJ\Spreadsheet\Sheet();
+      $sheet->rangeSettings($rangeSettings);
+      $sheets = array($sheet);
+      $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');
+	                                        
+      echo $spreadsheet -> sheets($sheets)->loadComplete('loadComplete')->render();
     ?>
     <script>
     function loadComplete() {                
@@ -90,11 +98,18 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% highlight html %}
 
     <?php
-      // ...                    
+      $Json = json_decode(file_get_contents("Data.json"), true);
+      $rangeSetting = new EJ\Spreadsheet\RangeSetting();
+      $rangeSetting->dataSource($Json);
+      $rangeSettings = array($rangeSetting);
+      $sheet = new EJ\Spreadsheet\Sheet();
+      $sheet->rangeSettings($rangeSettings);
+      $sheets = array($sheet);
+      $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');                  
       $exportSetting = new EJ\Spreadsheet\ExportSetting();
-	    $exportSetting->excelUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel')->csvUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv')->pdfUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf');
+	  $exportSetting->excelUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel')->csvUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv')->pdfUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf');
 
-      // ...
+      echo $spreadsheet -> sheets($sheets)->exportSettings($exportSetting)->render();
     ?>
 
 {% endhighlight %}
