@@ -10,6 +10,8 @@ keywords:
 
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
+Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
+
 ## Create Spreadsheet
 
 Create a Spreadsheet control by instantiating the PHP wrapper class available in EJ namespace as shown below.
@@ -38,12 +40,12 @@ Now, this section explains how to populate JSON data to the Spreadsheet. Refer t
     <?php
 
       $Json = json_decode(file_get_contents("Data.json"), true);
-      $rangeSetting1 = new EJ\Spreadsheet\RangeSetting();
-      $rangeSetting1->dataSource($Json);
-      $rangeSettings = array($rangeSetting1);
-      $sheet1 = new EJ\Spreadsheet\Sheet();
-      $sheet1->rangeSettings($rangeSettings);
-      $sheets = array($sheet1);
+      $rangeSetting = new EJ\Spreadsheet\RangeSetting();
+      $rangeSetting->dataSource($Json);
+      $rangeSettings = array($rangeSetting);
+      $sheet = new EJ\Spreadsheet\Sheet();
+      $sheet->rangeSettings($rangeSettings);
+      $sheets = array($sheet);
       $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');
 	
       echo $spreadsheet -> sheets($sheets)->render();
@@ -65,12 +67,22 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 {% highlight html %}
 
     <?php
-    // ...                                        
-    echo $spreadsheet -> sheets($sheets)->scrollSettings($scroll)->loadComplete('loadComplete')->render();
+      $Json = json_decode(file_get_contents("Data.json"), true);
+      $rangeSetting = new EJ\Spreadsheet\RangeSetting();
+      $rangeSetting->dataSource($Json);
+      $rangeSettings = array($rangeSetting);
+      $sheet = new EJ\Spreadsheet\Sheet();
+      $sheet->rangeSettings($rangeSettings);
+      $sheets = array($sheet);
+      $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');
+	                                        
+      echo $spreadsheet -> sheets($sheets)->loadComplete('loadComplete')->render();
     ?>
+    <script>
     function loadComplete() {                
-       this.XLCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "D3:D8" });
+       this.XLCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "D3:D8" });
     }
+    </script>
 
 {% endhighlight %}
 
@@ -86,11 +98,18 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% highlight html %}
 
     <?php
-      // ...                    
+      $Json = json_decode(file_get_contents("Data.json"), true);
+      $rangeSetting = new EJ\Spreadsheet\RangeSetting();
+      $rangeSetting->dataSource($Json);
+      $rangeSettings = array($rangeSetting);
+      $sheet = new EJ\Spreadsheet\Sheet();
+      $sheet->rangeSettings($rangeSettings);
+      $sheets = array($sheet);
+      $spreadsheet =  new EJ\Spreadsheet('Spreadsheet');                  
       $exportSetting = new EJ\Spreadsheet\ExportSetting();
-	    $exportSetting->excelUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel')->csvUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv')->pdfUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf');
+	  $exportSetting->excelUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel')->csvUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv')->pdfUrl('http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf');
 
-      // ...
+      echo $spreadsheet -> sheets($sheets)->exportSettings($exportSetting)->render();
     ?>
 
 {% endhighlight %}
