@@ -10,7 +10,7 @@ keywords:
 
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
-Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started]() Documentation.
+Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started](https://help.syncfusion.com/php/getting-started) Documentation.
 
 ## Create Spreadsheet
 
