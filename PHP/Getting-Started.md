@@ -8,11 +8,9 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Essential PHP 
 
-## Essential PHP 
-
-### System Requirements
+## System Requirements
 
 To work with PHP, you need install PHP on your machine
 
@@ -20,22 +18,35 @@ To work with PHP, you need install PHP on your machine
 
 * Unzip the downloaded file and move the unzipped folder to the desired drive.
 
-#### Download
+## Download and Install 
 
-* Download the setup file (.exe) of Essential Studio for Essential PHP product from this [link](https://www.syncfusion.com/downloads/php) with your Syncfusion account.
+Download and install the Essential PHP component setup from this link after logging in with your Syncfusion account. 
 
-Downloaded package contains the following directories.
+You can download the Essential PHP components in two ways.
+
+* Setup file(.exe).
+* Zipped file.
+
+If you are installing the setup file (.exe), then the Essential PHP component packages will be available under the installed location of Syncfusion, refer below.
+
+   (installed location) \Syncfusion\Essential Studio\14.4.0.15\PHP\.
+
+You can also find the PHP samples (demo website) available under the below installed location.
+
+  (installed location) \Syncfusion\Essential Studio\14.4.0.15\PHP\Samples\.
+
+If you are downloading the zipped package, Downloaded package contains the following directories.
 
 1. /Src - Comprises of required PHP class files to use Essential PHP.
 2. /Samples - Sample PHP Web Site.
 3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential PHP components. Also contains external dependency files such as jQuery, jsRender etc.
 4. /themes - Contains the style sheets for web components.
 
-### Run the Essential PHP demo web site
+## Run the Essential PHP demo web site
 
 To run the Essential PHP demo site, kindly refer the ReadMe.html file in `/Samples` location.
 
-### Create a simple PHP Application
+## Create a simple PHP Application
 
 To use Essential PHP in your PHP web site, follow the below steps:
 
@@ -49,7 +60,7 @@ To use Essential PHP in your PHP web site, follow the below steps:
     </head>
 {% endhighlight %}
 
-2. Copy the individual component source files from `/Src` to your directory. Include the Essential PHP Autoload file available in the `/Src` directory. This file automatically retreieves the required source class files to render the specified controls.
+2. Copy the individual component source files from `/Src` to your directory. Include the Essential PHP **Autoload.php** file available in the `/Src` directory. This file *automatically retreieves the required source class files* to render the specified controls.
 
 {% highlight html %}
     <body>
