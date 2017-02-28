@@ -2,8 +2,8 @@
 layout: post
 title: getting started
 description: getting started
-platform: js
-control: Control Name undefined
+platform: php
+control: Signature
 documentation: ug
 ---
 
