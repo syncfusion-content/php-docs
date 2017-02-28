@@ -58,6 +58,14 @@ The Ribbon control has the following external JavaScript dependency.
    </tr>
    <tr>
       <td>
+         ej.waitingpopup.min.js
+      </td>
+      <td>
+         This file is used to render waiting popup when on-demand functionality is enabled in <i><b>Ribbon</b></i><b> control.
+      </td>
+   </tr>
+   <tr>
+      <td>
          ej.menu.min.js
       </td>
       <td>
