@@ -132,7 +132,7 @@ Specify the remote data source URL and query in corresponding “dataSource” a
 
     <?php
         $dataManager = new \EJ\DataManager();
-        $dataManager->url('//mvc.syncfusion.com/Services/Northwnd.svc/');
+        $dataManager->url('//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/');
 
         $query = new \EJ\Query();
         $query->from('Categories')->select('CategoryID,CategoryName')->take(3);
