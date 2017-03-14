@@ -1,4 +1,4 @@
---
+---
 title: Group
 description: Overview of Group ribbon control.
 platform: php
@@ -36,31 +36,29 @@ Tooltip and Custom Tooltip can be specified for each group controls.
 
 {% highlight html %}
 
-    <body>
         <div id="Ribbon"></div>
-        <ul id="ribbonmenu">
-            <li>
-                <a>FILE</a>
-                <ul>
-                    <li><a>Open</a></li>
-                </ul>
-            </li>
-        </ul>
-        <ul id="pasteSplit">
-            <li>Paste</li>
-            <li>Paste Special</li>
-        </ul>
+	     <ul id="ribbonmenu">
+		    <li><a>FILE</a>
+		     <ul>
+		        <li><a>Open</a></li>
+		     </ul>
+		    </li>
+	     </ul>
+	     <ul id="pasteSplit">
+		    <li>Paste</li>
+		    <li>Paste Special</li>
+	     </ul>
         <?php
-        require_once 'EJ\AutoLoad.php';
+		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
-        $aTab = new \EJ\Ribbon\ApplicationTab();
-        $aTab->type('menu')->menuItemID('ribbonmenu');
+        $aTab = new \EJ\Ribbon\ApplicationTab();           
+        $aTab->type('menu')->menuItemID('ribbonmenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $grpcontent = new \EJ\Ribbon\Content();
         $contentgroup=new \EJ\Ribbon\ContentGroup();
-        $splitButtonSettings = array('contentType'=>'imageonly','targetID'=>'pasteSplit','imagePosition'=>'imagetop','prefixIcon'=>'e-icon e-ribbon e-ribbonpaste');
-        $contentgroup->id('paste')->text('Paste')->toolTip('Paste')->splitButtonSettings($splitButtonSettings);
+        $splitButtonSettings = array('contentType'=>'imageonly','targetID'=>'pasteSplit','imagePosition'=>'imagetop','prefixIcon'=>'e-icon e-ribbon e-ribbonpaste'); 
+        $contentgroup->id('paste')->text('Paste')->toolTip('Paste')->splitButtonSettings($splitButtonSettings);   
         $default= new \EJ\Ribbon\Defaults();
         $default->width(60)->height(40)->type("splitbutton");
         $grpcontent->groups(array($contentgroup))->defaults($default);
@@ -69,8 +67,8 @@ Tooltip and Custom Tooltip can be specified for each group controls.
         $grpcontent1 = new \EJ\Ribbon\Content();
         $contentgroup1=new \EJ\Ribbon\ContentGroup();
         $contentgroup2=new \EJ\Ribbon\ContentGroup();
-        $togglebutton =  array('defaultText'=>'Cut','targetID'=>'pasteSplit','activeText'=>'Cut Over');
-        $togglebutton1 =  array('defaultText'=>'Copy','targetID'=>'pasteSplit','activeText'=>'Copy Over');
+        $togglebutton =  array('defaultText'=>'Cut','targetID'=>'pasteSplit','activeText'=>'Cut Over'); 
+        $togglebutton1 =  array('defaultText'=>'Copy','targetID'=>'pasteSplit','activeText'=>'Copy Over'); 
         $contentgroup1->id('cut')->toggleButtonSettings($togglebutton);
         $contentgroup2->id('copy')->toggleButtonSettings($togglebutton1);
         $default1= new \EJ\Ribbon\Defaults();
@@ -80,43 +78,40 @@ Tooltip and Custom Tooltip can be specified for each group controls.
         $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
         ?>
-    </body>
-    
+
 {% endhighlight %}
 
-![](group_img1.png)
+![](Group/group_img1.png)
 
 ## Enable Separator
 
-Separates the control from the next control in the group when group alignType is row. Set “true” to enableSeparator.
+Separates the control from the next control in the group when group alignType is row. Set �true� to enableSeparator.
 
 {% highlight html %}
 
-    <body>
         <div id="Ribbon"></div>
-        <ul id="ribbonmenu">
-            <li>
-                <a>FILE</a>
-                <ul>
-                    <li><a>New</a></li>
-                    <li><a>Open</a></li>
-                </ul>
-            </li>
-        </ul>
+	     <ul id="ribbonmenu">
+		    <li><a>FILE</a>
+		     <ul>
+			    <li><a>New</a></li>
+                <li><a>Open</a></li>
+		     </ul>
+		    </li>
+	     </ul>
         <?php
-        require_once 'EJ\AutoLoad.php';
+		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
-        $aTab = new \EJ\Ribbon\ApplicationTab();
-        $aTab->type('menu')->menuItemID('ribbonmenu');
+        $aTab = new \EJ\Ribbon\ApplicationTab();           
+        $aTab->type('menu')->menuItemID('ribbonmenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $grpcontent = new \EJ\Ribbon\Content();
         $contentgroup=new \EJ\Ribbon\ContentGroup();
         $contentgroup1=new \EJ\Ribbon\ContentGroup();
-        $btnsettings = array('width'=> 100);
-        $contentgroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($btnsettings);
+        $btnsettings = array('width'=> 100); 
+        $contentgroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($btnsettings);   
         $btnsettings1 = array('width'=> 150);
-        $contentgroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($btnsettings1);
+        $contentgroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($btnsettings1);  
         $default= new \EJ\Ribbon\Defaults();
         $default->width(70)->type('button');
         $grpcontent->groups(array($contentgroup,$contentgroup1))->defaults($default);
@@ -124,9 +119,83 @@ Separates the control from the next control in the group when group alignType is
         $hometab->id('home')->text('HOME')->groups(array($clipboard));
         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
         ?>
-    </body>
 
 {% endhighlight %}
 
-![](group_img2.png)
+![](Group/group_img2.png)
 
+## Adding Custom Content
+
+Set group type as custom to add custom items such as div, table and custom controls. With type as custom, content can be added in two ways as specified below.
+
+* HTML contents can be directly added into the groups as string content using customContent property
+* Custom template id can be specified to render those specific custom template using contentID property
+
+{% highlight html %}
+
+        <div id="Ribbon"></div>
+	     <ul id="ribbonmenu">
+		    <li><a>FILE</a>    
+		     <ul>
+			    <li><a>New</a></li>
+		     </ul>
+		    </li>
+	     </ul>
+         <button id='btn'>Using Content ID</button>
+        <?php
+		require_once 'EJ\AutoLoad.php';
+        $ribbon = new  \EJ\Ribbon('defaultRibbon');
+        $aTab = new \EJ\Ribbon\ApplicationTab();           
+        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $hometab  = new \EJ\Ribbon\Tab();
+        $clipboard  = new \EJ\Ribbon\Group();
+        $clipboard1  = new \EJ\Ribbon\Group();
+        $grpcontent = new \EJ\Ribbon\Content();
+        $grpcontent1 = new \EJ\Ribbon\Content();
+        $contentgroup=new \EJ\Ribbon\ContentGroup();
+        $contentgroup1=new \EJ\Ribbon\ContentGroup(); 
+        $clipboard->text('New')->type('custom')->customContent("<button id='customContent'>Using Custom Content</button>");   
+        $clipboard1->text('Data')->type('custom')->contentID('btn');  
+        $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        ?>  
+              
+{% endhighlight %}
+
+![](Group/group_img3.png)
+
+## Group Expander
+
+Set enableGroupExpander as true to show Group Expander for each group in Tab. These expanders can be customized using groupExpand event, such as to show popup dialog.
+
+{% highlight html %}
+
+        <div id="Ribbon"></div>
+	     <ul id="ribbonmenu">
+		    <li><a>FILE</a>    
+		     <ul>
+			    <li><a>New</a></li>
+		     </ul>
+		    </li>
+	     </ul>
+         <button id='btn'>Home button</button>
+        <?php
+		require_once 'EJ\AutoLoad.php';
+        $ribbon = new  \EJ\Ribbon('defaultRibbon');
+        $aTab = new \EJ\Ribbon\ApplicationTab();           
+        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $hometab  = new \EJ\Ribbon\Tab();
+        $clipboard  = new \EJ\Ribbon\Group();
+        $clipboard->text('New')->alignType("rows")->type('custom')->enableGroupExpander(true)->contentID('btn');    
+        $hometab->id('home')->text('HOME')->groups(array($clipboard));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        ?>
+        <script>
+             groupExpand: function (args) {
+                 alert("Group expander click triggered");
+             }
+        </script>
+              
+{% endhighlight %}
+
+![](Group/group_img4.png)
