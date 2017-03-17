@@ -35,7 +35,8 @@ The following table describes about the built in controls type and their corresp
          ejButton - buttonSettings
       </td>
 	  <td>
-         buttonSettings: { width: 70, contentType: ej.ContentType.ImageOnly, prefixIcon: "e-ribbon e-new" }
+         $btnsettings=array('contentType'=>'imageonly','imagePosition'=>'imagetop','prefixIcon'=>'e-icon e-ribbon e-new');
+         $contentgroup->id('new')->text('New')->toolTip("New")->buttonSettings($btnsettings); 
       </td>
     </tr>
 	<tr>
@@ -46,7 +47,8 @@ The following table describes about the built in controls type and their corresp
          ejSplitButton - splitButtonSettings
       </td>
 	  <td>
-         splitButtonSettings: { contentType: ej.ContentType.ImageOnly, targetID: "pasteSplit", buttonMode: "dropdown", arrowPosition: ej.ArrowPosition.Bottom }
+          $splitButton=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-ribbonpaste','targetID'=>'pasteSplit','buttonMode'=>'dropdown','arrowPosition'=>'bottom');
+          $contentgroup1->id('new')->text('New')->toolTip("New")->splitButtonSettings($splitButton); 
       </td>
     </tr>
 	<tr>
@@ -57,7 +59,8 @@ The following table describes about the built in controls type and their corresp
          ejToggleButton - toggleButtonSettings
       </td>
 	  <td>
-         toggleButtonSettings: { contentType: ej.ContentType.ImageOnly, defaultText: "Italic", activeText: "Italic", }
+          $togglebutton =  array('defaultText'=>'Bold','activeText'=>'Bold','defaultPrefixIcon'=>'e-icon e-ribbon e-ribbonbold','activePrefixIcon'=>'e-icon e-ribbon e-bold'); 
+          $contentgroup4->id('bold')->toolTip('Bold')->type('togglebutton')->toggleButtonSettings($togglebutton);
       </td>
     </tr>
 	<tr>
@@ -68,7 +71,8 @@ The following table describes about the built in controls type and their corresp
          ejDropDownList - dropdownSettings
       </td>
 	  <td>
-         dropdownSettings: { dataSource: size, text: "1pt", width: 65 }
+         $dropdownButton=array('dataSource'=>$fontfamily,'text'=>'Segeo UI','width'=>150);
+         $contentgroup2->id('fontfamily')->toolTip('Font')->dropdownSettings($dropdownButton); 
       </td>
     </tr>
 </table>
