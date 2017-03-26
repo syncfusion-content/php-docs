@@ -43,11 +43,6 @@ The following code example describes the above behavior.
     echo $kanban ->columns($columns)->dataSource($Json)->fields($fields)->keyField("Status")->render();
     ?>
     </div>
-     <style>
-    .cols-sample-area {        
-        width: 100%;
-    }
-    </style>
 
 {% endhighlight %}
 
@@ -113,49 +108,47 @@ The following code example describes the above behavior.
     ?>
     <div class="cols-sample-area">
     <script id="column1" type="text/x-jsrender">
-            <span class="e-backlog e-icon"></span> Backlog
-        </script>
-        <div id="column4">
-            <span class="e-done e-icon"></span> Done
-        </div>
-    <?php    
+        <span class="e-backlog e-icon"></span> Backlog
+    </script>
+    <div id="column4">
+        <span class="e-done e-icon"></span> Done
+    </div>
+    <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Testing", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("default");    
+    $kanban = new EJ\Kanban("default");
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("Backlog")->headerTemplate("#column1");    
+    $column ->key("Open")->headerText("Backlog")->headerTemplate("#column1");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("In Progress");    
+    $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Testing")->headerText("Testing");    
+    $column2 ->key("Testing")->headerText("Testing");
     $column3 = new EJ\Kanban\Column();
-    $column3 ->key("Close")->headerText("Done")->headerTemplate("#column4");   
+    $column3 ->key("Close")->headerText("Done")->headerTemplate("#column4");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id");
-    $columns = array( 
-        $column,$column1,$column2,$column3
-        );    
+    $columns = array(
+    $column,$column1,$column2,$column3
+    );
     echo $kanban ->columns($columns)->dataSource($Json)->fields($fields)->keyField("Status")->render();
     ?>
     </div>
-
     <style>
-    .cols-sample-area {        
+    .cols-sample-area {
         width: 100%;
     }
-		 .e-backlog,.e-done {
+    .e-backlog, .e-done {
         font-size: 16px;
         padding-right: 5px;
         display: inline-block;
-        }    
-    .e-backlog:before {
-        content: "\e807";
-        }    
-    .e-done:before {
-        content: "\e80a";
+    }
+        .e-backlog:before {
+            content: "\e807";
+        }
+        .e-done:before {
+            content: "\e80a";
         }
     </style>
-
 
 {% endhighlight %}
 

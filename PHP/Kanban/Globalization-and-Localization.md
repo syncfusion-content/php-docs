@@ -107,39 +107,39 @@ The following code example describes the above behavior.
     ?>
     <div class="cols-sample-area">
     <script>
-    ej.Kanban.Locale["de-DE"] = {
-        EmptyCard: "Keine Karten angezeigt werden",
-        SaveButton: "Speichern",
-        CancelButton: "stornieren",
-        EditFormTitle: "Details von ",
-        AddFormTitle: "Neue Karte hinzufügen",
-        SwimlaneCaptionFormat: "- 8 Artikel  Artikel ",
-        FilterSettings: "Filter:",
-        FilterOfText: "Von",
-        Max: "Max.",
-        Min: "Min.",
-        Cards: "Karten",
-        ItemsCount:"Artikel Graf :",
-        Unassigned:"Nicht zugewiesen",
-    };
-    </script>            
-    <?php    
+        ej.Kanban.Locale["de-DE"] = {
+            EmptyCard: "Keine Karten angezeigt werden",
+            SaveButton: "Speichern",
+            CancelButton: "stornieren",
+            EditFormTitle: "Details von ",
+            AddFormTitle: "Neue Karte hinzufügen",
+            SwimlaneCaptionFormat: "- 8 Artikel  Artikel ",
+            FilterSettings: "Filter:",
+            FilterOfText: "Von",
+            Max: "Max.",
+            Min: "Min.",
+            Cards: "Karten",
+            ItemsCount: "Artikel Graf :",
+            Unassigned: "Nicht zugewiesen",
+        };
+    </script>
+    <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "InProgress", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("default");    
-	 $constraint = new EJ\Kanban\Constraint();
+    $kanban = new EJ\Kanban("default");
+    $constraint = new EJ\Kanban\Constraint();
     $constraint ->max(2);
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("Backlog");    
+    $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("In Progress")->constraints($constraint);    
+    $column1 ->key("InProgress")->headerText("In Progress")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Close")->headerText("Done");    
+    $column2 ->key("Close")->headerText("Done");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->tag('Tags');
-    $columns = array( 
-        $column,$column1,$column2
-        );    
+    $columns = array(
+    $column,$column1,$column2
+    );
     echo $kanban ->columns($columns)->dataSource($Json)->enableTotalCount(true)->locale("de-DE")->fields($fields)->keyField("Status")->render();
     ?>
     </div>
@@ -164,39 +164,39 @@ The following code example describes the above behavior.
     ?>
     <div class="cols-sample-area">
     <script>
-    ej.Kanban.Locale["ar-AE"] = {
-        EmptyCard: "لا بطاقات لعرض",
-        SaveButton: "حفظ",
-        CancelButton: "إلغاء",
-        EditFormTitle: "تفاصيل ",
-        AddFormTitle: "إضافة بطاقة جديدة",
-        SwimlaneCaptionFormat: "- 8 بند  العناصر ",
-        FilterSettings: "مرشحات:",
-        FilterOfText: "من",
-        Max: "ماكس",
-        Min: "دقيقة",
-        Cards: "  بطاقات",
-        ItemsCount: "عد العناصر:",
-        Unassigned: "غير معين",
-    };
-    </script>              
-    <?php    
+        ej.Kanban.Locale["ar-AE"] = {
+            EmptyCard: "لا بطاقات لعرض",
+            SaveButton: "حفظ",
+            CancelButton: "إلغاء",
+            EditFormTitle: "تفاصيل ",
+            AddFormTitle: "إضافة بطاقة جديدة",
+            SwimlaneCaptionFormat: "- 8 بند  العناصر ",
+            FilterSettings: "مرشحات:",
+            FilterOfText: "من",
+            Max: "ماكس",
+            Min: "دقيقة",
+            Cards: "  بطاقات",
+            ItemsCount: "عد العناصر:",
+            Unassigned: "غير معين",
+        };
+    </script>
+    <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "InProgress", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("default");    
-	 $constraint = new EJ\Kanban\Constraint();
+    $kanban = new EJ\Kanban("default");
+    $constraint = new EJ\Kanban\Constraint();
     $constraint ->max(2);
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("تراكم الأعمال غير المنجزة");    
+    $column ->key("Open")->headerText("تراكم الأعمال غير المنجزة");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("في تَقَدم")->constraints($constraint);    
+    $column1 ->key("InProgress")->headerText("في تَقَدم")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Close")->headerText("فعله");    
+    $column2 ->key("Close")->headerText("فعله");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->tag('Tags');
-    $columns = array( 
-        $column,$column1,$column2
-        );    
+    $columns = array(
+    $column,$column1,$column2
+    );
     echo $kanban ->columns($columns)->dataSource($Json)->enableRTL(true)->allowTitle(true)->locale("ar-AE")->fields($fields)->keyField("Status")->render();
     ?>
     </div>

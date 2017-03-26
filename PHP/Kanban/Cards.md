@@ -16,7 +16,7 @@ Cards can be customized with appropriate mapping fields from the database.
 The following code example describes the above behavior.
 
 {% highlight html %}
-
+   
     <?php
     require_once "../EJ/AutoLoad.php";
     ?>
@@ -35,17 +35,12 @@ The following code example describes the above behavior.
     $column2 ->key("Close")->headerText("Done");
     $cardset = new EJ\Kanban\CardSetting();
     $cardset ->colorMapping($colormap);
-    $fields = new EJ\Kanban\Field();    
+    $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->imageUrl("ImgUrl")->tag("Tags")->priority("RankId")->color("Type");
     $columns = array($column,$column1,$column2);
     echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->cardSettings($cardset)->fields($fields)->dataSource($Json)->render();
     ?>
     </div>
-    <style>
-    .cols-sample-area {        
-        width: 100%;
-    }
-    </style>
 
 {% endhighlight %}
 
@@ -65,56 +60,56 @@ The following code example describes the above behavior.
     require_once "../EJ/AutoLoad.php";
     ?>
     <div class="cols-sample-area">
-      <script id="cardtemplate" type="text/x-jsrender">             
+    <script id="cardtemplate" type="text/x-jsrender">
         <table class="e-templatetable">
-           <colgroup>
-               <col width="10%">
-               <col width="90%">
-          </colgroup>
-          <tbody>
-           <tr>
-            <td class="photo">
-                <img src="Content/images/kanban/{{:Priority}}.png">
-            </td>            
-            <td class="details">
-                <table>
-                    <colgroup>
-                        <col width="10%">
-                        <col width="90%">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <td class="CardHeader">   Assignee: </td>
-                            <td>{{:Assignee}}</td>
-                        </tr>                      
-                        <tr>
-                            <td class="CardHeader">   Summary: </td>
-                            <td>{{:Summary}}</td>
-                        </tr>
-                        <tr>
-                            <td class="CardHeader">   Type: </td>
-                            <td>{{:Type}}</td>
-                        </tr>                        
-                    </tbody>
-                </table>
-            </td>
-           </tr>
-        </tbody>
-    </table>     
+            <colgroup>
+                <col width="10%">
+                <col width="90%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="photo">
+                        <img src="Content/images/kanban/{{:Priority}}.png">
+                    </td>
+                    <td class="details">
+                        <table>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="90%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="CardHeader">   Assignee: </td>
+                                    <td>{{:Assignee}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">   Summary: </td>
+                                    <td>{{:Summary}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">   Type: </td>
+                                    <td>{{:Type}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </script>
-    <style type="text/css">  
+    <style type="text/css">
         .e-templatetable {
             width: 100%;
         }
-        .details >table {
-            margin-left:2px;            
-			border-collapse: separate;
+        .details > table {
+            margin-left: 2px;
+            border-collapse: separate;
             border-spacing: 2px;
             width: 100%;
         }
-	    .details td {
-	        vertical-align: top;
-	    }
+        .details td {
+            vertical-align: top;
+        }
         .details {
             padding: 8px 8px 10px 0;
         }
@@ -140,11 +135,11 @@ The following code example describes the above behavior.
     $column2  = new EJ\Kanban\Column();
     $column2->key("Testing")->headerText("Testing");
     $column3 = new EJ\Kanban\Column();
-    $column3->key("Close")->headerText("Done");    
+    $column3->key("Close")->headerText("Done");
     $cardset = new EJ\Kanban\CardSetting();
     $fields= new EJ\Kanban\Field();
     $fields->primaryKey("Id");
-    $cardset->template("#cardtemplate");    
+    $cardset->template("#cardtemplate");
     $columns = array($column,$column1,$column3);
     echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->enableTouch(false)->fields($fields)->cardSettings($cardset)->dataSource($Json)->render();
     ?>
@@ -165,29 +160,27 @@ The following code example describes the above behavior.
 {% highlight html %}
 
     <?php
-    require_once '../EJ/AutoLoad.php';
+    require_once "../EJ/AutoLoad.php";
     ?>
     <div class="cols-sample-area">
-    <?php    
+    <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Testing", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("default");    
+    $colormap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
+    $colormap = json_decode($colormap,true);
+    $kanban = new EJ\Kanban("customization");
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("Backlog");    
+    $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("In Progress");    
+    $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Testing")->headerText("Testing");    
-    $column3 = new EJ\Kanban\Column();
-    $column3 ->key("Close")->headerText("Done");    
-	$tooltipSettings = new EJ\Kanban\TooltipSetting();
-    $tooltipSettings ->enable(true);
+    $column2 ->key("Close")->headerText("Done");
+    $cardset = new EJ\Kanban\CardSetting();
+    $cardset ->colorMapping($colormap);
     $fields = new EJ\Kanban\Field();
-    $fields ->content("Summary")->primaryKey("Id")->tag('Tags');
-    $columns = array( 
-        $column,$column1,$column2,$column3
-        );    
-    echo $kanban ->columns($columns)->dataSource($Json)->tooltipSettings($tooltipSettings)->fields($fields)->keyField("Status")->render();
+    $fields ->content("Summary")->primaryKey("Id")->imageUrl("ImgUrl")->tag("Tags")->priority("RankId")->color("Type");
+    $columns = array($column,$column1,$column2);
+    echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->cardSettings($cardset)->fields($fields)->dataSource($Json)->render();
     ?>
     </div>
 
@@ -210,85 +203,90 @@ The following code example describes the tooltip template.
     ?>
     <div class="cols-sample-area">
     <script id="tooltipTemp" type="text/x-jsrender">
-            <div class='e-kanbantooltiptemplate'>
-                <table>
-                    <tr>
-                        <td class="photo">
-                            <img src="{{:ImgUrl}}">
-                        </td>
-                        <td class="details">
-                            <table>
-                                <colgroup>
-                                    <col width="30%">
-                                    <col width="70%">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="CardHeader">Assignee:</td>
-                                        <td>{{:Assignee}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="CardHeader">Type:</td>
-                                        <td>{{:Type}}</td>
-                                    </tr>                                
-                                    <tr>
-                                        <td class="CardHeader">Estimate:</td>
-                                        <td>{{:Estimate}}</td>
-                                    </tr>                                
-                                    <tr>
-                                        <td class="CardHeader">Summary:</td>
-                                        <td>{{:Summary}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <div class='e-kanbantooltiptemplate'>
+            <table>
+                <tr>
+                    <td class="photo">
+                        <img src="{{:ImgUrl}}">
+                    </td>
+                    <td class="details">
+                        <table>
+                            <colgroup>
+                                <col width="30%">
+                                <col width="70%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="CardHeader">Assignee:</td>
+                                    <td>{{:Assignee}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Type:</td>
+                                    <td>{{:Type}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Estimate:</td>
+                                    <td>{{:Estimate}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Summary:</td>
+                                    <td>{{:Summary}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </script>
-	 <style> 
-        .details >table {
+    <style>
+        .details > table {
             width: 100%;
-            margin-left:2px;           
+            margin-left: 2px;
             border-collapse: separate;
             border-spacing: 1px;
         }
+
         .e-kanbantooltiptemplate {
             width: 250px;
             padding: 3px;
         }
-        .e-kanbantooltiptemplate > table {
-            width: 100%;
-        }
-        .e-kanbantooltiptemplate td {
-            vertical-align: top;
-        }
+
+            .e-kanbantooltiptemplate > table {
+                width: 100%;
+            }
+
+            .e-kanbantooltiptemplate td {
+                vertical-align: top;
+            }
+
         td.details {
             padding-left: 10px;
         }
+
         .CardHeader {
             font-weight: bolder;
         }
     </style>
-    <?php    
+    <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Testing", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("default");    
+    $kanban = new EJ\Kanban("default");
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("Backlog");    
+    $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("In Progress");    
+    $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Testing")->headerText("Testing");    
+    $column2 ->key("Testing")->headerText("Testing");
     $column3 = new EJ\Kanban\Column();
-    $column3 ->key("Close")->headerText("Done");    
-	$tooltipSettings = new EJ\Kanban\TooltipSetting();
+    $column3 ->key("Close")->headerText("Done");
+    $tooltipSettings = new EJ\Kanban\TooltipSetting();
     $tooltipSettings ->enable(true)->template("#tooltipTemp");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->tag('Tags');
-    $columns = array( 
-        $column,$column1,$column2,$column3
-        );    
+    $columns = array(
+    $column,$column1,$column2,$column3
+    );
     echo $kanban ->columns($columns)->dataSource($Json)->tooltipSettings($tooltipSettings)->fields($fields)->keyField("Status")->render();
     ?>
     </div>

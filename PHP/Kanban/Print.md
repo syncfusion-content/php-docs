@@ -8,7 +8,7 @@ platform: php
 
 # Print
 
- Set ‘allowPrinting’ as true, to enable Print icon in the Kanban toolbar.  You can use ‘print()’ method from Kanban instance to print the Kanban.
+ Set `allowPrinting` as true, to enable Print icon in the Kanban toolbar.  You can use ‘print()’ method from Kanban instance to print the Kanban.
 
 The following code example describes the above behavior.
 
