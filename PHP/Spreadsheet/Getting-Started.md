@@ -36,9 +36,8 @@ The following screenshot illustrates the output of above code.
 Now, this section explains how to populate JSON data to the Spreadsheet. Refer the below code snippet.
 
 {% highlight html %}
-
+//   "the datasource "Data.json" is referred from 'http://php.syncfusion.com/Spreadsheet/Data.json'"
     <?php
-
       $Json = json_decode(file_get_contents("Data.json"), true);
       $rangeSetting = new EJ\Spreadsheet\RangeSetting();
       $rangeSetting->dataSource($Json);
