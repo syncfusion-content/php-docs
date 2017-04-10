@@ -112,14 +112,21 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 	
 {% highlight html %}
    
-       <?php
-    $dataManager  = new EJ\DataManager(); 
-    $dataManager->url('http://mvc.syncfusion.com/Services/Northwnd.svc/Customers/');
-    $dropdownlist =new EJ\DropDownList('dataManager');
+    <?php
+     $customers = array(
+       array('text'=> "ALFKI"),
+       array('text'=> "ANATR"),
+       array('text'=> "ANTON"),
+       array('text'=> "AROUT"),
+       array('text'=> "BERGS"),
+       array('text'=> "BLAUS"),
+       );
+	 $dropdownlist =new EJ\DropDownList("customers");
     $fields = new EJ\DropDownList\Field();
-    $fields->text('CustomerID');
-    echo $dropdownlist->fields($fields)->dataSource($dataManager)->render();
+    $fields->text("text");
+    echo $dropdownlist->AddItem($fields)->dataSource($customers)->render();
     ?>
+    
    
 {% endhighlight %}
 	
