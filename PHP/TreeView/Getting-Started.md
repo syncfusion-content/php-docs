@@ -60,7 +60,7 @@ You can render the PHP TreeView with specified items.
 
 ## Tree View using Data Binding
 
-Another way of creating TreeView is binding with the data source, you can bind local data or remote data source to create a TreeView.
+Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView.
 
 **Render TreeView with local data source.**
 
@@ -122,35 +122,6 @@ JSON file content
 
 
     {% endhighlight %}
-
-**Render TreeView with remote data source**
-
-Specify the remote data source URL and query in corresponding “dataSource” and “query” properties of TreeView.
-
-
-    {% highlight php %}
-
-    <?php
-        $dataManager = new \EJ\DataManager();
-        $dataManager->url('//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/');
-
-        $query = new \EJ\Query();
-        $query->from('Categories')->select('CategoryID,CategoryName')->take(3);
-
-        $child = new \EJ\TreeView\Field();
-        $child->dataSource($dataManager)->tableName('Products')->parentId('CategoryID')->text('ProductName');
-
-        $treeview = new \EJ\TreeView('remoteData');
-        $fields = new EJ\TreeView\Field();
-        $fields->id('CategoryID')->text('CategoryName')->dataSource($dataManager)->query($query)->child($child);
-
-        echo $treeview->height('300px')->width('300px')->fields($fields)->render();
-    ?>
-
-    {% endhighlight %}
-
-
-N>In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) is used to process the data from services and the value has been assigned to DataSource.
 
 ## Create Instance for TreeView
 
