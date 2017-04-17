@@ -96,7 +96,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->rende
 
 ## Data Binding
 
-Data binding in the grid is achieved by assigning an array of JavaScript objects binding to the `dataSource`property. Refer to the following code example.
+Data binding in the grid is achieved by assigning an array of objects to the `dataSource`property. Refer to the following code example.
 
 {% highlight php %}
 <?php
