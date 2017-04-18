@@ -96,7 +96,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->rende
 
 ## Data Binding
 
-Data binding in the grid is achieved by using the `DataManager` that supports both RESTful JSON data services binding and local JSON array binding. To set the `dataSource` to the grid, the `dataSource`property is assigned with the instance of the `DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/# "") is used in this tutorial. Refer to the following code example.
+Data binding in the grid is achieved by assigning an array of objects to the `dataSource`property. Refer to the following code example.
 
 {% highlight php %}
 <?php
@@ -108,6 +108,8 @@ require_once '..\EJ\AutoLoad.php';
 <div class="cols-sample-area">
 
 <?php
+/* the datasource is referred from Data.json */
+$Json = json_decode(file_get_contents("Data.json"), true);
 
 $col1 = new EJ\Grid\Column();
 
@@ -137,7 +139,7 @@ $dataManager->url('//mvc.syncfusion.com/Services/Northwnd.svc/Orders/')->offline
 
 $grid =  new EJ\Grid("Grid");
 
-echo $grid -> dataSource( $dataManager)->columns($gridColumns)->allowPaging(true)->render();
+echo $grid -> dataSource( $Json)->columns($gridColumns)->allowPaging(true)->render();
 
 ?>
 
