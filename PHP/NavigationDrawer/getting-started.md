@@ -103,10 +103,10 @@ To set the images for list items of the Navigation Drawer by using the Image Cla
 
     <?php
       $lvset=array("width"=>"300");
-      $itemslist=array(array("text"=>"Home","imageClass"=>"icon-home"),
-          array("text"=>"Profile","imageClass"=>"icon-profile"),
-          array("text"=>"Photos","imageClass"=>"icon-photo"),
-          array("text"=>"Location","imageClass"=>"icon-locations"));
+      $itemslist=array(array("text"=>"Home","imageClass"=>"e-icon e-home"),
+          array("text"=>"Profile","imageClass"=>"e-icon e-profile"),
+          array("text"=>"Photos","imageClass"=>"e-icon e-photo"),
+          array("text"=>"Location","imageClass"=>"e-icon e-location"));
       $navdraw=new EJ\NavigationDrawer("navpane");
       echo $navdraw->listViewSettings($lvset)->items($itemslist)->enableListView(true)->type("overlay")->position("normal")->targetId("butdrawer")->render();
     ?>
@@ -119,28 +119,49 @@ To set the images with the correct position by using the mentioned styles.
 
     <style>
     
-            #navpane [class*="icon-"]
-            {
-                width: 40px;
-                height: 29px;
-                background-image: url("http://js.syncfusion.com/ug/web/content/drawer/sprite.png");
-            }
-            .icon-home
-            {
-                background-position: 0 1px;
-            }
-            .icon-profile
-            {
-                background-position: 0px -532px;
-            }
-            .icon-photo
-            {
-                background-position: 0 -139px;
-            }
-            .icon-locations
-            {
-                background-position: 0 -71px;
-            }    
+          
+	@font-face { 
+        font-family: 'ej-xlfont'; 
+        src: url('../../common-images/tools/icons.eot'); 
+        src: url('../../common-images/tools/icons.eot') format('embedded-opentype'), url('../../common-images/tools/icons.woff') format('woff'),url('../../common-images/tools/icons.woff') format('woff'), url('../../common-images/tools/icons.ttf') format('truetype'), url('../../common-images/tools/icons.svg') format('svg'); 
+        font-weight: normal; 
+        font-style: normal; 
+    } 
+ 
+    .e-home:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e900"; 
+    } 
+ 
+    .e-profile:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e901"; 
+    } 
+ 
+    .e-photo:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e903"; 
+    } 
+ 
+    .e-location:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e905"; 
+    } 
+
+    .e-people:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e902"; 
+    } 
+ 
+    .e-communities:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e904"; 
+    }
+
+    .e-home, .e-profile, .e-people, .e-photo, .e-communities, .e-location { 
+        font-size: 24px; 
+        color: black; 
+    } 
             
     </style>
 
@@ -192,10 +213,10 @@ To load the appropriate content for the navigation by using the mouse up event h
 
     <?php
       $lvset=array("width"=>"300","selectedItemIndex"=>"0","mouseUp"=>"headChange");
-      $itemslist=array(array("text"=>"Home","imageClass"=>"icon-home"),
-          array("text"=>"Profile","imageClass"=>"icon-profile"),
-          array("text"=>"Photos","imageClass"=>"icon-photo"),
-          array("text"=>"Location","imageClass"=>"icon-locations"));
+      $itemslist=array(array("text"=>"Home","imageClass"=>"e-icon e-home"),
+          array("text"=>"Profile","imageClass"=>"e-icon e-profile"),
+          array("text"=>"Photos","imageClass"=>"e-icon e-photo"),
+          array("text"=>"Location","imageClass"=>"e-icon e-location"));
       $navdraw=new EJ\NavigationDrawer("navpane");
       echo $navdraw->listViewSettings($lvset)->items($itemslist)->enableListView(true)->type("overlay")->position("normal")->targetId("butdrawer")->render();
     ?>
@@ -227,10 +248,10 @@ By using this property, to change the list view open direction. The possible dir
 
     <?php
       $lvset=array("width"=>"300","selectedItemIndex"=>"0","mouseUp"=>"headChange");
-      $itemslist=array(array("text"=>"Home","imageClass"=>"icon-home"),
-          array("text"=>"Profile","imageClass"=>"icon-profile"),
-          array("text"=>"Photos","imageClass"=>"icon-photo"),
-          array("text"=>"Location","imageClass"=>"icon-locations"));
+      $itemslist=array(array("text"=>"Home","imageClass"=>"e-icon e-home"),
+          array("text"=>"Profile","imageClass"=>"e-icon e-profile"),
+          array("text"=>"Photos","imageClass"=>"e-icon e-photo"),
+          array("text"=>"Location","imageClass"=>"e-icon e-location"));
       $navdraw=new EJ\NavigationDrawer("navpane");
       echo $navdraw->listViewSettings($lvset)->items($itemslist)->enableListView(true)->type("overlay")->position("normal")->targetId("butdrawer")->direction("right")->render();
     ?>
