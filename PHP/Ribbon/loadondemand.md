@@ -100,7 +100,7 @@ Set enableOnDemand as true to enable load tab and backstage contents dynamically
                 width: 225,
                 contentType: 'textandimage',
                 imagePosition: 'imagetop',
-                prefixIcon: 'e-blank e-infopageicon'
+                prefixIcon: 'e-icon e-blank e-infopageicon'
                 });
           });
        </script>
@@ -230,7 +230,7 @@ Set collapsible'](https://help.syncfusion.com/api/js/ejribbon#members:collapsibl
                 width: 225,
                 contentType: 'textandimage',
                 imagePosition: 'imagetop',
-                prefixIcon: 'e-blank e-infopageicon'
+                prefixIcon: 'e-icon e-blank e-infopageicon'
                 });
            });
         </script>
