@@ -96,7 +96,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            <?php 
            require_once 'EJ\AutoLoad.php';
            $btn1 =  new EJ\Button("btn1");
-           echo $btn1->contentType("textandimage")->prefixIcon("e-blank e-infopageicon")->imagePosition("imagetop")->width(205)->height(200)->size("large")->render();
+           echo $btn1->contentType("textandimage")->prefixIcon("e-icon e-blank e-infopageicon")->imagePosition("imagetop")->width(205)->height(200)->size("large")->render();
            $ribbon = new  \EJ\Ribbon("defaultRibbon");
            $aTab = new \EJ\Ribbon\ApplicationTab();      
            $backstage = new \EJ\Ribbon\BackstageSetting();

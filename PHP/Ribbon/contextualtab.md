@@ -73,9 +73,9 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           $grpcontent = new \EJ\Ribbon\Content();
           $contentgroup=new \EJ\Ribbon\ContentGroup();
           $contentgroup1=new \EJ\Ribbon\ContentGroup();
-          $btnsettings=array('contentType'=>'imageonly','prefixIcon'=>' e-ribbon e-uppercase');
+          $btnsettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-uppercase');
           $contentgroup->id('uppercase')->text('Upper Case')->buttonSettings($btnsettings);
-          $btnsettings1=array('contentType'=>'imageonly','prefixIcon'=>' e-ribbon e-lowercase');
+          $btnsettings1=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-lowercase');
           $contentgroup1->id('lowercase')->text('Lower Case')->buttonSettings($btnsettings1);
           $default = new \EJ\Ribbon\Defaults();
           $default->isBig('true');
