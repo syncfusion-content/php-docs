@@ -1,5 +1,5 @@
 ---
-title: Getting started with ReportViewer component	
+title: Getting Started for PHP ReportViewer
 description: ReportViewer
 platform: PHP
 control: ReportViewer
