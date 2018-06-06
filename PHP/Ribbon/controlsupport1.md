@@ -83,7 +83,7 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
 {% highlight html %}
 
          <div id="Ribbon"></div>
-	      <ul id="ribbonmenu">
+	      <ul id="ribbonMenu">
 		      <li><a>FILE</a>    
 		       <ul>
 		          <li><a>New</a></li>
@@ -101,28 +101,28 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
 		 require_once 'EJ\AutoLoad.php';
          $ribbon = new  \EJ\Ribbon('defaultRibbon');
          $aTab = new \EJ\Ribbon\ApplicationTab();           
-         $aTab->type('menu')->menuItemID('ribbonmenu');  
-         $hometab  = new \EJ\Ribbon\Tab();
+         $aTab->type('menu')->menuItemID('ribbonMenu');  
+         $homeTab  = new \EJ\Ribbon\Tab();
          $clipboard  = new \EJ\Ribbon\Group();
-         $grpcontent = new \EJ\Ribbon\Content();
+         $groupContent = new \EJ\Ribbon\Content();
          $contentGroup=new \EJ\Ribbon\ContentGroup();
          $buttonSettings=array('contentType'=>'imageonly','imagePosition'=>'imagetop','prefixIcon'=>'e-icon e-ribbon e-new');
          $contentGroup->id('new')->text('New')->toolTip("New")->buttonSettings($buttonSettings);     
          $default = new \EJ\Ribbon\Defaults();
          $default->width(60)->height(70)->type("button");
-         $grpcontent->groups(array($contentGroup))->defaults($default);
-         $clipboard->text('New')->alignType('rows')->content(array($grpcontent));
+         $groupContent->groups(array($contentGroup))->defaults($default);
+         $clipboard->text('New')->alignType('rows')->content(array($groupContent));
          $clipboard1  = new \EJ\Ribbon\Group();
-         $grpcontent1 = new \EJ\Ribbon\Content();
+         $groupContent1 = new \EJ\Ribbon\Content();
          $contentGroup1 = new \EJ\Ribbon\ContentGroup();
          $splitButton=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-ribbonpaste','targetID'=>'pasteSplit','buttonMode'=>'dropdown','arrowPosition'=>'bottom');
          $contentGroup1->id('new')->text('New')->toolTip("New")->splitButtonSettings($splitButton);     
          $default1 = new \EJ\Ribbon\Defaults();
          $default1->width(50)->height(70)->type("splitbutton");
-         $grpcontent1->groups(array($contentGroup1))->defaults($default1);
-         $clipboard1->text('Clipboard')->alignType('columns')->content(array($grpcontent1));
+         $groupContent1->groups(array($contentGroup1))->defaults($default1);
+         $clipboard1->text('Clipboard')->alignType('columns')->content(array($groupContent1));
          $clipboard2  = new \EJ\Ribbon\Group();
-         $grpcontent2 = new \EJ\Ribbon\Content();
+         $groupContent2 = new \EJ\Ribbon\Content();
          $contentGroup2 = new \EJ\Ribbon\ContentGroup();
          $contentGroup3 = new \EJ\Ribbon\ContentGroup();
          $dropdownButton=array('dataSource'=>$fontfamily,'text'=>'Segeo UI','width'=>150);
@@ -131,10 +131,10 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
          $contentGroup3->id('fontsize')->toolTip('FontSize')->dropdownSettings($dropdownButton1);
          $default2 = new \EJ\Ribbon\Defaults();
          $default2->height(28)->type("dropdownlist");
-         $grpcontent2->groups(array($contentGroup2,$contentGroup3))->defaults($default2);
-         $clipboard2->text('Font')->alignType('rows')->content(array($grpcontent2));
+         $groupContent2->groups(array($contentGroup2,$contentGroup3))->defaults($default2);
+         $clipboard2->text('Font')->alignType('rows')->content(array($groupContent2));
          $clipboard3  = new \EJ\Ribbon\Group();
-         $grpcontent3 = new \EJ\Ribbon\Content();
+         $groupContent3 = new \EJ\Ribbon\Content();
          $contentGroup4 = new \EJ\Ribbon\ContentGroup();
          $contentGroup5 = new \EJ\Ribbon\ContentGroup();
          $toggleButton =  array('defaultText'=>'Bold','activeText'=>'Bold','defaultPrefixIcon'=>'e-icon e-ribbon e-ribbonbold','activePrefixIcon'=>'e-icon e-ribbon e-bold'); 
@@ -143,10 +143,10 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
          $contentGroup5->id('italic')->toolTip('Italic')->type('togglebutton')->toggleButtonSettings($toggleButton1);
          $default2 = new \EJ\Ribbon\Defaults();
          $default2->isBig('false');
-         $grpcontent3->groups(array($contentGroup4,$contentGroup5))->defaults($default2);
-         $clipboard3->text('Font')->content(array($grpcontent3));
-         $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1,$clipboard2,$clipboard3));
-         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+         $groupContent3->groups(array($contentGroup4,$contentGroup5))->defaults($default2);
+         $clipboard3->text('Font')->content(array($groupContent3));
+         $homeTab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1,$clipboard2,$clipboard3));
+         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
          ?>
 
 {% endhighlight %}
@@ -160,7 +160,7 @@ You can set type as custom to render custom controls and Custom element id has t
 {% highlight html %}
 
          <div id="Ribbon"></div>
-	      <ul id="ribbonmenu">
+	      <ul id="ribbonMenu">
 		      <li><a>FILE</a>    
 		       <ul>
 			      <li><a>New</a></li>
@@ -187,24 +187,24 @@ You can set type as custom to render custom controls and Custom element id has t
 		 require_once 'EJ\AutoLoad.php';
          $ribbon = new  \EJ\Ribbon('defaultRibbon');
          $aTab = new \EJ\Ribbon\ApplicationTab();           
-         $aTab->type('menu')->menuItemID('ribbonmenu');
-         $hometab  = new \EJ\Ribbon\Tab();
+         $aTab->type('menu')->menuItemID('ribbonMenu');
+         $homeTab  = new \EJ\Ribbon\Tab();
          $clipboard  = new \EJ\Ribbon\Group();
-         $grpcontent = new \EJ\Ribbon\Content();
+         $groupContent = new \EJ\Ribbon\Content();
          $contentGroup=new \EJ\Ribbon\ContentGroup();
          $contentGroup->id('fontcolor')->toolTip('Font Color')->contentID('fontcolor');
          $default = new \EJ\Ribbon\Defaults();
          $default->height(30)->type('custom');
-         $grpcontent->groups(array($contentGroup))->defaults($default);
-         $clipboard->text('Font')->content(array($grpcontent));
+         $groupContent->groups(array($contentGroup))->defaults($default);
+         $clipboard->text('Font')->content(array($groupContent));
          $clipboard1  = new \EJ\Ribbon\Group();
-         $grpcontent1 = new \EJ\Ribbon\Content();
+         $groupContent1 = new \EJ\Ribbon\Content();
          $contentGroup1=new \EJ\Ribbon\ContentGroup();
          $contentGroup1->id('design')->type('custom')->contentID('design'); 
-         $grpcontent1->groups(array($contentGroup1));
-         $clipboard1->text('Operators')->content(array($grpcontent1));
-         $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
-         echo $ribbon ->create('createControl')->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();   
+         $groupContent1->groups(array($contentGroup1));
+         $clipboard1->text('Operators')->content(array($groupContent1));
+         $homeTab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
+         echo $ribbon ->create('createControl')->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();   
          ?>
          <script type="text/javascript"> 
              function createControl(e){
