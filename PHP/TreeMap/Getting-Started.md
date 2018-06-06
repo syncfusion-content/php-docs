@@ -82,7 +82,7 @@ The `dataSource` property accepts the collection values as input. For example, y
 
 You can calculate the size of the object using `weightValuePath` of **TreeMap**.
 
-Populate the TreeMap data in PHP Json object. For example, you can use population data of countries to generate TreeMap data as illustrated in the following code sample. 
+Populate the TreeMap data in PHP JSON object. For example, you can use population data of countries to generate TreeMap data as illustrated in the following code sample. 
 
 {% highlight html %}
 
