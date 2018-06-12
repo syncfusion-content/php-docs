@@ -71,8 +71,8 @@ The following table describes about the built in controls type and their corresp
          ejDropDownList - dropdownSettings
       </td>
 	  <td>
-         $dropdownButton=array('dataSource'=>$fontfamily,'text'=>'Segeo UI','width'=>150);
-         $contentGroup2->id('fontfamily')->toolTip('Font')->dropdownSettings($dropdownButton); 
+         $dropdownButton=array('dataSource'=>$fontFamily,'text'=>'Segeo UI','width'=>150);
+         $contentGroup2->id('fontFamily')->toolTip('Font')->dropdownSettings($dropdownButton); 
       </td>
     </tr>
 </table>
