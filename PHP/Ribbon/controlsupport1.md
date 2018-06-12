@@ -125,7 +125,7 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
          $groupContent2 = new \EJ\Ribbon\Content();
          $contentGroup2 = new \EJ\Ribbon\ContentGroup();
          $contentGroup3 = new \EJ\Ribbon\ContentGroup();
-         $dropdownButton=array('dataSource'=>$fontFamily,'text'=>'Segeo UI','width'=>150);
+         $dropdownButton=array('dataSource'=>$fontFamily,'text'=>'Segoe UI','width'=>150);
          $contentGroup2->id('fontFamily')->toolTip('Font')->dropdownSettings($dropdownButton);     
          $dropdownButton1=array('dataSource'=>$fontSize,'text'=>'1pt','width'=>65);
          $contentGroup3->id('fontSize')->toolTip('FontSize')->dropdownSettings($dropdownButton1);
