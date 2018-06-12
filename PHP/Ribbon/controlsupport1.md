@@ -94,8 +94,8 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
               <li><a>Paste</a></li>
           </ul>
          <?php
-         $fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"];
-         $fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"];
+         $fontFamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"];
+         $fontSize = ["1pt", "2pt", "3pt", "4pt", "5pt"];
          $action1 = ["New", "Clear"];
          $action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"]; 
 		 require_once 'EJ\AutoLoad.php';
@@ -125,10 +125,10 @@ N> 2. For type property you can assign either string value (`splitbutton`) or en
          $groupContent2 = new \EJ\Ribbon\Content();
          $contentGroup2 = new \EJ\Ribbon\ContentGroup();
          $contentGroup3 = new \EJ\Ribbon\ContentGroup();
-         $dropdownButton=array('dataSource'=>$fontfamily,'text'=>'Segeo UI','width'=>150);
-         $contentGroup2->id('fontfamily')->toolTip('Font')->dropdownSettings($dropdownButton);     
-         $dropdownButton1=array('dataSource'=>$fontsize,'text'=>'1pt','width'=>65);
-         $contentGroup3->id('fontsize')->toolTip('FontSize')->dropdownSettings($dropdownButton1);
+         $dropdownButton=array('dataSource'=>$fontFamily,'text'=>'Segeo UI','width'=>150);
+         $contentGroup2->id('fontFamily')->toolTip('Font')->dropdownSettings($dropdownButton);     
+         $dropdownButton1=array('dataSource'=>$fontSize,'text'=>'1pt','width'=>65);
+         $contentGroup3->id('fontSize')->toolTip('FontSize')->dropdownSettings($dropdownButton1);
          $default2 = new \EJ\Ribbon\Defaults();
          $default2->height(28)->type("dropdownlist");
          $groupContent2->groups(array($contentGroup2,$contentGroup3))->defaults($default2);
@@ -168,7 +168,7 @@ You can set type as custom to render custom controls and Custom element id has t
 	           </ul>
 		      </li>
 	      </ul>
-          <input id="fontcolor" />
+          <input id="fontColor" />
           <table id="design" class="e-designtablestyle">
             <tr>
               <td>
@@ -192,7 +192,7 @@ You can set type as custom to render custom controls and Custom element id has t
          $clipboard  = new \EJ\Ribbon\Group();
          $groupContent = new \EJ\Ribbon\Content();
          $contentGroup=new \EJ\Ribbon\ContentGroup();
-         $contentGroup->id('fontcolor')->toolTip('Font Color')->contentID('fontcolor');
+         $contentGroup->id('fontColor')->toolTip('Font Color')->contentID('fontColor');
          $default = new \EJ\Ribbon\Defaults();
          $default->height(30)->type('custom');
          $groupContent->groups(array($contentGroup))->defaults($default);
@@ -209,7 +209,7 @@ You can set type as custom to render custom controls and Custom element id has t
          <script type="text/javascript"> 
              function createControl(e){
                  var ribbon = $("#Ribbon").data("ejRibbon");
-                 $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
+                 $("#fontColor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
              }
          </script>
                
