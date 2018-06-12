@@ -78,7 +78,7 @@ The following table describes about the built in controls type and their corresp
 </table>
 
 N> 1. You can specify type either to group's collection or to each group.
-N> 2. For type property you can assign either string value (`splitbutton`) or enum value (ej.Ribbon.type.splitButton).
+N> 2. For type property you can assign either string value (`splitButton`) or enum value (ej.Ribbon.type.splitButton).
 
 {% highlight html %}
 
