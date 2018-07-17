@@ -124,7 +124,7 @@ TreeGrid with empty datasource
 
 {% endhighlight %}
 
-4.Initialize the TreeGrid with Json data from external file.
+4.Initialize the TreeGrid with JSON data from external file.
 
 {% highlight js %}
 
