@@ -46,9 +46,9 @@ This section explains how to create a TreeGrid widget in your application with h
 
 <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     //...
-    echo $treegrid -> render();    
+    echo $treeGrid -> render();    
         ?>
 </body>
 
@@ -65,7 +65,7 @@ TreeGrid with empty datasource
 
     <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     $Json = [
      {
          taskID: 1,
@@ -118,19 +118,19 @@ TreeGrid with empty datasource
     $columns5 -> field="progress";
     $columns5 ->headerText ="Progress";
     $columns=array($columns1,$columns2,$columns3,$columns4,$columns5);
-    echo $treegrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
+    echo $treeGrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
         ?>
 </body>
 
 {% endhighlight %}
 
-4.Initialize the TreeGrid with Json data from external file.
+4.Initialize the TreeGrid with JSON data from external file.
 
 {% highlight js %}
 
     <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     $Json = json_decode(file_get_contents("Data.json"), true);
     $columns1= new EJ\TreeGrid\Column();
     $columns1 -> field="taskID";
@@ -148,7 +148,7 @@ TreeGrid with empty datasource
     $columns5 -> field="progress";
     $columns5 ->headerText ="Progress";
     $columns=array($columns1,$columns2,$columns3,$columns4,$columns5);
-    echo $treegrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
+    echo $treeGrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
         ?>
 </body>
 
@@ -170,9 +170,9 @@ Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](http
 
 <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     //...
-    echo $treegrid -> allowSorting(true) -> allowMultiSorting(true) -> render();    
+    echo $treeGrid -> allowSorting(true) -> allowMultiSorting(true) -> render();    
         ?>
 </body>
 
@@ -188,12 +188,12 @@ You can enable Editing in TreeGrid by using the [`editSettings`](http://help.syn
 
 <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     $edit=new EJ\TreeGrid\EditSetting();
     $edit->allowEditing(true)->allowAdding(true)->allowDeleting(true);
     
     //...
-    echo $treegrid -> editSettings($edit) -> render();    
+    echo $treeGrid -> editSettings($edit) -> render();    
         ?>
 </body>
 
@@ -206,7 +206,7 @@ And also, the following editors are provided for support in TreeGrid control.
 * numeric
 * dropdown
 * datepicker
-* datetimepicker
+* dateTimePicker
 
 You can set the editor type for a particular column as follows.
 
@@ -214,7 +214,7 @@ You can set the editor type for a particular column as follows.
 
      <body style="width:100%;height:100%;position:static;">
       <?php 
-    $treegrid=new EJ\TreeGrid("TreegridDefault");
+    $treeGrid=new EJ\TreeGrid("TreeGridDefault");
     $Json = json_decode(file_get_contents("Data.json"), true);
     $columns1= new EJ\TreeGrid\Column();
     $columns1 -> field="startDate";
@@ -229,7 +229,7 @@ You can set the editor type for a particular column as follows.
     $columns3 ->headerText ="Progress";
     $columns3->editType="numericedit";
     $columns=array($columns1,$columns2,$columns3);
-    echo $treegrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
+    echo $treeGrid -> isResponsive(true)-> columns($columns)-> childMapping("subtasks")->treeColumnIndex(1) -> dataSource($Json)->render();    
         ?>
 </body>
 
