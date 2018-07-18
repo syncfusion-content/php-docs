@@ -103,7 +103,7 @@ Create an HTML file and add the following necessary script and CSS files to the 
 
 {% endhighlight %}
 
-## Initialize the Gantt with Json data from external file.
+## Initialize the Gantt with JSON data from external file.
 
 {% highlight html %}
 
