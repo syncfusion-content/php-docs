@@ -2,7 +2,7 @@
 layout: post
 title: Upgrade from one version to another version| common | Syncfusion
 description: upgrade from one version to another version
-platform: aspnet
+platform: php
 control: Essential Studio
 documentation: ug
 ---
