@@ -60,7 +60,7 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
     </head>
 {% endhighlight %}
 
-2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **Autoload.php** file available in the `/Src` directory. This file *automatically retreieves the required source class files* to render the specified controls.
+2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **AutoLoad.php** file available in the `/Src` directory. This file *automatically retrieves the required source class files* to render the specified controls.
 
 {% highlight html %}
     <body>
