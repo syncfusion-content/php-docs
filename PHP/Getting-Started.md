@@ -39,7 +39,7 @@ If you are downloading the zipped package, Downloaded package contains the follo
 
 1. /Src - Comprises of required PHP class files to use Essential JS for PHP.
 2. /Samples - Sample PHP Web Site.
-3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for PHP components. Also contains external dependency files such as jQuery, jsRender etc.
+3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for PHP components. Also contains external dependency files such as jQuery, JsRender etc.
 4. /themes - Contains the style sheets for web components.
 
 ## Run the Essential JS for PHP demo web site
