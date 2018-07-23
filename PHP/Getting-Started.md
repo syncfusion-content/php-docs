@@ -39,7 +39,7 @@ If you are downloading the zipped package, Downloaded package contains the follo
 
 1. /Src - Comprises of required PHP class files to use Essential JS for PHP.
 2. /Samples - Sample PHP Web Site.
-3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for PHP components. Also contains external dependency files such as jQuery, jsRender etc.
+3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for PHP components. Also contains external dependency files such as jQuery, JsRender etc.
 4. /themes - Contains the style sheets for web components.
 
 ## Run the Essential JS for PHP demo web site
@@ -60,7 +60,7 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
     </head>
 {% endhighlight %}
 
-2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **Autoload.php** file available in the `/Src` directory. This file *automatically retreieves the required source class files* to render the specified controls.
+2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **AutoLoad.php** file available in the `/Src` directory. This file *automatically retrieves the required source class files* to render the specified controls.
 
 {% highlight html %}
     <body>
