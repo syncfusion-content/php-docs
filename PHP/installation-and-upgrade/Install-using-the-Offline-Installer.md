@@ -60,7 +60,7 @@ The following procedure illustrates how to install Essential Studio PHP platform
 	   However, you can change the locations by clicking browse button.
 
    * Select the **Install Syncfusion Samples** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
-   * Select the **Install Syncfusion Extensions** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
+   
 
 
 6.  Click Install.
