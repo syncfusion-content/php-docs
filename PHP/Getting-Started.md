@@ -10,38 +10,6 @@ documentation: ug
 
 # Essential JS for PHP
 
-## System Requirements
-
-To work with PHP, you need install PHP on your machine
-
-* PHP [5.3.3+ version](http://php.net/downloads.php).
-
-* Unzip the downloaded file and move the unzipped folder to the desired drive.
-
-## Download and Install 
-
-Download and install the Essential JS for PHP component setup from this link after logging in with your Syncfusion account. 
-
-You can download the Essential JS for PHP components in two ways.
-
-* Setup file(.exe).
-* Zipped file.
-
-If you are installing the setup file (.exe), then the Essential JS for PHP component packages will be available under the installed location of Syncfusion, refer below.
-
-   (installed location) \Syncfusion\Essential Studio\14.4.0.15\PHP\.
-
-You can also find the PHP samples (demo website) available under the below installed location.
-
-  (installed location) \Syncfusion\Essential Studio\14.4.0.15\PHP\Samples\.
-
-If you are downloading the zipped package, Downloaded package contains the following directories.
-
-1. /Src - Comprises of required PHP class files to use Essential JS for PHP.
-2. /Samples - Sample PHP Web Site.
-3. /scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for PHP components. Also contains external dependency files such as jQuery, jsRender etc.
-4. /themes - Contains the style sheets for web components.
-
 ## Run the Essential JS for PHP demo web site
 
 To run the Essential JS for PHP demo site, kindly refer the ReadMe.html file in `/Samples` location.
@@ -60,7 +28,7 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
     </head>
 {% endhighlight %}
 
-2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **Autoload.php** file available in the `/Src` directory. This file *automatically retrieves the required source class files* to render the specified controls.
+2. Copy the individual component source files from `/Src` to your directory. Include the Essential JS for PHP **AutoLoad.php** file available in the `/Src` directory. This file *automatically retrieves the required source class files* to render the specified controls.
 
 {% highlight html %}
     <body>
