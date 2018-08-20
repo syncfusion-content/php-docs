@@ -25,7 +25,7 @@ Set the UL element id to menuItemID property to create Application Menu and it w
 {% highlight html %}
 
           <div id="Ribbon"></div>
-          <ul id="ribbonmenu">
+          <ul id="ribbonMenu">
               <li><a>FILE</a>
           <ul>
               <li><a>New</a></li>
@@ -39,7 +39,7 @@ Set the UL element id to menuItemID property to create Application Menu and it w
           require_once 'EJ\AutoLoad.php';
           $ribbon = new  \EJ\Ribbon('defaultRibbon');
           $aTab = new \EJ\Ribbon\ApplicationTab();           
-          $aTab->type('menu')->menuItemID('ribbonmenu');
+          $aTab->type('menu')->menuItemID('ribbonMenu');
 		  $hometab  = new \EJ\Ribbon\Tab();
           $clipboard  = new \EJ\Ribbon\Group();
           $grpcontent = new \EJ\Ribbon\Content();
@@ -87,7 +87,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            <div class="e-accuser e-newpageicon" style="display:table-cell"></div>
            <div style="display:table-cell;vertical-align:middle">
                <div>user</div>
-               <div>xyz@syncfusion.com</div>
+               <div>xy@syncfusion.com</div>
            </div>
            </div>
            </div>
