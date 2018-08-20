@@ -39,7 +39,7 @@ Tooltip and Custom Tooltip can be specified for each group controls.
 {% highlight html %}
 
         <div id="Ribbon"></div>
-	     <ul id="ribbonmenu">
+	     <ul id="ribbonMenu">
 		    <li><a>FILE</a>
 		     <ul>
 		        <li><a>Open</a></li>
@@ -54,7 +54,7 @@ Tooltip and Custom Tooltip can be specified for each group controls.
 		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
-        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $aTab->type('menu')->menuItemID('ribbonMenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $grpcontent = new \EJ\Ribbon\Content();
@@ -92,7 +92,7 @@ Separates the control from the next control in the group when group alignType is
 {% highlight html %}
 
         <div id="Ribbon"></div>
-	     <ul id="ribbonmenu">
+	     <ul id="ribbonMenu">
 		    <li><a>FILE</a>
 		     <ul>
 			    <li><a>New</a></li>
@@ -104,7 +104,7 @@ Separates the control from the next control in the group when group alignType is
 		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
-        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $aTab->type('menu')->menuItemID('ribbonMenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $grpcontent = new \EJ\Ribbon\Content();
@@ -136,19 +136,19 @@ Set group type as custom to add custom items such as div, table and custom contr
 {% highlight html %}
 
         <div id="Ribbon"></div>
-	     <ul id="ribbonmenu">
+	     <ul id="ribbonMenu">
 		    <li><a>FILE</a>    
 		     <ul>
 			    <li><a>New</a></li>
 		     </ul>
 		    </li>
 	     </ul>
-         <button id='btn'>Using Content ID</button>
+         <button id='button'>Using Content ID</button>
         <?php
 		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
-        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $aTab->type('menu')->menuItemID('ribbonMenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $clipboard1  = new \EJ\Ribbon\Group();
@@ -157,7 +157,7 @@ Set group type as custom to add custom items such as div, table and custom contr
         $contentgroup=new \EJ\Ribbon\ContentGroup();
         $contentgroup1=new \EJ\Ribbon\ContentGroup(); 
         $clipboard->text('New')->type('custom')->customContent("<button id='customContent'>Using Custom Content</button>");   
-        $clipboard1->text('Data')->type('custom')->contentID('btn');  
+        $clipboard1->text('Data')->type('custom')->contentID('button');  
         $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
         ?>  
@@ -174,22 +174,22 @@ Set enableGroupExpander as true to show Group Expander for each group in Tab. Th
 {% highlight html %}
 
         <div id="Ribbon"></div>
-	     <ul id="ribbonmenu">
+	     <ul id="ribbonMenu">
 		    <li><a>FILE</a>    
 		     <ul>
 			    <li><a>New</a></li>
 		     </ul>
 		    </li>
 	     </ul>
-         <button id='btn'>Home button</button>
+         <button id='button'>Home button</button>
         <?php
 		require_once 'EJ\AutoLoad.php';
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
-        $aTab->type('menu')->menuItemID('ribbonmenu');  
+        $aTab->type('menu')->menuItemID('ribbonMenu');  
         $hometab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
-        $clipboard->text('New')->alignType("rows")->type('custom')->enableGroupExpander(true)->contentID('btn');    
+        $clipboard->text('New')->alignType("rows")->type('custom')->enableGroupExpander(true)->contentID('button');    
         $hometab->id('home')->text('HOME')->groups(array($clipboard));
         echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
         ?>
