@@ -55,30 +55,30 @@ Tooltip and Custom Tooltip can be specified for each group controls.
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
         $aTab->type('menu')->menuItemID('ribbonMenu');  
-        $hometab  = new \EJ\Ribbon\Tab();
+        $homeTab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
-        $grpcontent = new \EJ\Ribbon\Content();
-        $contentgroup=new \EJ\Ribbon\ContentGroup();
+        $grpContent = new \EJ\Ribbon\Content();
+        $contentGroup=new \EJ\Ribbon\ContentGroup();
         $splitButtonSettings = array('contentType'=>'imageonly','targetID'=>'pasteSplit','imagePosition'=>'imagetop','prefixIcon'=>'e-icon e-ribbon e-ribbonpaste'); 
-        $contentgroup->id('paste')->text('Paste')->toolTip('Paste')->splitButtonSettings($splitButtonSettings);   
+        $contentGroup->id('paste')->text('Paste')->toolTip('Paste')->splitButtonSettings($splitButtonSettings);   
         $default= new \EJ\Ribbon\Defaults();
         $default->width(60)->height(40)->type("splitbutton");
-        $grpcontent->groups(array($contentgroup))->defaults($default);
-        $clipboard->text('ClipBoard')->content(array($grpcontent));
+        $grpContent->groups(array($contentGroup))->defaults($default);
+        $clipboard->text('ClipBoard')->content(array($grpContent));
         $clipboard1  = new \EJ\Ribbon\Group();
-        $grpcontent1 = new \EJ\Ribbon\Content();
-        $contentgroup1=new \EJ\Ribbon\ContentGroup();
-        $contentgroup2=new \EJ\Ribbon\ContentGroup();
+        $grpContent1 = new \EJ\Ribbon\Content();
+        $contentGroup1=new \EJ\Ribbon\ContentGroup();
+        $contentGroup2=new \EJ\Ribbon\ContentGroup();
         $togglebutton =  array('defaultText'=>'Cut','targetID'=>'pasteSplit','activeText'=>'Cut Over'); 
         $togglebutton1 =  array('defaultText'=>'Copy','targetID'=>'pasteSplit','activeText'=>'Copy Over'); 
-        $contentgroup1->id('cut')->toggleButtonSettings($togglebutton);
-        $contentgroup2->id('copy')->toggleButtonSettings($togglebutton1);
+        $contentGroup1->id('cut')->toggleButtonSettings($togglebutton);
+        $contentGroup2->id('copy')->toggleButtonSettings($togglebutton1);
         $default1= new \EJ\Ribbon\Defaults();
         $default1->width(75)->height(30)->type("togglebutton");
-        $grpcontent1->groups(array($contentgroup1,$contentgroup2))->defaults($default1);
-        $clipboard1->text('Font')->alignType("columns")->content(array($grpcontent1));
-        $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
-        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        $grpContent1->groups(array($contentGroup1,$contentGroup2))->defaults($default1);
+        $clipboard1->text('Font')->alignType("columns")->content(array($grpContent1));
+        $homeTab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
         ?>
 
 {% endhighlight %}
@@ -105,21 +105,21 @@ Separates the control from the next control in the group when group alignType is
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
         $aTab->type('menu')->menuItemID('ribbonMenu');  
-        $hometab  = new \EJ\Ribbon\Tab();
+        $homeTab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
-        $grpcontent = new \EJ\Ribbon\Content();
-        $contentgroup=new \EJ\Ribbon\ContentGroup();
-        $contentgroup1=new \EJ\Ribbon\ContentGroup();
-        $btnsettings = array('width'=> 100); 
-        $contentgroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($btnsettings);   
-        $btnsettings1 = array('width'=> 150);
-        $contentgroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($btnsettings1);  
+        $grpContent = new \EJ\Ribbon\Content();
+        $contentGroup=new \EJ\Ribbon\ContentGroup();
+        $contentGroup1=new \EJ\Ribbon\ContentGroup();
+        $btnSettings = array('width'=> 100); 
+        $contentGroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($btnSettings);   
+        $btnSettings1 = array('width'=> 150);
+        $contentGroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($btnSettings1);  
         $default= new \EJ\Ribbon\Defaults();
         $default->width(70)->type('button');
-        $grpcontent->groups(array($contentgroup,$contentgroup1))->defaults($default);
-        $clipboard->text('New')->alignType('rows')->content(array($grpcontent));
-        $hometab->id('home')->text('HOME')->groups(array($clipboard));
-        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        $grpContent->groups(array($contentGroup,$contentGroup1))->defaults($default);
+        $clipboard->text('New')->alignType('rows')->content(array($grpContent));
+        $homeTab->id('home')->text('HOME')->groups(array($clipboard));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
         ?>
 
 {% endhighlight %}
@@ -149,17 +149,17 @@ Set group type as custom to add custom items such as div, table and custom contr
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
         $aTab->type('menu')->menuItemID('ribbonMenu');  
-        $hometab  = new \EJ\Ribbon\Tab();
+        $homeTab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $clipboard1  = new \EJ\Ribbon\Group();
-        $grpcontent = new \EJ\Ribbon\Content();
-        $grpcontent1 = new \EJ\Ribbon\Content();
-        $contentgroup=new \EJ\Ribbon\ContentGroup();
-        $contentgroup1=new \EJ\Ribbon\ContentGroup(); 
+        $grpContent = new \EJ\Ribbon\Content();
+        $grpContent1 = new \EJ\Ribbon\Content();
+        $contentGroup=new \EJ\Ribbon\ContentGroup();
+        $contentGroup1=new \EJ\Ribbon\ContentGroup(); 
         $clipboard->text('New')->type('custom')->customContent("<button id='customContent'>Using Custom Content</button>");   
         $clipboard1->text('Data')->type('custom')->contentID('button');  
-        $hometab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
-        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        $homeTab->id('home')->text('HOME')->groups(array($clipboard,$clipboard1));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
         ?>  
               
 {% endhighlight %}
@@ -187,11 +187,11 @@ Set enableGroupExpander as true to show Group Expander for each group in Tab. Th
         $ribbon = new  \EJ\Ribbon('defaultRibbon');
         $aTab = new \EJ\Ribbon\ApplicationTab();           
         $aTab->type('menu')->menuItemID('ribbonMenu');  
-        $hometab  = new \EJ\Ribbon\Tab();
+        $homeTab  = new \EJ\Ribbon\Tab();
         $clipboard  = new \EJ\Ribbon\Group();
         $clipboard->text('New')->alignType("rows")->type('custom')->enableGroupExpander(true)->contentID('button');    
-        $hometab->id('home')->text('HOME')->groups(array($clipboard));
-        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+        $homeTab->id('home')->text('HOME')->groups(array($clipboard));
+        echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
         ?>
         <script>
              groupExpand: function (args) {
