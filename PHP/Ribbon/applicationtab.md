@@ -44,8 +44,8 @@ Set the UL element id to menuItemID property to create Application Menu and it w
           $clipboard  = new \EJ\Ribbon\Group();
           $grpContent = new \EJ\Ribbon\Content();
           $contentGroup=new \EJ\Ribbon\ContentGroup();
-          $btnSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
-          $contentGroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($btnSettings);   
+          $buttonSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
+          $contentGroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($buttonSettings);   
           $grpContent->groups(array($contentGroup));
           $clipboard->text('New')->content(array($grpContent));
           $homeTab->id('home')->text('HOME')->groups(array($clipboard));
