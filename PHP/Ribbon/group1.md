@@ -110,10 +110,10 @@ Separates the control from the next control in the group when group alignType is
         $grpContent = new \EJ\Ribbon\Content();
         $contentGroup=new \EJ\Ribbon\ContentGroup();
         $contentGroup1=new \EJ\Ribbon\ContentGroup();
-        $btnSettings = array('width'=> 100); 
-        $contentGroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($btnSettings);   
-        $btnSettings1 = array('width'=> 150);
-        $contentGroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($btnSettings1);  
+        $buttonSettings = array('width'=> 100); 
+        $contentGroup->id('new')->text('New')->toolTip('New')->enableSeparator('true')->buttonSettings($buttonSettings);   
+        $buttonSettings1 = array('width'=> 150);
+        $contentGroup1->id('font')->text('Font')->toolTip('Font')->buttonSettings($buttonSettings1);  
         $default= new \EJ\Ribbon\Defaults();
         $default->width(70)->type('button');
         $grpContent->groups(array($contentGroup,$contentGroup1))->defaults($default);
