@@ -36,7 +36,7 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
               <p>Emphasis</p>
            </div>
           </div>
-          <table id="design" class="e-designtablestyle">
+          <table id="design" class="e-designtTablestyle">
             <tr>
                <td>
                  <input type="checkbox" id="Check2" />
@@ -53,37 +53,37 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           $ribbon = new  \EJ\Ribbon('defaultRibbon');
           $aTab = new \EJ\Ribbon\ApplicationTab();           
           $aTab->type('menu')->menuItemID('ribbonMenu');  
-          $hometab  = new \EJ\Ribbon\Tab();
+          $homeTab  = new \EJ\Ribbon\Tab();
           $clipboard  = new \EJ\Ribbon\Group();
           $clipboard->text('CustomControls')->type('custom')->contentID('Contents');     
-          $hometab->id('home')->text('HOME')->groups(array($clipboard));
-          $contextab  = new \EJ\Ribbon\ContextualTab();
-          $contextab1  = new \EJ\Ribbon\ContextualTab();
-          $designtab = new \EJ\Ribbon\Tab();
+          $homeTab->id('home')->text('HOME')->groups(array($clipboard));
+          $contexTab  = new \EJ\Ribbon\ContextualTab();
+          $contexTab1  = new \EJ\Ribbon\ContextualTab();
+          $designtTab = new \EJ\Ribbon\Tab();
           $clipboard1  = new \EJ\Ribbon\Group();
           $clipboard1->text('Table Style Options')->type('custom')->contentID('design');
-          $designtab->id('Design')->text('DESIGN')->groups(array($clipboard1));
-          $contextab->backgroundColor('#FCFBEB')->borderColor('#F2CC1C')->tabs(array($designtab));
+          $designtTab->id('Design')->text('DESIGN')->groups(array($clipboard1));
+          $contexTab->backgroundColor('#FCFBEB')->borderColor('#F2CC1C')->tabs(array($designtTab));
           $tabset1 = new \EJ\Ribbon\Tab();
           $clipboard2  = new \EJ\Ribbon\Group();
           $clipboard2->text('Tabset1 Style')->type('custom')->contentID('headings');
           $tabset1->id('tabset1')->text('Tabset1')->groups(array($clipboard2));
           $tabset2 = new \EJ\Ribbon\Tab();
           $clipboard3  = new \EJ\Ribbon\Group();
-          $grpcontent = new \EJ\Ribbon\Content();
-          $contentgroup=new \EJ\Ribbon\ContentGroup();
-          $contentgroup1=new \EJ\Ribbon\ContentGroup();
-          $btnsettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-uppercase');
-          $contentgroup->id('uppercase')->text('Upper Case')->buttonSettings($btnsettings);
-          $btnsettings1=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-lowercase');
-          $contentgroup1->id('lowercase')->text('Lower Case')->buttonSettings($btnsettings1);
+          $grpContent = new \EJ\Ribbon\Content();
+          $contentGroup=new \EJ\Ribbon\ContentGroup();
+          $contentGroup1=new \EJ\Ribbon\ContentGroup();
+          $btnSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-uppercase');
+          $contentGroup->id('uppercase')->text('Upper Case')->buttonSettings($btnSettings);
+          $btnSettings1=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-lowercase');
+          $contentGroup1->id('lowercase')->text('Lower Case')->buttonSettings($btnSettings1);
           $default = new \EJ\Ribbon\Defaults();
           $default->isBig('true');
-          $grpcontent->groups(array($contentgroup,$contentgroup1))->defaults($default);
-          $clipboard3->text('TabSet2 Style')->content(array($grpcontent));
+          $grpContent->groups(array($contentGroup,$contentGroup1))->defaults($default);
+          $clipboard3->text('TabSet2 Style')->content(array($grpContent));
           $tabset2->id('tabset2')->text('Tabset2')->groups(array($clipboard3));
-          $contextab1->backgroundColor('blue')->borderColor('red')->tabs(array($tabset1,$tabset2));
-          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->contextualTabs(array($contextab,$contextab1))->render();
+          $contexTab1->backgroundColor('blue')->borderColor('red')->tabs(array($tabset1,$tabset2));
+          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->contextualTabs(array($contexTab,$contexTab1))->render();
           ?>
 
 {% endhighlight %}
