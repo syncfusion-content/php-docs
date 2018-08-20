@@ -14,7 +14,7 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
 {% highlight html %}
 
           <div id="Ribbon"></div>
-	       <ul id="ribbonmenu">
+	       <ul id="ribbonMenu">
 		      <li><a>FILE</a>    
 		       <ul>
 		          <li><a>New</a></li>
@@ -24,15 +24,15 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           <div id="Contents">Custom Control</div>
           <div id="headings" class="e-headings">
            <div>
-              <p>AaBbCcDd</p>
+              <p>ABCD</p>
               <p>No Spacing</p>
            </div>
            <div>
-              <p class="e-strong">AaBbCcDd</p>
+              <p class="e-strong">ABCD</p>
               <p>Strong</p>
            </div>
            <div>
-              <p class="e-emphasis">AaBbCcDd</p>
+              <p class="e-emphasis">ABCD</p>
               <p>Emphasis</p>
            </div>
           </div>
@@ -52,7 +52,7 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
 		  require_once 'EJ\AutoLoad.php';
           $ribbon = new  \EJ\Ribbon('defaultRibbon');
           $aTab = new \EJ\Ribbon\ApplicationTab();           
-          $aTab->type('menu')->menuItemID('ribbonmenu');  
+          $aTab->type('menu')->menuItemID('ribbonMenu');  
           $hometab  = new \EJ\Ribbon\Tab();
           $clipboard  = new \EJ\Ribbon\Group();
           $clipboard->text('CustomControls')->type('custom')->contentID('Contents');     
@@ -82,7 +82,7 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           $grpcontent->groups(array($contentgroup,$contentgroup1))->defaults($default);
           $clipboard3->text('TabSet2 Style')->content(array($grpcontent));
           $tabset2->id('tabset2')->text('Tabset2')->groups(array($clipboard3));
-          $contextab1->backgroundColor('blue')->borderColor('lightblue')->tabs(array($tabset1,$tabset2));
+          $contextab1->backgroundColor('blue')->borderColor('red')->tabs(array($tabset1,$tabset2));
           echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->contextualTabs(array($contextab,$contextab1))->render();
           ?>
 
