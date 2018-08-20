@@ -57,13 +57,13 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           $clipboard  = new \EJ\Ribbon\Group();
           $clipboard->text('CustomControls')->type('custom')->contentID('Contents');     
           $homeTab->id('home')->text('HOME')->groups(array($clipboard));
-          $contexTab  = new \EJ\Ribbon\ContextualTab();
-          $contexTab1  = new \EJ\Ribbon\ContextualTab();
-          $designtTab = new \EJ\Ribbon\Tab();
+          $contextTab  = new \EJ\Ribbon\ContextualTab();
+          $contextTab1  = new \EJ\Ribbon\ContextualTab();
+          $designTab = new \EJ\Ribbon\Tab();
           $clipboard1  = new \EJ\Ribbon\Group();
           $clipboard1->text('Table Style Options')->type('custom')->contentID('design');
-          $designtTab->id('Design')->text('DESIGN')->groups(array($clipboard1));
-          $contexTab->backgroundColor('#FCFBEB')->borderColor('#F2CC1C')->tabs(array($designtTab));
+          $designTab->id('Design')->text('DESIGN')->groups(array($clipboard1));
+          $contextTab->backgroundColor('#FCFBEB')->borderColor('#F2CC1C')->tabs(array($designTab));
           $tabset1 = new \EJ\Ribbon\Tab();
           $clipboard2  = new \EJ\Ribbon\Group();
           $clipboard2->text('Tabset1 Style')->type('custom')->contentID('headings');
@@ -73,17 +73,17 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
           $grpContent = new \EJ\Ribbon\Content();
           $contentGroup=new \EJ\Ribbon\ContentGroup();
           $contentGroup1=new \EJ\Ribbon\ContentGroup();
-          $btnSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-uppercase');
-          $contentGroup->id('uppercase')->text('Upper Case')->buttonSettings($btnSettings);
-          $btnSettings1=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-lowercase');
-          $contentGroup1->id('lowercase')->text('Lower Case')->buttonSettings($btnSettings1);
+          $buttonSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-uppercase');
+          $contentGroup->id('uppercase')->text('Upper Case')->buttonSettings($buttonSettings);
+          $buttonSettings1=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-lowercase');
+          $contentGroup1->id('lowercase')->text('Lower Case')->buttonSettings($buttonSettings1);
           $default = new \EJ\Ribbon\Defaults();
           $default->isBig('true');
           $grpContent->groups(array($contentGroup,$contentGroup1))->defaults($default);
           $clipboard3->text('TabSet2 Style')->content(array($grpContent));
           $tabset2->id('tabset2')->text('Tabset2')->groups(array($clipboard3));
-          $contexTab1->backgroundColor('blue')->borderColor('red')->tabs(array($tabset1,$tabset2));
-          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->contextualTabs(array($contexTab,$contexTab1))->render();
+          $contextTab1->backgroundColor('blue')->borderColor('red')->tabs(array($tabset1,$tabset2));
+          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->contextualTabs(array($contextTab,$contextTab1))->render();
           ?>
 
 {% endhighlight %}
