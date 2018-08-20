@@ -15,7 +15,7 @@ Tab is a collection of control groups which enables you to organize related comm
 {% highlight html %}
 
             <div id="Ribbon"></div>
-             <ul id="ribbonmenu">
+             <ul id="ribbonMenu">
                  <li><a>FILE</a>
                   <ul>
                      <li><a>Open</a></li>
@@ -29,7 +29,7 @@ Tab is a collection of control groups which enables you to organize related comm
             require_once 'EJ\AutoLoad.php';
             $ribbon = new  \EJ\Ribbon('defaultRibbon');
             $aTab = new \EJ\Ribbon\ApplicationTab();
-            $aTab->type('menu')->menuItemID('ribbonmenu'); 
+            $aTab->type('menu')->menuItemID('ribbonMenu'); 
             $homeTab  = new \EJ\Ribbon\Tab();
             $sendRect = new \EJ\Ribbon\Tab();
             $clipboard1  = new \EJ\Ribbon\Group();
