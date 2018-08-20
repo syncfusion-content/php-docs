@@ -40,16 +40,16 @@ Set the UL element id to menuItemID property to create Application Menu and it w
           $ribbon = new  \EJ\Ribbon('defaultRibbon');
           $aTab = new \EJ\Ribbon\ApplicationTab();           
           $aTab->type('menu')->menuItemID('ribbonMenu');
-		  $hometab  = new \EJ\Ribbon\Tab();
+		  $homeTab  = new \EJ\Ribbon\Tab();
           $clipboard  = new \EJ\Ribbon\Group();
-          $grpcontent = new \EJ\Ribbon\Content();
-          $contentgroup=new \EJ\Ribbon\ContentGroup();
-          $btnsettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
-          $contentgroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($btnsettings);   
-          $grpcontent->groups(array($contentgroup));
-          $clipboard->text('New')->content(array($grpcontent));
-          $hometab->id('home')->text('HOME')->groups(array($clipboard));
-          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+          $grpContent = new \EJ\Ribbon\Content();
+          $contentGroup=new \EJ\Ribbon\ContentGroup();
+          $btnSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
+          $contentGroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($btnSettings);   
+          $grpContent->groups(array($contentGroup));
+          $clipboard->text('New')->content(array($grpContent));
+          $homeTab->id('home')->text('HOME')->groups(array($clipboard));
+          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
           ?>
 
 {% endhighlight %}
@@ -108,14 +108,14 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            $backstagepages3->id("account")->text("Office Account")->contentID("infoCon");
            $backstage->text("FILE")->height("350")->width("600px")->headerWidth("120px")->pages(array($backstagepages1,$backstagepages2,$backstagepages3));
            $aTab->type("backstage")->backstageSettings($backstage);
-           $hometab  = new \EJ\Ribbon\Tab();
+           $homeTab  = new \EJ\Ribbon\Tab();
            $clipboard  = new \EJ\Ribbon\Group();
-           $grpcontent = new \EJ\Ribbon\Content();
-           $contentgroup=new \EJ\Ribbon\ContentGroup();
-           $contentgroup->text('New')->type('custom')->contentID('ribbonContent');   
-           $grpcontent->groups(array($contentgroup));
-           $clipboard->text('New')->content(array($grpcontent));
-           $hometab->id('home')->text('HOME')->groups(array($clipboard));
+           $grpContent = new \EJ\Ribbon\Content();
+           $contentGroup=new \EJ\Ribbon\ContentGroup();
+           $contentGroup->text('New')->type('custom')->contentID('ribbonContent');   
+           $grpContent->groups(array($contentGroup));
+           $clipboard->text('New')->content(array($grpContent));
+           $homeTab->id('home')->text('HOME')->groups(array($clipboard));
            echo $ribbon ->width('500px')->applicationTab($aTab)->render();
            ?>
 		   <style type="text/css">
