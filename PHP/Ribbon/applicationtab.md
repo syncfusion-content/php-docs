@@ -25,7 +25,7 @@ Set the UL element id to menuItemID property to create Application Menu and it w
 {% highlight html %}
 
           <div id="Ribbon"></div>
-          <ul id="ribbonmenu">
+          <ul id="ribbonMenu">
               <li><a>FILE</a>
           <ul>
               <li><a>New</a></li>
@@ -39,17 +39,17 @@ Set the UL element id to menuItemID property to create Application Menu and it w
           require_once 'EJ\AutoLoad.php';
           $ribbon = new  \EJ\Ribbon('defaultRibbon');
           $aTab = new \EJ\Ribbon\ApplicationTab();           
-          $aTab->type('menu')->menuItemID('ribbonmenu');
-		  $hometab  = new \EJ\Ribbon\Tab();
+          $aTab->type('menu')->menuItemID('ribbonMenu');
+		  $homeTab  = new \EJ\Ribbon\Tab();
           $clipboard  = new \EJ\Ribbon\Group();
-          $grpcontent = new \EJ\Ribbon\Content();
-          $contentgroup=new \EJ\Ribbon\ContentGroup();
-          $btnsettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
-          $contentgroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($btnsettings);   
-          $grpcontent->groups(array($contentgroup));
-          $clipboard->text('New')->content(array($grpcontent));
-          $hometab->id('home')->text('HOME')->groups(array($clipboard));
-          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($hometab))->render();
+          $grpContent = new \EJ\Ribbon\Content();
+          $contentGroup=new \EJ\Ribbon\ContentGroup();
+          $buttonSettings=array('contentType'=>'imageonly','prefixIcon'=>'e-icon e-ribbon e-new');
+          $contentGroup->text('New')->type('custom')->contentID('Contents')->buttonSettings($buttonSettings);   
+          $grpContent->groups(array($contentGroup));
+          $clipboard->text('New')->content(array($grpContent));
+          $homeTab->id('home')->text('HOME')->groups(array($clipboard));
+          echo $ribbon ->width('500px')->applicationTab($aTab)->tabs(array($homeTab))->render();
           ?>
 
 {% endhighlight %}
@@ -87,7 +87,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            <div class="e-accuser e-newpageicon" style="display:table-cell"></div>
            <div style="display:table-cell;vertical-align:middle">
                <div>user</div>
-               <div>xyz@syncfusion.com</div>
+               <div>xy@syncfusion.com</div>
            </div>
            </div>
            </div>
@@ -108,14 +108,14 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            $backstagepages3->id("account")->text("Office Account")->contentID("infoCon");
            $backstage->text("FILE")->height("350")->width("600px")->headerWidth("120px")->pages(array($backstagepages1,$backstagepages2,$backstagepages3));
            $aTab->type("backstage")->backstageSettings($backstage);
-           $hometab  = new \EJ\Ribbon\Tab();
+           $homeTab  = new \EJ\Ribbon\Tab();
            $clipboard  = new \EJ\Ribbon\Group();
-           $grpcontent = new \EJ\Ribbon\Content();
-           $contentgroup=new \EJ\Ribbon\ContentGroup();
-           $contentgroup->text('New')->type('custom')->contentID('ribbonContent');   
-           $grpcontent->groups(array($contentgroup));
-           $clipboard->text('New')->content(array($grpcontent));
-           $hometab->id('home')->text('HOME')->groups(array($clipboard));
+           $grpContent = new \EJ\Ribbon\Content();
+           $contentGroup=new \EJ\Ribbon\ContentGroup();
+           $contentGroup->text('New')->type('custom')->contentID('ribbonContent');   
+           $grpContent->groups(array($contentGroup));
+           $clipboard->text('New')->content(array($grpContent));
+           $homeTab->id('home')->text('HOME')->groups(array($clipboard));
            echo $ribbon ->width('500px')->applicationTab($aTab)->render();
            ?>
 		   <style type="text/css">
@@ -152,4 +152,4 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 
 N> Height & width of backstage can be set using height and width, if these are not set, Ribbon�s height & width will be considered.
 
-
+You can add/remove/update backStage item to the ribbon control by using [`addBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:addbackstageitem), [`removeBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:removebackstageitem) and [`updateBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:updatebackstageitem) methods. Also you can show/hide the backstage page in ribbon control by using [`showBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:showbackstage) and [`hideBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:hidebackstage methods.

@@ -62,6 +62,8 @@ You can render the PHP TreeView with specified items.
 
 Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView.
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 **Render TreeView with local data source.**
 
 First specify the tree data source in array format then map the data source items with tree view fields as shown below.
@@ -72,14 +74,14 @@ First specify the tree data source in array format then map the data source item
     <?php
         $localData = array(
                         array('id'=>1, 'name'=>'Item 1', 'hasChild'=>true, 'expanded'=>true ),
-                        array('id'=>2, 'pid'=>1, 'name'=>'Item 1.1' ),
-                        array('id'=>3, 'pid'=>1, 'name'=>'Item 1.2' ),                    
+                        array('id'=>2, 'parent'=>1, 'name'=>'Item 1.1' ),
+                        array('id'=>3, 'parent'=>1, 'name'=>'Item 1.2' ),                    
                         array('id'=>4, 'name'=>'Item 2', 'hasChild'=>false, 'isChecked'=>true ),
                         array('id'=>4, 'name'=>'Item 3', 'hasChild'=>false ),                    
                         );
         $treeview = new \EJ\TreeView('localData');
         $fields = new EJ\TreeView\Field();
-        $fields->id('id')->text('name')->parentId('pid')->hasChild('hasChild')->dataSource($localData)
+        $fields->id('id')->text('name')->parentId('parent')->hasChild('hasChild')->dataSource($localData)
             ->expanded('expanded')->isChecked('isChecked');
         echo $treeview->showCheckbox(true)->fields($fields)->render();
         ?>
@@ -98,7 +100,7 @@ You can get and decode the JSON file content using "**file_get_contents**" and "
         $Json = json_decode(file_get_contents("Data.json"), true);
         $treeview = new \EJ\TreeView("localData");
         $fields = new EJ\TreeView\Field();
-        $fields->id("id")->text("name")->parentId("pid")->hasChild("hasChild")->dataSource($Json)->expanded("expanded")->isChecked("isChecked");
+        $fields->id("id")->text("name")->parentId("parent")->hasChild("hasChild")->dataSource($Json)->expanded("expanded")->isChecked("isChecked");
         echo $treeview->fields($fields)->render();
     ?>
 
@@ -110,14 +112,14 @@ JSON file content
         
         [
         { "id": 1, "name": "Discover Music", "hasChild": true, "expanded": true },
-        { "id": 2, "pid": 1, "name": "Hot Singles" },
-        { "id": 3, "pid": 1, "name": "Rising Artists" },
-        { "id": 4, "pid": 1, "name": "Live Music" },
-        { "id": 6, "pid": 1, "name": "Best of 2013 So Far" },
+        { "id": 2, "parent": 1, "name": "Hot Singles" },
+        { "id": 3, "parent": 1, "name": "Rising Artists" },
+        { "id": 4, "parent": 1, "name": "Live Music" },
+        { "id": 6, "parent": 1, "name": "Best of 2013 So Far" },
         { "id": 7, "name": "Sales and Events", "hasChild": true, "expanded": true },
-        { "id": 8, "pid": 7, "name": "100 Albums - $5 Each" },
-        { "id": 9, "pid": 7, "name": "Hip-Hop and R&B Sale" },
-        { "id": 10, "pid": 7, "name": "CD Deals" }
+        { "id": 8, "parent": 7, "name": "100 Albums - $5 Each" },
+        { "id": 9, "parent": 7, "name": "Hip-Hop and R&B Sale" },
+        { "id": 10, "parent": 7, "name": "CD Deals" }
         ]
 
 
@@ -155,14 +157,14 @@ EJ PHP TreeView supports all the client side [events](http://help.syncfusion.com
     <?php
         $localData = array(
                         array("id"=>1, "name"=>"Item 1", "hasChild"=>true, "expanded"=>true ),
-                        array("id"=>2, "pid"=>1, "name"=>"Item 1.1" ),
-                        array("id"=>3, "pid"=>1, "name"=>"Item 1.2" ),                    
+                        array("id"=>2, "parent"=>1, "name"=>"Item 1.1" ),
+                        array("id"=>3, "parent"=>1, "name"=>"Item 1.2" ),                    
                         array("id"=>4, "name"=>"Item 2", "hasChild"=>false, "isChecked"=>true ),
                         array("id"=>4, "name"=>"Item 3", "hasChild"=>false ),                    
                         );
         $treeview = new \EJ\TreeView("localData");
         $fields = new EJ\TreeView\Field();
-        $fields->id("id")->text("name")->parentId("pid")->hasChild("hasChild")->dataSource($localData)
+        $fields->id("id")->text("name")->parentId("parent")->hasChild("hasChild")->dataSource($localData)
             ->expanded("expanded")->isChecked("isChecked");
         echo $treeview->showCheckbox(true)->fields($fields)->nodeExpand("onExpand")->nodeCollapse("onCollapse")->nodeSelect("onSelect")->render();
     ?>
