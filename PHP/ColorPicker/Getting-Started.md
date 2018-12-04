@@ -13,9 +13,9 @@ This section illustrates the details on how to render and configure a Colorpicke
 
 Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started](https://help.syncfusion.com/php/getting-started) Documentation.
 
-## Create Colorpicker
+## Create ColorPicker
 
-Create a Colorpicker control by instantiating the ColorPicker class available in EJ namespace and configure it.
+Create a ColorPicker control by instantiating the ColorPicker class available in EJ namespace and configure it.
 
 {% highlight html %}
 
