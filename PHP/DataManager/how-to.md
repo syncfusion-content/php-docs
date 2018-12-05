@@ -1,5 +1,5 @@
 ---
-title: How-to
+title: How-to | Syncfusion
 description: How-to
 platform: php
 control: DataManager
@@ -9,7 +9,7 @@ keywords: WebService, ESRI Rest Web Services, WCF-RESTful Service
 
 # How To
 
-## How I can call and bind to a WebService.asmx
+## How I can call and bind to a WebService.aspx
 
 Create a sample using ASP.NET Web Services
 
@@ -193,7 +193,7 @@ For getting started with WCF OData service please refer [link](http://msdn.micro
 
 ## Can I use ESRI Rest Web Services in url of DataManager?
 
-Yes, you can use ESRI Rest web services in url of DataManager. We have used a demo service from the site in our DataManager and prepared a sample with custom DataAdaptor in Datamanager. 
+Yes, you can use ESRI Rest web services in url of DataManager. We have used a demo service from the site in our DataManager and prepared a sample with custom DataAdaptor in data manager. 
 Refer to the following link for the sample: 
 
 Playground sample : [Demo](http://jsplayground.syncfusion.com/jr2cgadj)
@@ -339,28 +339,28 @@ In the aspx page add the below code for CRUD Operations
 
 The output of above code will be as shown below 
 
-![](HowTo_images/Default.png) 
+![default image](HowTo_images/Default.png) 
 
 Insert:
 
-![](HowTo_images/Add.png) 
+![insert](HowTo_images/Add.png) 
 
 After Insertion:
 
-![](HowTo_images/Addedrow.png) 
+![after insert](HowTo_images/Addedrow.png) 
 
 Edit:
 
-![](HowTo_images/Edit.png) 
+![edit](HowTo_images/Edit.png) 
 
 After Edit:
 
-![](HowTo_images/Editedrow.png) 
+![after edit](HowTo_images/Editedrow.png) 
 
 Delete:
 
-![](HowTo_images/Delete.png) 
+![delete](HowTo_images/Delete.png) 
 
 After Deletion:
 
-![](HowTo_images/Deletedrow.png) 
+![after deletion](HowTo_images/Deletedrow.png) 
