@@ -9,18 +9,18 @@ keywords: Colorpicker getting started, Colorpicker php
 
 # Getting Started
 
-This section illustrates the details on how to render and configure a Colorpicker control using the methods available in PHP wrapper classes. 
+This section illustrates the details on how to render and configure a ColorPicker control using the methods available in PHP wrapper classes. 
 
 Create a PHP Project and add necessary scripts and styles with the help of the given PHP [Getting Started](https://help.syncfusion.com/php/getting-started) Documentation.
 
-## Create Colorpicker
+## Create ColorPicker
 
-Create a Colorpicker control by instantiating the ColorPicker class available in EJ namespace and configure it.
+Create a ColorPicker control by instantiating the ColorPicker class available in EJ namespace and configure it.
 
 {% highlight html %}
 
     <?php
-        $color = new \EJ\ColorPicker("colorpicker");
+        $color = new \EJ\ColorPicker("ColorPicker");
         echo $color->value("#278787")->render();
     ?>
 
@@ -28,5 +28,5 @@ Create a Colorpicker control by instantiating the ColorPicker class available in
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_images/colorpicker.png)
+![ColorPicker Control](Getting-Started_images/colorpicker.png)
 
