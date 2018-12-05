@@ -39,7 +39,7 @@ The following code example illustrates on how the model is made observable and u
                     <div class="form-group">
                         <label class="col-sm-4 control-label">EmployeeID</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="empId">
+                            <input type="text" class="form-control" id="employee">
                         </div>
                     </div>
                     <div class="form-group">
@@ -65,7 +65,7 @@ The following code example illustrates on how the model is made observable and u
    </div>
     <script type="text/javascript">
         $(function () {
-            window.data = [{ "EmployeeID": 1, "LastName": "Davolio", "FirstName": "Nancy" },
+            window.data = [{ "EmployeeID": 1, "LastName": "Peacock", "FirstName": "Nancy" },
                 { "EmployeeID": 2, "LastName": "Fuller", "FirstName": "Andrew" },
                 { "EmployeeID": 3, "LastName": "Leverling", "FirstName": "Janet" },
                 { "EmployeeID": 4, "LastName": "Peacock", "FirstName": "Margaret" },
@@ -88,10 +88,10 @@ The following code example illustrates on how the model is made observable and u
             });               
             });
         $("#formSubmit").click(function (e) {
-            var empId = parseInt($("#empId").val(), 10);
+            var employee = parseInt($("#employee").val(), 10);
             var fName = $("#first").val();
             var lName = $("#last").val();
-            employee = window.pageModel.employees()[empId - 1];
+            employee = window.pageModel.employees()[employee - 1];
             employee.FirstName(fName);
             employee.LastName(lName);
         });
@@ -101,7 +101,7 @@ The following code example illustrates on how the model is made observable and u
 
 The result of the above code example is illustrated as follows.
 
-Before changing the model, EmployeeID 1 has FullName value as `Nancy Davolio`. After changing, the result is as follows.
+Before changing the model, EmployeeID 1 has FullName value as Nancy Peacock. After changing, the result is as follows.
 
 ![result](KO-ResultSet_images/KO-ResultSet_img1.png) 
 

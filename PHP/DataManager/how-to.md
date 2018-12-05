@@ -88,7 +88,7 @@ Please refer to the below code example.
     <script type="text/javascript">
 
         var dataManager = ej.DataManager({
-            url: "/WebService.asmx/Get",
+            url: "/WebService.aspx/Get",
             adaptor: new ej.UrlAdaptor(), //"UrlAdaptor",
             crossDomain: false,
             offline: false

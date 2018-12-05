@@ -13,7 +13,7 @@ The **DataManager** contains support to manage the hierarchical query. The hiera
 
 ## ForeignKey
 
-The **Foreign key** method of **ej.Query** can be used to refer another table fields. The foreignkey method accepts one parameter that is the foreign key value. 
+The **Foreign key** method of **ej.Query** can be used to refer another table fields. The foreign key method accepts one parameter that is the foreign key value. 
 
 The following code example illustrates the hierarchical query and foreign key method. 
 
@@ -41,7 +41,7 @@ The following code example illustrates the hierarchical query and foreign key me
         </div>
         <div class="e-gridcontent">
             <table class="e-table">
-                <tbody>
+                <tbody class="e-body">
 
                 </tbody>
             </table>
@@ -76,7 +76,7 @@ The following code example illustrates the hierarchical query and foreign key me
             var promise = dataManger.executeQuery(query);
             promise.done(function (e) {
                 
-                $("#grid tbody").html($("#tableTemplate").render(e.result));
+                $("#grid .e-body").html($("#tableTemplate").render(e.result));
                 $("#grid").ejWaitingPopup("hide");
             });
 
