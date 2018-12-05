@@ -1,5 +1,5 @@
 ---
-title: KO-ResultSet
+title: KO-ResultSet | Syncfusion
 description: ko resultset
 platform: php
 control: DataManager
@@ -101,7 +101,7 @@ The following code example illustrates on how the model is made observable and u
 
 The result of the above code example is illustrated as follows.
 
-Before changing the model, EmployeeID 1 has FullName value as Nancy Davolio. After changing, the result is as follows.
+Before changing the model, EmployeeID 1 has FullName value as `Nancy Davolio`. After changing, the result is as follows.
 
-![](KO-ResultSet_images/KO-ResultSet_img1.png) 
+![result](KO-ResultSet_images/KO-ResultSet_img1.png) 
 
