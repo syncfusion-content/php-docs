@@ -44,8 +44,8 @@ N> Suppose, application has been hosted in EST time zone and client may be in IS
     </div>
     <script type="text/javascript">
         var serverTimeZoneDifference = -5.0   // if your server is in EST time zone (UTC -5.0) (in hours)
-        var clientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
-        ej.serverTimezoneOffset = serverTimeZoneDifference + clientSideTimeZoneDifference;
+        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
+        ej.serverTimezoneOffset = serverTimeZoneDifference + ClientSideTimeZoneDifference;
         $(function () {
             var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
             $("#Grid").ejGrid({
@@ -80,8 +80,8 @@ Let see an example, when they observe the Daylight saving time.
     </div>
     <script type="text/javascript">
         var serverTimeZoneDifference = -4.0  // if your server is in EDT time zone (UTC -4.0) (in hours)
-        var clientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
-        ej.serverTimezoneOffset = serverTimeZoneDifference + clientSideTimeZoneDifference;
+        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
+        ej.serverTimezoneOffset = serverTimeZoneDifference + ClientSideTimeZoneDifference;
         $(function () {
             var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
             $("#Grid").ejGrid({
