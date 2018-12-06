@@ -71,7 +71,7 @@ The `Sum` summary type provides the sum of the data. The Sum data utilization me
 
 The result of the above code example is illustrated as follows.
 
-![Sum Summary](Summary_images/Summary_img1.png) 
+![sum](Summary_images/Summary_img1.png) 
 
 ## Min
 
@@ -122,7 +122,7 @@ The minimum of particular field can be calculated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![Min Summary](Summary_images/Summary_img2.png) 
+![min](Summary_images/Summary_img2.png) 
 
 ## Max
 
@@ -173,7 +173,7 @@ The maximum of particular field can be calculated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![Max Summary](Summary_images/Summary_img3.png) 
+![max](Summary_images/Summary_img3.png) 
 
 ## Avg
 
@@ -222,7 +222,7 @@ The Average summary type provides the average of the given data. The Average dat
 
 The result of the above code example is illustrated as follows.
 
-![Average summary](Summary_images/Summary_img4.png) 
+![avg](Summary_images/Summary_img4.png) 
 
 ## Distinct
 
