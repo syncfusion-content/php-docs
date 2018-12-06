@@ -146,7 +146,7 @@ The following code example illustrates the hierarchical query and foreign key me
 
 The result for the above code example is illustrated as follows.
 
-![](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
+![hierarchical](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
 
 
 
