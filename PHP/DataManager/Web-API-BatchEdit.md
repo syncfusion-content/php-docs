@@ -1,5 +1,5 @@
 ---
-title: WebAPI Batch Edit
+title: WebAPI Batch Edit | Syncfusion
 description: WebAPI Batch Edit
 platform: php
 control: DataManager
@@ -281,7 +281,7 @@ namespace Sample.Controllers
 
 {% endhighlight %}
 
-In the view, configure the Datamanager to use the Post/Put/Delete methods created in the previous steps.
+In the view, configure the data manager to use the Post/Put/Delete methods created in the previous steps.
 
 {% highlight html %}
 

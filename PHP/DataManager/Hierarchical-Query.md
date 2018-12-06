@@ -1,5 +1,5 @@
 ---
-title: Hierarchical-Query
+title: Hierarchical-Query | Syncfusion
 description: hierarchical query
 platform: php
 control: DataManager
@@ -13,9 +13,9 @@ The **DataManager** contains support to manage the hierarchical query. The hiera
 
 ## ForeignKey
 
-The **foreignkey** method of **ej.Query** can be used to refer another table fields. The foreignkey method accepts one parameter that is the foreign key value. 
+The **Foreign key** method of **ej.Query** can be used to refer another table fields. The foreign key method accepts one parameter that is the foreign key value. 
 
-The following code example illustrates the hierarchical query and foreignkey method. 
+The following code example illustrates the hierarchical query and foreign key method. 
 
 
 {% highlight html %}
@@ -41,7 +41,7 @@ The following code example illustrates the hierarchical query and foreignkey met
         </div>
         <div class="e-gridcontent">
             <table class="e-table">
-                <tbody>
+                <tbody class="e-body">
 
                 </tbody>
             </table>
@@ -76,7 +76,7 @@ The following code example illustrates the hierarchical query and foreignkey met
             var promise = dataManger.executeQuery(query);
             promise.done(function (e) {
                 
-                $("#grid tbody").html($("#tableTemplate").render(e.result));
+                $("#grid .e-body").html($("#tableTemplate").render(e.result));
                 $("#grid").ejWaitingPopup("hide");
             });
 
@@ -146,7 +146,7 @@ The following code example illustrates the hierarchical query and foreignkey met
 
 The result for the above code example is illustrated as follows.
 
-![](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
+![hierarchical](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
 
 
 

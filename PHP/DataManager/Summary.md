@@ -1,5 +1,5 @@
 ---
-title: Summary
+title: Summary | Syncfusion
 description: summary 
 platform: php
 control: DataManager
@@ -71,7 +71,7 @@ The `Sum` summary type provides the sum of the data. The Sum data utilization me
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img1.png) 
+![sum](Summary_images/Summary_img1.png) 
 
 ## Min
 
@@ -122,7 +122,7 @@ The minimum of particular field can be calculated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img2.png) 
+![min](Summary_images/Summary_img2.png) 
 
 ## Max
 
@@ -173,7 +173,7 @@ The maximum of particular field can be calculated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img3.png) 
+![max](Summary_images/Summary_img3.png) 
 
 ## Avg
 
@@ -222,11 +222,11 @@ The Average summary type provides the average of the given data. The Average dat
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img4.png) 
+![avg](Summary_images/Summary_img4.png) 
 
 ## Distinct
 
-In a data, a field may contain many duplicate values; and sometimes you only require to list the different (distinct) values. This can be achieved by using the **ej.distinct** method. This method accepts three parameters such as **JSON**/Array data, fieldname that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a **JSON** array. 
+In a data, a field may contain many duplicate values; and sometimes you only require to list the different (distinct) values. This can be achieved by using the **ej.distinct** method. This method accepts three parameters such as **JSON**/Array data, field name that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a **JSON** array. 
 
 The following code example illustrates how to use the `ej.distinct` method. In the following code, the third param of distinct method is set as true and hence it fetches the whole record from the provided data.
 
@@ -285,5 +285,5 @@ The following code example illustrates how to use the `ej.distinct` method. In t
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img5.png) 
+![Distinct](Summary_images/Summary_img5.png) 
 
