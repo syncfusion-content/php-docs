@@ -29,7 +29,7 @@ N> Suppose, application has been hosted in EST time zone and client may be in IS
 <table>
     <tr>
         Time-zone offset calculation from UTC: <br>
-        ej.serverTimezoneOffset = serverTimeZoneDiff(in hours) + ClientSideTimeZoneDiff(in hours); 
+        ej.serverTimezoneOffset = serverTimeZoneDifference(in hours) + ClientSideTimeZoneDifference(in hours); 
     </tr>
 </table>
 

@@ -13,9 +13,9 @@ The **DataManager** contains support to manage the hierarchical query. The hiera
 
 ## ForeignKey
 
-The **foreignkey** method of **ej.Query** can be used to refer another table fields. The foreignkey method accepts one parameter that is the foreign key value. 
+The **foreignKey** method of **ej.Query** can be used to refer another table fields. The foreignKey method accepts one parameter that is the foreign key value. 
 
-The following code example illustrates the hierarchical query and foreignkey method. 
+The following code example illustrates the hierarchical query and foreignKey method. 
 
 
 {% highlight html %}

@@ -226,7 +226,7 @@ The result of the above code example is illustrated as follows.
 
 ## Distinct
 
-In a data, a field may contain many duplicate values; and sometimes you only require to list the different (distinct) values. This can be achieved by using the **ej.distinct** method. This method accepts three parameters such as **JSON**/Array data, fieldname that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a **JSON** array. 
+In a data, a field may contain many duplicate values; and sometimes you only require to list the different (distinct) values. This can be achieved by using the **ej.distinct** method. This method accepts three parameters such as **JSON**/Array data, field name that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a **JSON** array. 
 
 The following code example illustrates how to use the `ej.distinct` method. In the following code, the third param of distinct method is set as true and hence it fetches the whole record from the provided data.
 

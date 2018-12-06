@@ -193,7 +193,7 @@ For getting started with WCF OData service please refer [link](http://msdn.micro
 
 ## Can I use ESRI Rest Web Services in url of DataManager?
 
-Yes, you can use ESRI Rest web services in url of DataManager. We have used a demo service from the site in our DataManager and prepared a sample with custom DataAdaptor in Datamanager. 
+Yes, you can use ESRI Rest web services in url of DataManager. We have used a demo service from the site in our DataManager and prepared a sample with custom DataAdaptor in DataManager. 
 Refer to the following link for the sample: 
 
 Playground sample : [Demo](http://jsplayground.syncfusion.com/jr2cgadj)
