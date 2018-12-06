@@ -1,5 +1,5 @@
 ---
-title: WebAPI Batch Edit
+title: WebAPI Batch Edit | DataManager | PHP | Syncfusion
 description: WebAPI Batch Edit
 platform: php
 control: DataManager

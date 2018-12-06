@@ -1,5 +1,5 @@
 ---
-title: Hierarchical-Query
+title: Hierarchical-Query | DataManager | PHP | Syncfusion
 description: hierarchical query
 platform: php
 control: DataManager
@@ -146,7 +146,7 @@ The following code example illustrates the hierarchical query and foreignKey met
 
 The result for the above code example is illustrated as follows.
 
-![](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
+![ForeignKey](Hierarchical-Query_images/Hierarchical-Query_img1.png) 
 
 
 

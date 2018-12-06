@@ -1,5 +1,5 @@
 ---
-title: Summary
+title: Summary | DataManager | PHP | Syncfusion
 description: summary 
 platform: php
 control: DataManager
@@ -71,7 +71,7 @@ The `Sum` summary type provides the sum of the data. The Sum data utilization me
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img1.png) 
+![Sum Summary](Summary_images/Summary_img1.png) 
 
 ## Min
 
@@ -122,7 +122,7 @@ The minimum of particular field can be calculated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img2.png) 
+![Min Summary](Summary_images/Summary_img2.png) 
 
 ## Max
 
@@ -173,7 +173,7 @@ The maximum of particular field can be calculated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img3.png) 
+![Max Summary](Summary_images/Summary_img3.png) 
 
 ## Avg
 
@@ -222,7 +222,7 @@ The Average summary type provides the average of the given data. The Average dat
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img4.png) 
+![Average summary](Summary_images/Summary_img4.png) 
 
 ## Distinct
 
@@ -285,5 +285,5 @@ The following code example illustrates how to use the `ej.distinct` method. In t
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img5.png) 
+![Distinct Summary](Summary_images/Summary_img5.png) 
 
