@@ -1,5 +1,5 @@
 ---
-title: How-to | Syncfusion
+title: How-to | DataManager | PHP | Syncfusion
 description: How-to
 platform: php
 control: DataManager
@@ -339,28 +339,28 @@ In the aspx page add the below code for CRUD Operations
 
 The output of above code will be as shown below 
 
-![default image](HowTo_images/Default.png) 
+![CRUD Operations using Stored Procedures](HowTo_images/Default.png) 
 
 Insert:
 
-![insert](HowTo_images/Add.png) 
+![Insert Operation](HowTo_images/Add.png) 
 
 After Insertion:
 
-![after insert](HowTo_images/Addedrow.png) 
+![Added Row](HowTo_images/Addedrow.png) 
 
 Edit:
 
-![edit](HowTo_images/Edit.png) 
+![Edit Operation](HowTo_images/Edit.png) 
 
 After Edit:
 
-![after edit](HowTo_images/Editedrow.png) 
+![Edited Row](HowTo_images/Editedrow.png) 
 
 Delete:
 
-![delete](HowTo_images/Delete.png) 
+![Delete Operation](HowTo_images/Delete.png) 
 
 After Deletion:
 
-![after deletion](HowTo_images/Deletedrow.png) 
+![Deleted Row](HowTo_images/Deletedrow.png) 

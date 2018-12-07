@@ -1,5 +1,5 @@
 ---
-title: Summary | Syncfusion
+title: Summary | DataManager | PHP | Syncfusion
 description: summary 
 platform: php
 control: DataManager
@@ -285,5 +285,5 @@ The following code example illustrates how to use the `ej.distinct` method. In t
 
 The result for the above code example is illustrated as follows.
 
-![Distinct](Summary_images/Summary_img5.png) 
+![Distinct Summary](Summary_images/Summary_img5.png) 
 

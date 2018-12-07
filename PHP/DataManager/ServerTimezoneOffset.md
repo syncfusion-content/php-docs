@@ -1,5 +1,5 @@
 ---
-title: ServerTimezoneOffset | Syncfusion
+title: ServerTimezoneOffset | DataManager | PHP | Syncfusion
 description: ej.serverTimezoneOffset
 platform: php
 control: DataManager
