@@ -1,5 +1,5 @@
 ---
-title: Hierarchical-Query | Syncfusion
+title: Hierarchical-Query | DataManager | PHP | Syncfusion
 description: hierarchical query
 platform: php
 control: DataManager
