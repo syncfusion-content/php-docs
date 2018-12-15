@@ -22,19 +22,19 @@ File                          </th><th>
 Description/Usage</th></tr>
 <tr>
 <td>
-ej.core.min.js</td><td>
+[`ej.core.min.js`]</td><td>
 Must be referred always before using all the JS controls.</td></tr>
 <tr>
 <td>
-ej.data.min.js</td><td>
+[`ej.data.min.js`]</td><td>
 Used to handle data manager operation and should be used while binding data to JS controls.</td></tr>
 <tr>
 <td>
-ej.touch.min.js</td><td>
+[`ej.touch.min.js`]</td><td>
 For providing touch support.</td></tr>
 <tr>
 <td>
-ej.radialmenu.min.js</td><td>
+[`ej.radialmenu.min.js`]</td><td>
 This is the main source file specific for rendering RadialMenu.</td></tr>
 </table>
  

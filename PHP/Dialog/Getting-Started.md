@@ -88,7 +88,7 @@ Run the above code and your output will be,
 In most cases, the Dialog control are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog control provides “open” and “close” methods to open/close the dialogs dynamically.
 The Dialog control can be hidden on initialize using **showOnInit(false)** property which should be set to false. If you want to use **showOnInit** property you need to use as like this $dialog->title("Dialog")-> showOnInit(false)->templateStart();
 
-Use the below code in the php tag. The dialog will be opened on clicking the Button control.
+Use the below code in the `php` tag. The dialog will be opened on clicking the Button control.
 
 {% highlight php %}
 

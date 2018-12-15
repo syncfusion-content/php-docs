@@ -20,163 +20,163 @@ Locale key words </th><th>
 Text</th></tr>
 <tr>
 <td>
-EmptyCard
+[`EmptyCard`]
 </td><td>
 No cards to display
 </td></tr>
 <tr>
 <td>
-SaveButton
+[`SaveButton`]
 </td><td>
 Save
 </td></tr>
 <tr>
 <td>
-CancelButton
+[`CancelButton`]
 </td><td>
 Cancel
 </td></tr>
 <tr>
 <td>
-EditFormTitle
+[`EditFormTitle`]
 </td><td>
 Details of
 </td></tr>
 <tr>
 <td>
-AddFormTitle
+[`AddFormTitle`]
 </td><td>
 Add New Card
 </td></tr>
 <tr>
 <td>
-SwimlaneCaptionFormat
+[`SwimlaneCaptionFormat`]
 </td><td>
 "- {{:count}}{{if count == 1 }} item {{else}} items {{/if}}"
 </td></tr>
 <tr>
 <td>
-FilterSettings
+[`FilterSettings`]
 </td><td>
 Filters:
 </td></tr>
 <tr>
 <td>
-Min
+[`Min`]
 </td><td>
 Min
 </td></tr>
 <tr>
 <td>
-Max
+[`Max`]
 </td><td>
 Max
 </td></tr>
 <tr>
 <td>
-FilterOfText
+[`FilterOfText`]
 </td><td>
 Of
 </td></tr>
 <tr>
 <td>
-Cards
+[`Cards`]
 </td><td>
 Cards
 </td></tr>
 <tr>
 <td>
-ItemsCount
+[`ItemsCount`]
 </td><td>
 Items Count :
 </td></tr>
 <tr>
 <td>
-Unassigned
+[`Unassigned`]
 </td><td>
 Unassigned
 </td></tr>
 <tr>
 <td>
-AddCard
+[`AddCard`]
 </td><td>
 Add Card
 </td></tr>
 <tr>
 <td>
-EditCard
+[`EditCard`]
 </td><td>
 Edit Card
 </td></tr>
 <tr>
 <td>
-DeleteCard
+[`DeleteCard`]
 </td><td>
 Delete Card
 </td></tr>
 <tr>
 <td>
-TopofRow
+[`TopofRow`]
 </td><td>
 Top of Row
 </td></tr>
 <tr>
 <td>
-BottomofRow
+[`BottomofRow`]
 </td><td>
 Bottom of Row
 </td></tr>
 <tr>
 <td>
-MoveUp
+[`MoveUp`]
 </td><td>
 Move Up
 </td></tr>
 <tr>
 <td>
-MoveDown
+[`MoveDown`]
 </td><td>
 Move Down
 </td></tr>
 <tr>
 <td>
-MoveLeft
+[`MoveLeft`]
 </td><td>
 Move Left
 </td></tr>
 <tr>
 <td>
-MoveRight
+[`MoveRight`]
 </td><td>
 Move Right
 </td></tr>
 <tr>
 <td>
-MovetoSwimlane
+[`MovetoSwimlane`]
 </td><td>
 Move to Swimlane
 </td></tr>
 <tr>
 <td>
-HideColumn
+[`HideColumn`]
 </td><td>
 Hide Column
 </td></tr>
 <tr>
 <td>
-VisibleColumns
+[`VisibleColumns`]
 </td><td>
 Visible Columns
 </td></tr>
 <tr>
 <td>
-PrintCard
+[`PrintCard`]
 </td><td>
 Print Card
 </td></tr>
 <tr>
 <td>
-Search
+[`Search`]
 </td><td>
 Search
 </td></tr>
