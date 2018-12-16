@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RadialSlider-Dependencies
+title: Syncfusion RadialSlider-Dependencies
 description: radialslider-dependencies
 platform: php
 control: RadialSlider

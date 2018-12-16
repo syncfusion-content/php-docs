@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NavigationDrawer-dependencies
+title: Syncfusion NavigationDrawer-dependencies
 description: navigationdrawer-dependencies
 platform: php
 control: navigationdrawer

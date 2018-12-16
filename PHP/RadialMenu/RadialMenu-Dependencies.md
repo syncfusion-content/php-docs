@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RadialMenu-Dependencies
+title: Syncfusion RadialMenu-Dependencies
 description: radialmenu-dependencies
 platform: php
 control: RadialMenu

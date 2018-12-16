@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Responsive
+title:  Syncfusion Kanban Responsive
 description: Responsive
 documentation: ug
 platform: php
@@ -16,7 +16,7 @@ The Kanban control has support for responsive behavior based on client browserâ€
 
 You can check the image representation of touch actions from the below image.
 
-![](Responsive_images/KanbanOverlayImage.png)
+![Responsive](Responsive_images/KanbanOverlayImage.png)
 
 ## Mobile Layout
 
@@ -29,11 +29,11 @@ If client width is less than 480px, the Kanban will render in mobile mode. In wh
     ?>
     <div class="cols-sample-area">
     <?php
-    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Testing", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }, { "Id": 6, "Status": "Close", "Summary": "Arrange a web meeting with the customer to get the login page requirements.", "Type": "Others", "Priority": "Low", "Tags": "Meeting", "Estimate": 2, "Assignee": "Michael Suyama", "ImgUrl": "Content/images/kanban/6.png", "RankId":1 }, { "Id": 7, "Status": "Close", "Summary": "Validate new requirements", "Type": "Improvement", "Priority": "Low", "Tags": "Validation", "Estimate": 1.5, "Assignee": "Robert King", "ImgUrl": "Content/images/kanban/7.png", "RankId":1 }, { "Id": 8, "Status": "Close", "Summary": "Login page validation", "Type": "Story", "Priority": "Release Breaker", "Tags": "Validation,Fix", "Estimate": 2.5, "Assignee": "Laura Callahan", "ImgUrl": "Content/images/kanban/8.png", "RankId":2 }, { "Id": 9, "Status": "Testing", "Summary": "Fix the issues reported in Safari browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "Fix,Safari", "Estimate": 1.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":2 }]';
+    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImageUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImageUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Testing", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImageUrl": "Content/images/kanban/5.png", "RankId":1 }, { "Id": 6, "Status": "Close", "Summary": "Arrange a web meeting with the customer to get the login page requirements.", "Type": "Others", "Priority": "Low", "Tags": "Meeting", "Estimate": 2, "Assignee": "Michael Suyama", "ImageUrl": "Content/images/kanban/6.png", "RankId":1 }, { "Id": 7, "Status": "Close", "Summary": "Validate new requirements", "Type": "Improvement", "Priority": "Low", "Tags": "Validation", "Estimate": 1.5, "Assignee": "Robert King", "ImageUrl": "Content/images/kanban/7.png", "RankId":1 }, { "Id": 8, "Status": "Close", "Summary": "Login page validation", "Type": "Story", "Priority": "Release Breaker", "Tags": "Validation,Fix", "Estimate": 2.5, "Assignee": "Laura Callahan", "ImageUrl": "Content/images/kanban/8.png", "RankId":2 }, { "Id": 9, "Status": "Testing", "Summary": "Fix the issues reported in Safari browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "Fix,Safari", "Estimate": 1.5, "Assignee": "Nancy Davloio", "ImageUrl": "Content/images/kanban/1.png", "RankId":2 }]';
     $Json = json_decode($Json,true);
-    $colormap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
-    $colormap = json_decode($colormap,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $colorMap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
+    $colorMap = json_decode($colorMap,true);
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog")->showAddButton(true);
     $column1 = new EJ\Kanban\Column();    
@@ -42,20 +42,20 @@ If client width is less than 480px, the Kanban will render in mobile mode. In wh
     $column2 ->key("Testing")->headerText("Testing");
     $column3 = new EJ\Kanban\Column();
     $column3 ->key("Close")->headerText("Done");
-    $cardset = new EJ\Kanban\CardSetting();
-    $cardset ->colorMapping($colormap);
-    $edititem = new EJ\Kanban\EditItem();
-    $edititem->field("Id");
-    $edititem1 = new EJ\Kanban\EditItem();
-    $edititem1->field("Status")->editType("dropdownedit");
-    $edititem2 = new EJ\Kanban\EditItem();
-    $edititem2->field("Assignee")->editType("dropdownedit");
-    $edititem3 = new EJ\Kanban\EditItem();
-    $edititem3->field("Summary")->editType("textarea");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->editItems(array($edititem,$edititem1,$edititem2,$edititem3));
+    $cardSetting = new EJ\Kanban\CardSetting();
+    $cardSetting ->colorMapping($colorMap);
+    $editItem = new EJ\Kanban\EditItem();
+    $editItem->field("Id");
+    $editItem1 = new EJ\Kanban\EditItem();
+    $editItem1->field("Status")->editType("dropDownEdit");
+    $editItem2 = new EJ\Kanban\EditItem();
+    $editItem2->field("Assignee")->editType("dropDownEdit");
+    $editItem3 = new EJ\Kanban\EditItem();
+    $editItem3->field("Summary")->editType("textarea");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->editItems(array($editItem,$editItem1,$editItem2,$editItem3));
     $fields = new EJ\Kanban\Field();    
-    $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->imageUrl("ImgUrl");
+    $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->imageUrl("ImageUrl");
 	$filterQuery = new EJ\Query();
     $filterQuery->where("'Assignee','equal','Janet Leverling'");
     $filterQuery1 = new EJ\Query();
@@ -65,32 +65,32 @@ If client width is less than 480px, the Kanban will render in mobile mode. In wh
     $filter1 = new EJ\Kanban\FilterSetting();
     $filter1->text("Closed Issues")->query($filterQuery1)->description("Display the issues of 'Closed Issues'");	
     $columns = array($column,$column1,$column2,$column3);    
-    echo $kanban->keyField("Status")->allowFiltering(true)->allowSearching(true)->allowKeyboardNavigation(true)->filterSettings(array($filter,$filter1))->allowTitle(true)->isResponsive(true)->columns($columns)->cardSettings($cardset)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->allowFiltering(true)->allowSearching(true)->allowKeyboardNavigation(true)->filterSettings(array($filter,$filter1))->allowTitle(true)->isResponsive(true)->columns($columns)->cardSettings($cardSetting)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
 
 {% endhighlight %}
    
-![](Responsive_images/Responsive_img2.png)
+![Mobild Layout](Responsive_images/Responsive_img2.png)
 
 
 W> IE8 and IE9 does not support responsive kanban. `ej.responsive.css` should be referred to display Responsive Kanban.
 
-![](Responsive_images/Responsive_img3.png)
+![Responsive](Responsive_images/Responsive_img3.png)
 {:caption}
 CRUD in mobile layout
 
-![](Responsive_images/Responsive_img4.png)
+![CRUD in mobile layout](Responsive_images/Responsive_img4.png)
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.png)
+![Filtering in mobile layout](Responsive_images/Responsive_img5.png)
 {:caption}
 Searching in mobile layout
 
-![](Responsive_images/Responsive_img6.png)
+![Searching](Responsive_images/Responsive_img6.png)
 
-![](Responsive_images/Responsive_img7.png)
+![Searching in mobile layout](Responsive_images/Responsive_img7.png)
 {:caption}
 Kanban with Swim-lane
 
@@ -108,7 +108,7 @@ The following code example describes the above behavior.
     ?>
     <div class="cols-sample-area">
     <?php    
-    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
+    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImageUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImageUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImageUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
     $kanban = new EJ\Kanban("default");    
     $column = new EJ\Kanban\Column();
@@ -143,7 +143,7 @@ The following code example describes the above behavior.
     ?>
     <div class="cols-sample-area">
     <?php    
-    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "Open", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Open", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
+    $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImageUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "Open", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImageUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImageUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Open", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImageUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
     $kanban = new EJ\Kanban("default");    
     $column = new EJ\Kanban\Column();
@@ -165,4 +165,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Responsive_images/responsive_img1.png)
+![Minimum Width](Responsive_images/responsive_img1.png)

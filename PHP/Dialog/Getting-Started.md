@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Dialog Getting-Started
 description: getting started
 platform: php
 control: Dialog
@@ -29,7 +29,7 @@ Create a simple Dialog object by referring the below code,**EJ\Dialog** object i
 
 This will render an empty Dialog control on executing.
 
-![](Getting_Started_images/getting-started-img1.png)
+![Getting Started](Getting_Started_images/getting-started-img1.png)
 
 ## Add dialog content
 
@@ -54,7 +54,7 @@ You can add the content to Dialog Control. Here templateStart() is used to add c
 
 Run the above code and output renders as follows,
 
-![](Getting_Started_images/getting-started-img2.png)
+![Dialog content](Getting_Started_images/getting-started-img2.png)
 
 ## Set the title
 
@@ -81,7 +81,7 @@ You can set Dialog control title as follows.
 
 Run the above code and your output will be,
 
-![](Getting_Started_images/getting-started-img3.png)
+![Dialog Title](Getting_Started_images/getting-started-img3.png)
 
 ## Open Dialog dynamically
 
@@ -103,8 +103,8 @@ Use the below code in the `php` tag. The dialog will be opened on clicking the B
         <?php    
         
         echo $dialog-> close("onDialogClose")->templateEnd()->render();
-    $btn = new \EJ\Button("btn");
-            echo $btn->text("Click to open dialog")->type("button")->height("30px")->width("150px")->click("onBtnClick")->render();
+    $button = new \EJ\Button("button");
+            echo $button->text("Click to open dialog")->type("button")->height("30px")->width("150px")->click("onButtonClick")->render();
         ?>
 
 {% endhighlight %}
@@ -114,9 +114,9 @@ Add the following in the script section.
 {% highlight javascript %}
 
         function onDialogClose() {
-            $("#btn").show()
+            $("#button").show()
         }
-        function onBtnClick() {
+        function onButtonClick() {
                 $("#dialog").ejDialog("open");
         }
 
@@ -125,6 +125,6 @@ Add the following in the script section.
 
 Run the above code, you get the output as below,
 
-![](Getting_Started_images/getting-started-img4.png)
+![Open Dialog Dynamically](Getting_Started_images/getting-started-img4.png)
 
 > _Note:_ _You can find the Dialog properties from the_ [API reference](https://help.syncfusion.com/api/js/ejdialog) _document_
