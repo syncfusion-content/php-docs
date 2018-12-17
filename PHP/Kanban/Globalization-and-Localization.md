@@ -271,11 +271,11 @@ The following code example describes the above behavior.
     $constraint = new EJ\Kanban\Constraint();
     $constraint ->max(2);
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("Öffnen");
+    $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("jetzt in Arbeit")->constraints($constraint);
+    $column1 ->key("InProgress")->headerText("In Progress")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Close")->headerText("Schließen");
+    $column2 ->key("Close")->headerText("Done");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->tag('Tags');
     $columns = array(
