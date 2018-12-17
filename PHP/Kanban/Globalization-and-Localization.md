@@ -249,19 +249,19 @@ The following code example describes the above behavior.
     <div class="cols-sample-area">
     <script>
         ej.Kanban.Locale["ar-AE"] = {
-            EmptyCard: "لا بطاقات لعرض",
-            SaveButton: "حفظ",
-            CancelButton: "إلغاء",
-            EditFormTitle: "تفاصيل ",
-            AddFormTitle: "إضافة بطاقة جديدة",
-            SwimlaneCaptionFormat: "- 8 بند  العناصر ",
-            FilterSettings: "مرشحات:",
-            FilterOfText: "من",
-            Max: "ماكس",
-            Min: "دقيقة",
-            Cards: "  بطاقات",
-            ItemsCount: "عد العناصر:",
-            Unassigned: "غير معين",
+            EmptyCard: "Keine Karten angezeigt werden",
+            SaveButton: "Speichern",
+            CancelButton: "stornieren",
+            EditFormTitle: "Details von ",
+            AddFormTitle: "Neue Karte hinzufügen",
+            SwimlaneCaptionFormat: "- 8 Artikel  Artikel ",
+            FilterSettings: "Filter:",
+            FilterOfText: "Von",
+            Max: "Max.",
+            Min: "Min.",
+            Cards: "Karten",
+            ItemsCount: "Artikel Graf :",
+            Unassigned: "Nicht zugewiesen",
         };
     </script>
     <?php
@@ -271,17 +271,17 @@ The following code example describes the above behavior.
     $constraint = new EJ\Kanban\Constraint();
     $constraint ->max(2);
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("تراكم الأعمال غير المنجزة");
+    $column ->key("Open")->headerText("Öffnen");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("في تَقَدم")->constraints($constraint);
+    $column1 ->key("InProgress")->headerText("In Bearbeitung")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Close")->headerText("فعله");
+    $column2 ->key("Close")->headerText("Schließen");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->tag('Tags');
     $columns = array(
     $column,$column1,$column2
     );
-    echo $kanban ->columns($columns)->dataSource($Json)->enableRTL(true)->allowTitle(true)->locale("ar-AE")->fields($fields)->keyField("Status")->render();
+    echo $kanban ->columns($columns)->dataSource($Json)->enableRTL(true)->allowTitle(true)->locale("de-DE")->fields($fields)->keyField("Status")->render();
     ?>
     </div>
 
