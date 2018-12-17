@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RadialSlider-Dependencies
+title: Syncfusion RadialSlider-Dependencies
 description: radialslider-dependencies
 platform: php
 control: RadialSlider
@@ -22,15 +22,15 @@ File                          </th><th>
 Description/Usage</th></tr>
 <tr>
 <td>
-ej.core.min.js</td><td>
+[`ej.core.min.js`]</td><td>
 Must be referred always before using all the JS controls.</td></tr>
 <tr>
 <td>
-ej.touch.min.js</td><td>
+[`ej.touch.min.js`]</td><td>
 For providing touch support.</td></tr>
 <tr>
 <td>
-ej.radialslider.min.js</td><td>
+[`ej.radialslider.min.js`]</td><td>
 This is the main source file specific for rendering RadialSlider.</td></tr>
 </table> 
 

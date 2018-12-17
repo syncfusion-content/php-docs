@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Editing
+title:  Syncfusion Kanban Editing
 description: Editing
 documentation: ug
 platform: php
@@ -36,31 +36,31 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $colormap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
-    $colormap = json_decode($colormap,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $colorMap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
+    $colorMap = json_decode($colorMap,true);
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();    
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $cardset = new EJ\Kanban\CardSetting();
-    $cardset ->colorMapping($colormap);
-    $edititem = new EJ\Kanban\EditItem();
-    $edititem->field("Id");
-    $edititem1 = new EJ\Kanban\EditItem();
-    $edititem1->field("Status")->editType("dropdownedit");
-    $edititem2 = new EJ\Kanban\EditItem();
-    $edititem2->field("Assignee")->editType("dropdownedit");
-    $edititem3 = new EJ\Kanban\EditItem();
-    $edititem3->field("Summary")->editType("textarea");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->editItems(array($edititem,$edititem1,$edititem2,$edititem3));
+    $cardSettings = new EJ\Kanban\CardSetting();
+    $cardSettings ->colorMapping($colorMap);
+    $editItem = new EJ\Kanban\EditItem();
+    $editItem->field("Id");
+    $editItem1 = new EJ\Kanban\EditItem();
+    $editItem1->field("Status")->editType("dropDownEdit");
+    $editItem2 = new EJ\Kanban\EditItem();
+    $editItem2->field("Assignee")->editType("dropDownEdit");
+    $editItem3 = new EJ\Kanban\EditItem();
+    $editItem3->field("Summary")->editType("textarea");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->editItems(array($editItem,$editItem1,$editItem2,$editItem3));
     $fields = new EJ\Kanban\Field();    
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);    
-    echo $kanban->keyField("Status")->columns($columns)->cardSettings($cardset)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->columns($columns)->cardSettings($cardSettings)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
     
@@ -68,7 +68,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Configuring Edit Items](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -89,31 +89,31 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $colormap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
-    $colormap = json_decode($colormap,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $colorMap = '{"#ee4e75": "Bug,Story","#57b94c": "Improvement","#edba3c": "Epic","#5187c6": "Others"}';
+    $colorMap = json_decode($colorMap,true);
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();    
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $cardset = new EJ\Kanban\CardSetting();
-    $cardset ->colorMapping($colormap);
-    $edititem = new EJ\Kanban\EditItem();
-    $edititem->field("Id");
-    $edititem1 = new EJ\Kanban\EditItem();
-    $edititem1->field("Status")->editType("dropdownedit");
-    $edititem2 = new EJ\Kanban\EditItem();
-    $edititem2->field("Assignee")->editType("dropdownedit");
-    $edititem3 = new EJ\Kanban\EditItem();
-    $edititem3->field("Summary")->editType("textarea");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->editItems(array($edititem,$edititem1,$edititem2,$edititem3));
+    $cardSettings = new EJ\Kanban\CardSetting();
+    $cardSettings ->colorMapping($colorMap);
+    $editItem = new EJ\Kanban\EditItem();
+    $editItem->field("Id");
+    $editItem1 = new EJ\Kanban\EditItem();
+    $editItem1->field("Status")->editType("dropDownEdit");
+    $editItem2 = new EJ\Kanban\EditItem();
+    $editItem2->field("Assignee")->editType("dropDownEdit");
+    $editItem3 = new EJ\Kanban\EditItem();
+    $editItem3->field("Summary")->editType("textarea");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->editItems(array($editItem,$editItem1,$editItem2,$editItem3));
     $fields = new EJ\Kanban\Field();    
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);    
-    echo $kanban->keyField("Status")->columns($columns)->cardSettings($cardset)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->columns($columns)->cardSettings($cardSettings)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
     
@@ -121,7 +121,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Edit Mode as dialog](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
@@ -129,11 +129,11 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to `editItems`.
 
-To edit the cards using Dialog template form, set `editMode` as `dialogtemplate` and specify the template id to `dialogTemplate` property of `editSettings`.
+To edit the cards using Dialog template form, set `editMode` as `dialogTemplate` and specify the template id to `dialogTemplate` property of `editSettings`.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited card.
-N> 3.  For `editMode` property you can assign either `string` value (“dialogtemplate”) or `enum` value (`ej.Kanban.EditMode.DialogTemplate`).
+N> 3.  For `editMode` property you can assign either `string` value (“dialogTemplate”) or `enum` value (`ej.Kanban.EditMode.DialogTemplate`).
 
 The following code example describes the above behavior.
 
@@ -191,7 +191,7 @@ The following code example describes the above behavior.
     </script>
     <script>
         function complete(args) {
-            if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == "dialogtemplate") {
+            if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == ej.Kanban.EditMode.DialogTemplate) {
                 $("#Estimate").ejNumericTextbox({ value: parseFloat($("#Estimate").val()), width: "175px", height: "34px", decimalPlaces: 2 });
                 $("#Assignee").ejDropDownList({ width: '175px' });
                 $("#Status").ejDropDownList({ width: '175px' });
@@ -205,19 +205,19 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->dialogTemplate("#template")->editMode("DialogTemplate");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->dialogTemplate("#template")->editMode("DialogTemplate");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);
-    echo $kanban->keyField("Status")->actionComplete("complete")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->actionComplete("complete")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
 
@@ -225,11 +225,11 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog Template form](Editing_images/editing_img3.png)
 
 ### External Form
 
-Set the `editMode` as externalform to open the edit form in outside kanban content.
+Set the `editMode` as externalForm to open the edit form in outside kanban content.
 
 The following code example describes the above behavior.
 
@@ -242,27 +242,27 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();    
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $edititem = new EJ\Kanban\EditItem();
-    $edititem->field("Id");
-    $edititem1 = new EJ\Kanban\EditItem();
-    $edititem1->field("Status")->editType("dropdownedit");
-    $edititem2 = new EJ\Kanban\EditItem();
-    $edititem2->field("Assignee")->editType("dropdownedit");
-    $edititem3 = new EJ\Kanban\EditItem();
-    $edititem3->field("Summary")->editType("textarea");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->editMode("ExternalForm")->editItems(array($edititem,$edititem1,$edititem2,$edititem3));
+    $editItem = new EJ\Kanban\EditItem();
+    $editItem->field("Id");
+    $editItem1 = new EJ\Kanban\EditItem();
+    $editItem1->field("Status")->editType("dropDownEdit");
+    $editItem2 = new EJ\Kanban\EditItem();
+    $editItem2->field("Assignee")->editType("dropDownEdit");
+    $editItem3 = new EJ\Kanban\EditItem();
+    $editItem3->field("Summary")->editType("textarea");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->editMode("ExternalForm")->editItems(array($editItem,$editItem1,$editItem2,$editItem3));
     $fields = new EJ\Kanban\Field();    
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);    
-    echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
 
@@ -270,7 +270,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External Form](Editing_images/editing_img11.png)
 
 Form Position:
 
@@ -287,27 +287,27 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();    
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $edititem = new EJ\Kanban\EditItem();
-    $edititem->field("Id");
-    $edititem1 = new EJ\Kanban\EditItem();
-    $edititem1->field("Status")->editType("dropdownedit");
-    $edititem2 = new EJ\Kanban\EditItem();
-    $edititem2->field("Assignee")->editType("dropdownedit");
-    $edititem3 = new EJ\Kanban\EditItem();
-    $edititem3->field("Summary")->editType("textarea");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->formPosition("Bottom")->editMode("ExternalForm")->editItems(array($edititem,$edititem1,$edititem2,$edititem3));
+    $editItem = new EJ\Kanban\EditItem();
+    $editItem->field("Id");
+    $editItem1 = new EJ\Kanban\EditItem();
+    $editItem1->field("Status")->editType("dropDownEdit");
+    $editItem2 = new EJ\Kanban\EditItem();
+    $editItem2->field("Assignee")->editType("dropDownEdit");
+    $editItem3 = new EJ\Kanban\EditItem();
+    $editItem3->field("Summary")->editType("textarea");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->formPosition("Bottom")->editMode("ExternalForm")->editItems(array($editItem,$editItem1,$editItem2,$editItem3));
     $fields = new EJ\Kanban\Field();    
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);    
-    echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
         
@@ -315,7 +315,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img12.png)
+![Form Position](Editing_images/editing_img12.png)
 
 ### External Template Form
 
@@ -323,13 +323,13 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
 
-To edit the cards using External template form, set `editMode` as `externalformtemplate` and specify the template id to `externalFormTemplate` property of `editSettings`.
+To edit the cards using External template form, set `editMode` as `externalFormTemplate` and specify the template id to `externalFormTemplate` property of `editSettings`.
 
 While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using `actionComplete` event of Kanban.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited card. 
-N> 3. For `editMode` property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
+N> 3. For `editMode` property you can assign either `string` value ("externalFormTemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
 
 The following code example describes the above behavior.
 
@@ -369,10 +369,10 @@ The following code example describes the above behavior.
                 </td>
                 <td style="text-align: left">
                     <select id="Assignee" name="Assignee">
-                        <option value="Nancy Davloio">Nancy Davloio</option>
+                        <option value="Nancy">Nancy</option>
                         <option value="Andrew Fuller">Andrew Fuller</option>
                         <option value="Janet Leverling">Janet Leverling</option>
-                        <option value="Margaret hamilt">Margaret hamilt</option>
+                        <option value="Margaret">Margaret</option>
                         <option value="Steven walker">Steven walker</option>
                         <option value="Michael Suyama">Michael Suyama</option>
                         <option value="Robert King">Robert King</option>
@@ -400,7 +400,7 @@ The following code example describes the above behavior.
     </script>
     <script>
         function complete(args) {
-            if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == "externalformtemplate") {
+            if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == ej.Kanban.EditMode.ExternalFormTemplate) {
                 $("#Assignee").ejDropDownList({ width: '175px' });
                 $("#Status").ejDropDownList({ width: '175px' });
                 if (args.requestType == "beginedit" || args.requestType == "add") {
@@ -413,19 +413,19 @@ The following code example describes the above behavior.
     <?php
     $Json = '[{"Id": 1, "Status": "Open", "Summary": "Analyze the new requirements gathered from the customer.", "Type": "Story", "Priority": "Low", "Tags": "Analyze,Customer", "Estimate": 3.5, "Assignee": "Nancy Davloio", "ImgUrl": "Content/images/kanban/1.png", "RankId":1 }, { "Id": 2, "Status": "InProgress", "Summary": "Improve application performance", "Type": "Improvement", "Priority": "Normal", "Tags": "Improvement", "Estimate": 6, "Assignee": "Andrew Fuller", "ImgUrl": "Content/images/kanban/2.png", "RankId":1 }, { "Id": 3, "Status": "Open", "Summary": "Arrange a web meeting with the customer to get new requirements.", "Type": "Others", "Priority": "Critical", "Tags": "Meeting", "Estimate": 5.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 4, "Status": "InProgress", "Summary": "Fix the issues reported in the IE browser.", "Type": "Bug", "Priority": "Release Breaker", "Tags": "IE", "Estimate": 2.5, "Assignee": "Janet Leverling", "ImgUrl": "Content/images/kanban/3.png", "RankId":2 }, { "Id": 5, "Status": "Close", "Summary": "Fix the issues reported by the customer.", "Type": "Bug", "Priority": "Low", "Tags": "Customer", "Estimate": "3.5", "Assignee": "Steven walker", "ImgUrl": "Content/images/kanban/5.png", "RankId":1 }]';
     $Json = json_decode($Json,true);
-    $kanban = new EJ\Kanban("dialogedit");
+    $kanban = new EJ\Kanban("dialogEdit");
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
     $column1 ->key("InProgress")->headerText("In Progress");
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Done");
-    $editset = new EJ\Kanban\EditSetting();
-    $editset->allowEditing(true)->allowAdding(true)->externalFormTemplate("#template")->editMode("ExternalFormTemplate");
+    $editSetting = new EJ\Kanban\EditSetting();
+    $editSetting->allowEditing(true)->allowAdding(true)->externalFormTemplate("#template")->editMode("ExternalFormTemplate");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id");
     $columns = array($column,$column1,$column2);
-    echo $kanban->keyField("Status")->actionComplete("complete")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editset)->dataSource($Json)->render();
+    echo $kanban->keyField("Status")->actionComplete("complete")->allowTitle(true)->columns($columns)->fields($fields)->editSettings($editSetting)->dataSource($Json)->render();
     ?>
     </div>
 
@@ -433,5 +433,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![External Template Form](Editing_images/editing_img13.png)
 

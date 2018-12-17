@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NavigationDrawer-dependencies
+title: Syncfusion NavigationDrawer-dependencies
 description: navigationdrawer-dependencies
 platform: php
 control: navigationdrawer
@@ -13,7 +13,7 @@ The external script dependencies of the NavigationDrawer component is,
 
 jQuery 1.7.1 and later versions.
 
-jsRender - To render the templates
+[`jsRender`] - To render the templates
 
 The ej.web.all.js is a bundle of all PHP controls. If you use ej.web.all.js in your application, you can leave this section or else you can try to render NavigationDrawer in your application using ej.navigationdrawer.min.js file. You can refer the following frameworks and controls in your project.
 

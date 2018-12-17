@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Globalization and Localization
+title:  Syncfusion Kanban Globalization and Localization
 description: Globalization and Localization
 documentation: ug
 platform: Php
@@ -20,163 +20,163 @@ Locale key words </th><th>
 Text</th></tr>
 <tr>
 <td>
-EmptyCard
+[`EmptyCard`]
 </td><td>
 No cards to display
 </td></tr>
 <tr>
 <td>
-SaveButton
+[`SaveButton`]
 </td><td>
 Save
 </td></tr>
 <tr>
 <td>
-CancelButton
+[`CancelButton`]
 </td><td>
 Cancel
 </td></tr>
 <tr>
 <td>
-EditFormTitle
+[`EditFormTitle`]
 </td><td>
 Details of
 </td></tr>
 <tr>
 <td>
-AddFormTitle
+[`AddFormTitle`]
 </td><td>
 Add New Card
 </td></tr>
 <tr>
 <td>
-SwimlaneCaptionFormat
+[`SwimlaneCaptionFormat`]
 </td><td>
 "- {{:count}}{{if count == 1 }} item {{else}} items {{/if}}"
 </td></tr>
 <tr>
 <td>
-FilterSettings
+[`FilterSettings`]
 </td><td>
 Filters:
 </td></tr>
 <tr>
 <td>
-Min
+[`Min`]
 </td><td>
 Min
 </td></tr>
 <tr>
 <td>
-Max
+[`Max`]
 </td><td>
 Max
 </td></tr>
 <tr>
 <td>
-FilterOfText
+[`FilterOfText`]
 </td><td>
 Of
 </td></tr>
 <tr>
 <td>
-Cards
+[`Cards`]
 </td><td>
 Cards
 </td></tr>
 <tr>
 <td>
-ItemsCount
+[`ItemsCount`]
 </td><td>
 Items Count :
 </td></tr>
 <tr>
 <td>
-Unassigned
+[`Unassigned`]
 </td><td>
 Unassigned
 </td></tr>
 <tr>
 <td>
-AddCard
+[`AddCard`]
 </td><td>
 Add Card
 </td></tr>
 <tr>
 <td>
-EditCard
+[`EditCard`]
 </td><td>
 Edit Card
 </td></tr>
 <tr>
 <td>
-DeleteCard
+[`DeleteCard`]
 </td><td>
 Delete Card
 </td></tr>
 <tr>
 <td>
-TopofRow
+[`TopofRow`]
 </td><td>
 Top of Row
 </td></tr>
 <tr>
 <td>
-BottomofRow
+[`BottomofRow`]
 </td><td>
 Bottom of Row
 </td></tr>
 <tr>
 <td>
-MoveUp
+[`MoveUp`]
 </td><td>
 Move Up
 </td></tr>
 <tr>
 <td>
-MoveDown
+[`MoveDown`]
 </td><td>
 Move Down
 </td></tr>
 <tr>
 <td>
-MoveLeft
+[`MoveLeft`]
 </td><td>
 Move Left
 </td></tr>
 <tr>
 <td>
-MoveRight
+[`MoveRight`]
 </td><td>
 Move Right
 </td></tr>
 <tr>
 <td>
-MovetoSwimlane
+[`MovetoSwimlane`]
 </td><td>
 Move to Swimlane
 </td></tr>
 <tr>
 <td>
-HideColumn
+[`HideColumn`]
 </td><td>
 Hide Column
 </td></tr>
 <tr>
 <td>
-VisibleColumns
+[`VisibleColumns`]
 </td><td>
 Visible Columns
 </td></tr>
 <tr>
 <td>
-PrintCard
+[`PrintCard`]
 </td><td>
 Print Card
 </td></tr>
 <tr>
 <td>
-Search
+[`Search`]
 </td><td>
 Search
 </td></tr>
@@ -232,7 +232,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Localization](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -249,19 +249,19 @@ The following code example describes the above behavior.
     <div class="cols-sample-area">
     <script>
         ej.Kanban.Locale["ar-AE"] = {
-            EmptyCard: "لا بطاقات لعرض",
-            SaveButton: "حفظ",
-            CancelButton: "إلغاء",
-            EditFormTitle: "تفاصيل ",
-            AddFormTitle: "إضافة بطاقة جديدة",
-            SwimlaneCaptionFormat: "- 8 بند  العناصر ",
-            FilterSettings: "مرشحات:",
-            FilterOfText: "من",
-            Max: "ماكس",
-            Min: "دقيقة",
-            Cards: "  بطاقات",
-            ItemsCount: "عد العناصر:",
-            Unassigned: "غير معين",
+            EmptyCard: "Keine Karten angezeigt werden",
+            SaveButton: "Speichern",
+            CancelButton: "stornieren",
+            EditFormTitle: "Details von ",
+            AddFormTitle: "Neue Karte hinzufügen",
+            SwimlaneCaptionFormat: "- 8 Artikel  Artikel ",
+            FilterSettings: "Filter:",
+            FilterOfText: "Von",
+            Max: "Max.",
+            Min: "Min.",
+            Cards: "Karten",
+            ItemsCount: "Artikel Graf :",
+            Unassigned: "Nicht zugewiesen",
         };
     </script>
     <?php
@@ -271,17 +271,17 @@ The following code example describes the above behavior.
     $constraint = new EJ\Kanban\Constraint();
     $constraint ->max(2);
     $column = new EJ\Kanban\Column();
-    $column ->key("Open")->headerText("تراكم الأعمال غير المنجزة");
+    $column ->key("Open")->headerText("Backlog");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("في تَقَدم")->constraints($constraint);
+    $column1 ->key("InProgress")->headerText("In Progress")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
-    $column2 ->key("Close")->headerText("فعله");
+    $column2 ->key("Close")->headerText("Done");
     $fields = new EJ\Kanban\Field();
     $fields ->content("Summary")->primaryKey("Id")->swimlaneKey('Assignee')->tag('Tags');
     $columns = array(
     $column,$column1,$column2
     );
-    echo $kanban ->columns($columns)->dataSource($Json)->enableRTL(true)->allowTitle(true)->locale("ar-AE")->fields($fields)->keyField("Status")->render();
+    echo $kanban ->columns($columns)->dataSource($Json)->enableRTL(true)->allowTitle(true)->locale("de-DE")->fields($fields)->keyField("Status")->render();
     ?>
     </div>
 
@@ -289,5 +289,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Right to left](Localization_images/localization_img2.png)
 
