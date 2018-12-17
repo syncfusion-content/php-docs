@@ -273,7 +273,7 @@ The following code example describes the above behavior.
     $column = new EJ\Kanban\Column();
     $column ->key("Open")->headerText("Öffnen");
     $column1 = new EJ\Kanban\Column();
-    $column1 ->key("InProgress")->headerText("In Bearbeitung")->constraints($constraint);
+    $column1 ->key("InProgress")->headerText("jetzt in Arbeit")->constraints($constraint);
     $column2 = new EJ\Kanban\Column();
     $column2 ->key("Close")->headerText("Schließen");
     $fields = new EJ\Kanban\Field();
