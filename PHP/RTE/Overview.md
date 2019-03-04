@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OverView of the RichTextEditor
+title: OverView of the RichTextEditor | Syncfusion
 description: OverView of the RichTextEditor
 platform: php
 control: RichTextEditor
