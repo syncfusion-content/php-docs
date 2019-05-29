@@ -60,7 +60,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img1.png)
+![Local data in PHP kanban control](Data_Binding_images/Data_Bind_img1.png)
 
 ## Remote Data
 
@@ -103,4 +103,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img2.png)
+![Remote data in PHP kanban control](Data_Binding_images/Data_Bind_img2.png)

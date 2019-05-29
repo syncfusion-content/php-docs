@@ -57,4 +57,4 @@ The following code example describes the above Workflow functionality.
 
 The following output is displayed as a result of the above code example.
 
-![](WorkFlows_images/workflows1.png)
+![Workflows in PHP kanban control](WorkFlows_images/workflows1.png)
