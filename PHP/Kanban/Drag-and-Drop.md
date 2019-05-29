@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Drag and Drop
-description: Drag and Drop
+title:  Essential EJ1 Syncfusion PHP Kanban Drag and Drop
+description: This section explains how to drag and drop Kanban cards and their features of the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: drag and drop,kanban drag and drop
@@ -48,5 +48,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Drag_and_Drop_images/drag_and_drop_img1.png)
+![Prioritization of cards in PHP kanban control](Drag_and_Drop_images/drag_and_drop_img1.png)
 

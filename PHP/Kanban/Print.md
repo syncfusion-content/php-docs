@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Print with Kanban widget for Syncfusion Essential JS
-description: How to enable print option in Kanban
+title:  Essential EJ1 Syncfusion PHP Kanban Print
+description: This section explains how to perform printing feature and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 ---
@@ -41,6 +41,6 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Printing_images/print_img1.png)
+![Print in PHP kanban control](Printing_images/print_img1.png)
 
 

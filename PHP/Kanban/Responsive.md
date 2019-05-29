@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Syncfusion Kanban Responsive
-description: Responsive
+title:  Responsive | Kanban | PHP | Syncfusion
+description: This section explains the responsive behavior of the Syncfusion PHP Kanban component based on the client browser width and height.
 documentation: ug
 platform: php
 keywords: responsive,kanban responsive
