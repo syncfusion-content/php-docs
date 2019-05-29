@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Filtering
-description: Filtering
+title:  Essential EJ1 Syncfusion PHP Kanban Filtering
+description: This section explains how to enable filtering and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: filtering,kanban filtering

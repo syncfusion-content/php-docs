@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  context menu 
-description: context menu 
+title:  Essential EJ1 Syncfusion PHP Kanban context menu
+description: This section explains how to enable context menu and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: context menu ,kanban context menu 

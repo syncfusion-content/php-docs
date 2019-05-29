@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title:  Essential EJ1 Syncfusion PHP Kanban Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: swimlanes,kanban swimlanes

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Scrolling
-description: Scrolling
+title:  Essential EJ1 Syncfusion PHP Kanban Scrolling
+description: This section explains how to achieve the scrolling behavior and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: scrolling,kanban scrolling

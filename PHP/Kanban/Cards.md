@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Cards
-description: Cards
+title:  Essential EJ1 Syncfusion PHP Kanban context menu
+description: This section explains how to define the basic structure of cards and their features of the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: cards,kanban cards

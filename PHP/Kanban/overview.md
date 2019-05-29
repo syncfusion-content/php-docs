@@ -1,6 +1,6 @@
 ---
 title: Kanban Control Overview	
-description: Overview of Kanban control
+description: This section explains the short description of basic features on the Syncfusion PHP Kanban component.
 platform: php
 control: kanban
 documentation: ug

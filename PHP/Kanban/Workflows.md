@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Workflows
-description: Workflows
+title:  Essential EJ1 Syncfusion PHP Kanban Workflows
+description: This section explains the flow of cards between the Kanban columns in the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: Workflows,kanban Workflows

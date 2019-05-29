@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Data Binding 
-description: Data Binding 
+title:  Essential EJ1 Syncfusion PHP Kanban Data Binding
+description: Databinding is used to show the different binding of adaptor section using Syncfusion PHP Kanban component. 
 documentation: ug
 platform: php
 keywords: data binding ,kanban data binding
