@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection and Hovering
-description: Selection and Hovering
+title: Essential EJ1 Syncfusion PHP Kanban Selection and Hovering
+description: This section explains how to select and hover the card on the Essential EJ1 Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: selection, hovering,kanban selection, hovering
@@ -79,4 +79,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/selection_img1.png)
+![Selection and hovering in PHP kanban control](Selection_images/selection_img1.png)
