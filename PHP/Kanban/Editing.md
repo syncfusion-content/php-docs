@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Syncfusion Kanban Editing
-description: Editing
+title:  Essential EJ1 Syncfusion PHP Kanban Editing
+description: This section explains how to enable different editing mode and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: editing,kanban editing

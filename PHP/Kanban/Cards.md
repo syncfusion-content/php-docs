@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Cards
-description: Cards
+title:  Essential EJ1 Syncfusion PHP Kanban context menu
+description: This section explains how to define the basic structure of cards and their features of the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: cards,kanban cards
@@ -46,7 +46,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img1.png)
+![Card customization in PHP kanban control](Cards_images/cards_img1.png)
 
 ## Template
 
@@ -149,7 +149,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img2.png)
+![Card template in PHP kanban control](Cards_images/cards_img2.png)
 
 ## Tooltip
 
@@ -188,7 +188,7 @@ The following code example describes the above behavior.
  
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img3.png)
+![Card tooltip in PHP kanban control](Cards_images/cards_img3.png)
 
 ### Template
 
@@ -295,4 +295,4 @@ The following code example describes the tooltip template.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img4.png)
+![Card tooltip template in PHP kanban control](Cards_images/cards_img4.png)

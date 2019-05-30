@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title:  Essential EJ1 Syncfusion PHP Kanban Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: swimlanes,kanban swimlanes
@@ -42,7 +42,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img1.png)
+![Swim lanes in PHP kanban control](Swimlane_images/swimlane_img1.png)
 
 ## Drag And Drop between swim lanes
 
@@ -83,7 +83,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img2.png)
+![Drag And Drop between swim lanes in PHP kanban control](Swimlane_images/swimlane_img2.png)
 
 ## Unassigned swim lane group
 
@@ -131,4 +131,4 @@ The following code example describes the above behavior.
 
 The output of the above code example.
 
-![](Swimlane_images/swimlane_img3.png)
+![Unassigned swim lane group using default values in PHP kanban control](Swimlane_images/swimlane_img3.png)

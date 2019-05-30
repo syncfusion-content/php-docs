@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Columns
-description: Columns
+title:  Essential EJ1 Syncfusion PHP Kanban Columns
+description: This section explains how to define the columns and their features of the Syncfusion PHP Kanban component.
 documentation: ug
 platform: php
 keywords: columns,kanban columns
@@ -48,7 +48,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img.png)
+![Key mapping in PHP kanban control](Columns_images/column_img.png)
 
 ## Multiple Key Mapping
 
@@ -89,7 +89,7 @@ The following code example and screenshot which describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img9.png)
+![Multiple key mapping in PHP kanban control](Columns_images/column_img9.png)
 
 ## Headers
 
@@ -155,7 +155,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img1.png)
+![Header template in PHP kanban control](Columns_images/column_img1.png)
 
 ## Width
 
@@ -196,7 +196,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img2.png)
+![Column width in PHP kanban control](Columns_images/column_img2.png)
 
 ## Visibility 
 
@@ -235,7 +235,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img3.png)
+![Column visibility in PHP kanban control](Columns_images/column_img3.png)
 
 
 ## Toggle 
@@ -275,7 +275,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img4.png)
+![Toggle column in PHP kanban control](Columns_images/column_img4.png)
 
 ## Allow Dragging
 
@@ -312,7 +312,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img5.png)
+![Allow dragging in PHP kanban control](Columns_images/column_img5.png)
 
 ## Allow Dropping
 
@@ -349,7 +349,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img6.png)
+![Allow dropping in PHP kanban control](Columns_images/column_img6.png)
 
 ## Items Count
 
@@ -386,5 +386,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img7.png)
+![Items count in PHP kanban control](Columns_images/column_img7.png)
 
