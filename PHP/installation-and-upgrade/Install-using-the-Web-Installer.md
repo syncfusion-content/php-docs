@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio PHP products
-description: Learn how to install and deploy the Syncfusion PHP component
+title: Installation process for Syncfusion Essential Studio PHP products
+description: This section provides information regarding the Syncfusion PHP Online installer and steps for installing it
 platform: php
 control: Installation and Deployment
 documentation: ug
