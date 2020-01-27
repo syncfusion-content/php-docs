@@ -10,14 +10,14 @@ documentation: ug
 
 ## Installation
 
-The following procedure illustrates how to install Essential Studio PHP Online Installer setup. 
+The following procedure illustrates how to install Essential Studio PHP Online Installer. 
 
-1.  Double-click the Syncfusion Essential Studio PHP Online Installer setup file. The Setup Wizard opens and extracts the package automatically.
+1.  Double-click the Syncfusion Essential Studio PHP Online Installer file. The installer Wizard opens and extracts the package automatically.
 
-    ![Setup Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
+    ![Installer Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
 
     
-    N> The Setup wizard extracts the syncfusion{platform}webinstaller_{version}.exe dialog, displaying the unzip operation of the package.
+    N> The installer wizard extracts the syncfusion{platform}webinstaller_{version}.exe dialog, displaying the unzip operation of the package.
     
 2. Welcome wizard of the Syncfusion PHP Online Installer will be displayed. Click Next.
 
@@ -82,11 +82,11 @@ The following procedure illustrates how to install Essential Studio PHP Online I
 
 Till version 17.2, Syncfusion Web Installer had option for installation alone. Starting with the version 17.3 (2019 Vol 3), Syncfusion provides option for uninstalling the platforms of the same version from the Web Installer application itself. Select the list of the platforms to be uninstalled and Web Installer will uninstall those platforms one by one.
 
-The following procedure illustrates how to uninstall Essential Studio PHP from Web Installer setup. 
+The following procedure illustrates how to uninstall Essential Studio PHP from Web Installer. 
 
-1.  Double-click the Syncfusion Essential Studio PHP Online Installer setup file. The Setup Wizard opens and extracts the package automatically.
+1.  Double-click the Syncfusion Essential Studio PHP Online Installer file. The installer Wizard opens and extracts the package automatically.
 
-    ![Setup Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
+    ![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	
 2. Welcome wizard of the Syncfusion PHP Online Installer will be displayed. Click Next.
 
@@ -113,11 +113,11 @@ The following procedure illustrates how to uninstall Essential Studio PHP from W
 
 Till version 17.2, Syncfusion Web Installer had option for installation alone. Starting with the version 17.3 (2019 Vol 3), Syncfusion provides option for both install and uninstall the platforms of the same version from the Web Installer application itself.
 
-The following procedure illustrates how to install/uninstall Essential Studio PHP from Web Installer setup. 
+The following procedure illustrates how to install/uninstall Essential Studio PHP from Web Installer. 
 
-1.  Double-click the Syncfusion Essential Studio PHP Online Installer setup file. The Setup Wizard opens and extracts the package automatically.
+1.  Double-click the Syncfusion Essential Studio PHP Online Installer file. The installer Wizard opens and extracts the package automatically.
 
-    ![Setup Extraction Wizard Install/Uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
+    ![Installer Extraction Wizard Install/Uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	
 2. Welcome wizard of the Syncfusion PHP Online Installer will be displayed. Click Next.
 

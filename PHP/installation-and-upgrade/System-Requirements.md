@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Essential PHP components
-description: Learn what are the system requirements needed to use Syncfusion Essential PHP components
+title: System Requirements | PHP | Syncfusion
+description: this section provides the information about the system requirements for PHP platform with supported browsers
 platform: php
 control: System Requirement
 documentation: ug
@@ -29,7 +29,7 @@ The following topic describes the system requirements for Syncfusion PHP platfor
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 200 MB of available space may be required. However, 50 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 200 MB of available space may be required. However, 50 MB free space is required in boot drive even if you are installing in other drive.
 
 ### Development Environment
 
