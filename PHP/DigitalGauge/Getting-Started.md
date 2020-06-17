@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started
-description: getting started
+description: Learn here about getting started with Syncfusion PHP DigitalGauge control and more details.
 platform: php
 control: Digital Gauge
 documentation: ug

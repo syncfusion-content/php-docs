@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started
-description: getting started
+description: Learn here about getting started with Syncfusion PHP RangeNavigator control and more details.
 platform: js
 control: RangeNavigator
 documentation: ug

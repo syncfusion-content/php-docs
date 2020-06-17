@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started
-description: getting started
+description: Learn here about getting started with Syncfusion PHP LinearGauge control and more details.
 platform: php
 control: Linear Gauge
 documentation: ug
