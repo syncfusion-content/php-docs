@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | PHP | Syncfusion
-description: You can learn and clearly understand here about getting started with Syncfusion PHP Linear Gauge control and more details.
+title: Getting-Started with PHP Linear Gauge control | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP Linear Gauge control and more details.
 platform: php
 control: Linear Gauge
 documentation: ug
 ---
 
-# API Reference for Getting Started
+# Getting Started with PHP Linear Gauge
 
 This section briefly explains on how to create a **Linear Gauge** control for your application.
 

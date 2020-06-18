@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | PHP | Syncfusion
-description: You can learn and clearly understand here about getting started with Syncfusion PHP Circular Gauge control and more details.
+title: Getting-Started with PHP Circular Gauge control | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP Circular Gauge control and more details.
 platform: php
 control: Circular Gauge
 documentation: ug
 ---
 
-# API Reference for Getting Started
+# Getting Started with PHP Circular Gauge
 
 This section encompasses how to configure **Circular Gauge**. You can provide data to a **Circular Gauge** and make them to display  in a required way. 
 
