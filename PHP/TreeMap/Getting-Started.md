@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | PHP | Syncfusion
-description: You can learn here about getting started with Syncfusion PHP Tree Map control and more details.
+description: You can learn and clearly understand here about getting started with Syncfusion PHP Tree Map control and more details.
 platform: php
 control: TreeMap
 documentation: ug
