@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started with PHP TreeMap Control | Syncfusion
+title: Getting Started with PHP TreeMap Control | Syncfusion
 description: You can learn here about getting started with Syncfusion Essential PHP TreeMap control and more details.
 platform: php
 control: TreeMap

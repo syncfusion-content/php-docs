@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started with PHP Circular Gauge control | Syncfusion
+title: Getting Started with PHP Circular Gauge control | Syncfusion
 description: You can learn here about getting started with Syncfusion PHP Circular Gauge control and more details.
 platform: php
 control: Circular Gauge

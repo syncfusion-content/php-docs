@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started with PHP Range Navigator control | Syncfusion
+title: Getting Started with PHP Range Navigator control | Syncfusion
 description: You can learn here about getting started with Syncfusion PHP Range Navigator control and more details.
 platform: js
 control: RangeNavigator
