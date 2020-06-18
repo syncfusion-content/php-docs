@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with PHP Digital Gauge control  | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP Digital Gauge control and more details.
 platform: php
 control: Digital Gauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP Digital Gauge
 
 * This section encompasses on how to configure **Digital Gauge**. You can provide your own data for a **Digital Gauge** and make them to display in a required way. 
 
@@ -16,7 +16,7 @@ documentation: ug
 * **Digital gauge** is used in advertisement, decorative purpose, displaying share details in share market, game score boards, token systems, etc.
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Visual representation of Thermometer using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img1.png)
 
 ## Create a Digital Gauge
 
@@ -72,7 +72,7 @@ Add the following code in the index.php file to create the DigitalGauge control 
 
 On executing the above code, sample renders a default **Digital Gauge** with default values as follows.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Initialize Sparkline using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img2.png)
 
 ## Set Height and Width values
 
@@ -93,7 +93,7 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 On executing the above code, sample renders a default **Digital Gauge** with the specified height and width values.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Set Height and Width values using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img3.png)
 
 ## Set Items Property
 
@@ -137,7 +137,7 @@ You can customize the **Digital Gauge** using different properties.
 
 On executing the above code, sample renders a **Digital Gauge** with default values as follows.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Set Items Property using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img4.png)
 
 ## Add Background Image
 
@@ -170,7 +170,7 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 
 On executing the above code, sample renders a default **Digital Gauge** as follows.           
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Add Background Image using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img5.png)
 
 ## Add Location
 
@@ -199,7 +199,7 @@ You can position the digital letters inside the canvas element using **location*
 On executing the above code, sample renders a default **Digital Gauge** as follows.
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Add Location using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img6.png)
 
 ## Add Items collection
 
@@ -280,5 +280,5 @@ You can add **Items collection** to display the temperature value as used in the
 
 The following screenshot displays a **Digital Gauge** with all the customizations discussed earlier.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Add Items collection using Digital Gauge in PHP](Getting-Started_images/Getting-Started_img7.png)
 
