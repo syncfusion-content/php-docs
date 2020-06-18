@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: Learn here about getting started with Syncfusion PHP RangeNavigator control and more details.
+title: Getting-Started | PHP | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP Range Navigator control and more details.
 platform: js
 control: RangeNavigator
 documentation: ug
 ---
 
-# Getting Started
+# API Reference for Getting Started
 
 This section explains briefly about how to create a **RangeNavigator** in your application with **JavaScript**.
 
@@ -17,7 +17,7 @@ This section encompasses on how to configure the **ejRangeNavigator** and update
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Visual representation of Range Navigator in PHP](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Adding PHP EJ source and script reference
 
@@ -64,7 +64,7 @@ The following code example renders a RangeNavigator with a range from 2010, Janu
 
 The following screen shot displays the **RangeNavigator** with a range from 2010, January 1st to December 31st.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Initialize Range Navigator in PHP](Getting-Started_images/Getting-Started_img2.png) 
 
 
 ## Add series
@@ -107,7 +107,7 @@ The following screenshot displays a RangeNavigator with the default **"Line"** s
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![Add series using Range Navigator in PHP](Getting-Started_images/Getting-Started_img3.png) 
 
 ## Enable tooltip
 
@@ -132,7 +132,7 @@ The following code sample shows how to enable a Tooltip.
 
 The following screenshot displays the label format **Tooltip** in RangeNavigator:
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![ Enable tooltip using Range Navigator in PHP](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Update Chart
 
@@ -195,7 +195,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![Update Chart using Range Navigator in PHP](Getting-Started_images/Getting-Started_img5.png) 
 
 ## Set value type
 
@@ -240,5 +240,5 @@ The following screenshot displays a RangeNavigator with numerical values:
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![Set value type using Range Navigator in PHP](Getting-Started_images/Getting-Started_img6.png) 
 

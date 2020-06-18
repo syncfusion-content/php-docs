@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: Learn here about getting started with Syncfusion PHP LinearGauge control and more details.
+title: Getting-Started | PHP | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP LinearGauge control and more details.
 platform: php
 control: Linear Gauge
 documentation: ug
 ---
 
-# Getting Started
+# API Reference for Getting Started
 
 This section briefly explains on how to create a **Linear Gauge** control for your application.
 
@@ -17,7 +17,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Visual representation of Thermometer using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img1.png)
 
 ## Adding PHP EJ source and script reference
 
@@ -74,9 +74,9 @@ Add the following code in the index.php file to create the LinearGauge control i
 On executing the above code sample renders a default **Linear Gauge** with default values as follows.
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Initialize Linear Gauge in PHP](Getting-Started_images/Getting-Started_img2.png)
 
-Set Height and Width values
+## Set Height and Width values
 
 * Basic attributes of each canvas elements are height and width properties. 
 
@@ -98,7 +98,7 @@ Set Height and Width values
 On executing the above code sample renders a default **Linear Gauge** with height and width.
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Set Height and Width values using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img3.png)
 
 ## Set animate option and Label Color
 
@@ -123,7 +123,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Set animate option and Label Color using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img4.png)
 
 ## Provide scale values
 
@@ -168,7 +168,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 On executing the above code sample renders a customized gauge with ranges as follows.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Provide scale values using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img5.png)
 
 ## Add pointers data
 
@@ -211,7 +211,7 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 On executing the above code sample renders a **Linear Gauge** with bar marker as follows.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Add pointers data using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img6.png)
 
 ## Add Label Customization
 
@@ -268,7 +268,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Add Label Customization using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img7.png)
 
 ## Add Ticks Details
 
@@ -314,7 +314,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 On executing the above code sample renders a **Linear Gauge** with custom labels as follows.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Add Ticks Details using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img8.png)
 
 ## Add Custom Label Details
 
@@ -363,7 +363,7 @@ The following code example illustrates how to use custom texts.
 
 On executing the above code sample renders a customized **Linear Gauge** as follows. 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Add Custom Label Details using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img9.png)
 
 ## Change scale Degree to Fahrenheit
 
@@ -398,7 +398,7 @@ On executing the above code sample renders a **Linear Gauge** with values in Deg
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Change scale Degree to Fahrenheit using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img10.png)
 
 ## Add Custom label for Current Value
 
@@ -465,5 +465,5 @@ You can add the function that displays the current temperature value in the cust
 
 The following screen shot displays a linear gauge with all the customizations discussed earlier.
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![Add Custom label for Current Value using Linear Gauge in PHP](Getting-Started_images/Getting-Started_img11.png)
 

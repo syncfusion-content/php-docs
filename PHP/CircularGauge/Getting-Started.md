@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting-Started
-description: Learn here about getting started with Syncfusion PHP CircularGauge control and more details.
+title: Getting-Started | PHP | Syncfusion
+description: You learn here about getting started with Syncfusion PHP Circular Gauge control and more details.
 platform: php
 control: Circular Gauge
 documentation: ug
 ---
 
-# Getting Started
+# API Reference for Getting Started
 
 This section encompasses how to configure **Circular Gauge**. You can provide data to a **Circular Gauge** and make them to display  in a required way. 
 
 The following screen shot displays a **Circular Gauge**, which visually represents the functions of an Automobile speedometer with RPM (Rotation per Minute), kph (Kilometer per hour) and it denotes the speed level indicators (Safe, Caution and Danger). 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Visual representation of Speedometer using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img1.png)
 
 ## Adding PHP EJ source and script reference
 
@@ -70,7 +70,7 @@ Add the following code in the index.php file to create the Sparkline control in 
 
 On executing the above code, sample renders a default **Circular Gauge** with default values as follows.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Initialize Circular Gauge in PHP](Getting-Started_images/Getting-Started_img2.png)
 
 ## Set Height and Width values
 
@@ -92,7 +92,7 @@ Pointers have different height and range. You can set the height and width of th
 
 The following screenshot displays a **Gauge** in which height and width are set.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Set Height and Width values using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img3.png)
 
 ## Set Background Color
 
@@ -114,7 +114,7 @@ You can draw the speedometer with dark background and to vary the speed of the p
 
 The above code example renders a **Gauge** as shown in the following screen shot.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Set Background Color using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img4.png)
 
 ## Provide scale values
 
@@ -149,7 +149,7 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Provide Scale values using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img5.png)
 
 ## Add Label Customization
 
@@ -182,7 +182,7 @@ To display the values in the **Gauge,** scale labels are used. You can customize
 
 On executing the above code, sample renders a default **Circular Gauge** with customized labels as follows.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Add Label Customization using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img6.png)
 
 ## Add pointer data
 
@@ -223,7 +223,7 @@ You can use three pointers that denote kilometer value, rotation per minute valu
 
 On executing the above code, sample renders a customized **Circular Gauge** as follows.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Add pointer data using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img7.png)
 
 ## Add Tick Details
 
@@ -258,7 +258,7 @@ You can display the tick value with customization as given in the following code
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Add Tick Details using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img8.png)
 
 ## Add Range Values
 
@@ -297,7 +297,7 @@ Ranges denote the property of scale value in the speedometer. The color values o
 
 On executing the above code, sample renders a **Circular Gauge** with customized range as follows.
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Add Range Values using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img9.png)
 
 ## Add Indicator Details
 
@@ -358,7 +358,7 @@ Indicators denote whether the pointer values are placed in their respective zone
 
 On executing the above code, sample renders a **Circular Gauge** with customized indicators as follows.
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Add Indicator Details using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img10.png)
 
 ## Add Custom Label Details
 
@@ -402,5 +402,5 @@ You can specify the text in the **Gauge** using **Custom labels** and you can cu
 
 The following screenshot displays a **Circular Gauge** control with all customization properties.
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![Add Custom Label Details using Circular Gauge in PHP](Getting-Started_images/Getting-Started_img11.png)
 

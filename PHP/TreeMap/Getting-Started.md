@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: Learn here about getting started with Syncfusion PHP TreeMap control and more details.
+title: Getting-Started | PHP | Syncfusion
+description: You can learn here about getting started with Syncfusion PHP Tree Map control and more details.
 platform: php
 control: TreeMap
 documentation: ug
 ---
 
-# Getting Started
+# API Reference for Getting Started
 
 This section explains briefly about how to create a **TreeMap** in your application with **PHP**.
 
@@ -15,7 +15,7 @@ This section explains briefly about how to create a **TreeMap** in your applicat
 
 You can configure an **Essential PHP TreeMap** in simple steps. In this section, you can learn how to configure a TreeMap control in a real-time scenario where it is used to visually represent the percentage of growth in population in each continent. It also provides a walk-through on some of the customization features available in TreeMap control. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Visual representation of TreeMap in PHP](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Adding PHP EJ source and script reference
@@ -132,7 +132,7 @@ Populate the TreeMap data in PHP JSON object. For example, you can use populatio
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Initialize TreeMap in PHP](Getting-Started_images/Getting-Started_img2.png)
 
 ## Group with Levels
 
@@ -163,7 +163,7 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 The following screenshot displays grouping of **TreeMap****Items** using **Levels**.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Group with Levels using TreeMap in PHP](Getting-Started_images/Getting-Started_img3.png)
 
 ## Customize TreeMap by Range
 
@@ -203,7 +203,7 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 The following screenshot displays a customized **TreeMap** control. 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Customize TreeMap by Range in PHP](Getting-Started_images/Getting-Started_img4.png)
 
 ## Enable Tooltip
 
@@ -246,7 +246,7 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 The following screenshot displays a ToolTip in a **TreeMap** control.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Leaf Item Settings using TreeMap in PHP](Getting-Started_images/Getting-Started_img5.png)
 
 ## Enable Legend
 
@@ -294,7 +294,7 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 The following screenshot displays labels in a **TreeMap** control. 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Enable Legend using TreeMap in PHP](Getting-Started_images/Getting-Started_img6.png)
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
