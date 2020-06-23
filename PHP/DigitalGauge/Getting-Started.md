@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with PHP Digital Gauge control  | Syncfusion
+title: Getting Started with PHP Digital Gauge control | Syncfusion
 description: You can learn here about getting started with Syncfusion PHP Digital Gauge control and more details.
 platform: php
 control: Digital Gauge
