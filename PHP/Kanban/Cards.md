@@ -7,7 +7,7 @@ platform: php
 keywords: cards,kanban cards
 ---
 
-# Cards
+# Cards in PHP Kanban component
 
 ## Customization
 
