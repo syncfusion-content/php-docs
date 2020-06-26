@@ -132,7 +132,7 @@ The following code sample shows how to enable a Tooltip.
 
 The following screenshot displays the label format **Tooltip** in RangeNavigator:
 
-![ Enable tooltip using Range Navigator in PHP](Getting-Started_images/Getting-Started_img4.png) 
+![Enable tooltip using Range Navigator in PHP](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Update Chart
 
