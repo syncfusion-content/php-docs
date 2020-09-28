@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Essential EJ1 Syncfusion PHP Kanban Globalization and Localization
+title: Globalization and Localization in Syncfusion Essential PHP Kanban
 description: This section explains how to enable localization and its functionalities using the Syncfusion PHP Kanban component.
 documentation: ug
 platform: Php
