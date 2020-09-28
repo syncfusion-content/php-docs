@@ -7,7 +7,7 @@ platform: Php
 keywords: globalization and localization,kanban globalization and localizationards
 ---
 
-# Localization
+# Localization in Kanban
 
 ## Localization
 
