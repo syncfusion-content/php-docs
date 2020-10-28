@@ -12,7 +12,7 @@ documentation: ug
 
 ## Run the Essential JS for PHP demo web site
 
-To run the Essential JS for PHP demo site, kindly refer the ReadMe.html file in `/Samples` location.
+To run the Essential JS for [`PHP`](https://www.syncfusion.com/products/release-history/estudio/php) demo site, kindly refer the ReadMe.html file in `/Samples` location.
 
 ## Create a simple PHP Application
 
@@ -37,7 +37,7 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
     </body>
 {% endhighlight %}
 
-3. Use any Essential JS for PHP wrapper. For Example, to use DatePicker refer below.
+3. Use any Essential JS for [`PHP`](https://www.syncfusion.com/products/release-history/estudio/php) wrapper. For Example, to use DatePicker refer below.
 
 {% highlight html %}
     <?php
