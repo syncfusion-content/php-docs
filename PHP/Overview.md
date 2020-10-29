@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential PHP
-description: Overview of Syncfusion Essential PHP.
+description: This section describes the overview of Syncfusion Essential PHP and How to render a Syncfusion PHP component.
 platform: php
 control: Introduction
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | PHP | Syncfusion
-description: Getting Started.
+description: Check out the documentation for getting started with Syncfusion Essential JS for PHP.
 platform: php 
 control: Common 
 documentation: ug
