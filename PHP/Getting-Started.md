@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | PHP | Syncfusion
-description: Getting Started.
+description: Check out the getting started documentation for the Essential JS PHP platform with more details on creating simple PHP application.
 platform: php 
 control: Common 
 documentation: ug
@@ -48,4 +48,6 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
 
 4. Run the PHP web site, the DatePicker widget will be displayed as shown below,
 
-   ![](/PHP/Getting-Started_images/Getteing-Started_img1.JPG)
+   ![PHP datepicker control](/PHP/Getting-Started_images/Getteing-Started_img1.JPG)
+
+N> You can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio/php).
