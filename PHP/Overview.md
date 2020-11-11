@@ -27,7 +27,7 @@ Syncfusion PHP server side wrapper with over 40+ controls provides the enhanced 
 
 * And, you can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio/php).
 
-## Create a support incident
+## Create a support incidents
 
 If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
 
