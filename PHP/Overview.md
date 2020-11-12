@@ -29,5 +29,5 @@ Syncfusion PHP server side wrapper with over 40+ controls provides the enhanced 
 
 ## Create a support incidents
 
-If you are still not able to find the information that you are looking for in the self-help resources mentinoed above then plese [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then plese [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
 
