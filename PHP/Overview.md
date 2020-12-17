@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential PHP
-description: Overview of Syncfusion Essential PHP.
+description: This section describes the overview of Syncfusion Essential PHP and How to render a Syncfusion PHP component.
 platform: php
 control: Introduction
 documentation: ug
@@ -25,7 +25,9 @@ Syncfusion PHP server side wrapper with over 40+ controls provides the enhanced 
 
 * Similar to the [Knowledge Base](http://www.syncfusion.com/kb/php), the [forum](https://www.syncfusion.com/forums/php) section also contains responses to questions that other customers have asked us in the past.
 
-## Create a support incident
+* And, you can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio/php).
+
+## Create a support incidents
 
 If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
 
