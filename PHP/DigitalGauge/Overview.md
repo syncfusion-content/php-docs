@@ -13,23 +13,23 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 
 * Seven Segment
 
-![](/PHP/DigitalGauge/Overview_images/Overview_img2.png)
+![PHP DigitalGauge Overview Image2](/PHP/DigitalGauge/Overview_images/Overview_img2.png)
 
 * Fourteen Segment
 
-![](/PHP/DigitalGauge/Overview_images/Overview_img3.png)
+![PHP DigitalGauge Overview Image3](/PHP/DigitalGauge/Overview_images/Overview_img3.png)
 
 * Sixteen Segment
 
-![](/PHP/DigitalGauge/Overview_images/Overview_img4.png)
+![PHP DigitalGauge Overview Image4](/PHP/DigitalGauge/Overview_images/Overview_img4.png)
 
 * EightCrossEightDotMatrix
 
-![](/PHP/DigitalGauge/Overview_images/Overview_img5.png)
+![PHP DigitalGauge Overview Image5](/PHP/DigitalGauge/Overview_images/Overview_img5.png)
 
 * EightCrossEightSquareMatrix
 
-![](/PHP/DigitalGauge/Overview_images/Overview_img6.png)
+![PHP DigitalGauge Overview Image6](/PHP/DigitalGauge/Overview_images/Overview_img6.png)
 
 
 

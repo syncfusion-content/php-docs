@@ -59,4 +59,4 @@ This section explains briefly about how to create a **Barcode** control in your 
 
 The following screenshot illustrates the output of the above code example.
 
-![](getting-started-images/default.png)
+![PHP Barcode Getting Started Image](getting-started-images/default.png)
