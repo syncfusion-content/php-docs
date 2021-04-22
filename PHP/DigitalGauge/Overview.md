@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Digital Gauge PHP Control
-description: This section describes the overview of Syncfusion Essential PHP and How to render a Syncfusion Digital Gauge PHP component.
+title: About PHP Digital Gauge Control | Syncfusion
+description: Learn here all about introduction of Syncfusion PHP Digital Gauge Control, its features, and more details.
 platform: php
 control: Digital Gauge
 documentation: ug
 ---
 
-# Overview of Digital Gauge PHP Control
+# PHP Digital Gauge Overview
 
 Digital Gauge for Essential Studio encompasses the visualization of the segmented display of both the 7-segment numeric values and the 14-segment alphanumeric characters. It can display the following five kinds of character types:
 
