@@ -1,13 +1,13 @@
 ---
-title: Getting started with Barcode component	
-description: Rendering a Barcode in PHP
+title: Getting started with Barcode component | Syncfusion
+description: Check out the getting started documentation for the Essential Barcode PHP platform and explains about key features of Barcode control.
 platform: php
 control: Barcode
 documentation: ug
 keywords: ejBarcode, Barcode
 ---
 
-# Overview
+# Overview of Syncfusion Barcode Control
 
 The Syncfusion Essential JS Barcode widget enables rendering of one dimension and two dimension barcodes in web page. Barcode provides you a simple and inexpensive method of encoding text information that can be easily read by electronic readers.
 
@@ -16,7 +16,7 @@ The Syncfusion Essential JS Barcode widget enables rendering of one dimension an
 * Supports 10 one-dimensional barcodes including Code 39 and Code 32 barcodes.
 * Supports 2 two-dimensional barcodes such as QR and Data Matrix barcodes.
 
-# Getting Started
+## Getting Started
 
 This section explains briefly about how to create a **Barcode** control in your application with **PHP** wrapper classes of EJ controls.
 
