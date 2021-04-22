@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About PHP Digital Gauge Control | Syncfusion
-description: Learn here all about introduction of Syncfusion PHP Digital Gauge Control, its features, and more details.
+description: Learn here all about introduction of Syncfusion Essential PHP Digital Gauge Control, its features, and more.
 platform: php
 control: Digital Gauge
 documentation: ug

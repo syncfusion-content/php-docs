@@ -1,6 +1,6 @@
 ---
 title: Getting started with PHP Barcode Control | Syncfusion
-description: Learn here about getting started with Syncfusion PHP Barcode Control, and explains elements, key features of Barcode control.
+description: Learn here about getting started with Syncfusion Essential Studio PHP Barcode Control, its elements, and more.
 platform: php
 control: Barcode
 documentation: ug
