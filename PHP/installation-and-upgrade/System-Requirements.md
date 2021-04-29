@@ -7,7 +7,7 @@ control: System Requirement
 documentation: ug
 ---
 
-# System Requirement
+# System Requirements for PHP
 
 The system requirements for using our Syncfusion PHP platform are as follows
 
