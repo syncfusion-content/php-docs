@@ -9,7 +9,7 @@ documentation: ug
 
 # System Requirement
 
-The following topic describes the system requirements for Syncfusion PHP platform.
+The system requirements for using our Syncfusion PHP platform are as follows
 
 ### Operating Systems
 
