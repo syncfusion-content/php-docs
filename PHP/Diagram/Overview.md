@@ -11,7 +11,7 @@ documentation: ug
 
 **Essential Diagram PHP** creates rich Visio-like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
-![](Overview_images/Overview_img1.png)
+![Overview_images1](Overview_images/Overview_img1.png)
 
 The list of rich features of Diagram control in PHP is as follows.
 
