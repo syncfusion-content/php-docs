@@ -1,13 +1,13 @@
 ---
 title: Getting Started with DatePicker | DatePicker | PHP | Syncfusion
-description: Getting Started with DatePicker
+description: Learn here all about getting started with Syncfusion Essential PHP DatePicker Control, its elements, and more.
 platform: php
 control: DatePicker
 documentation: ug
 keywords: Datepicker getting started, php Datepicker
 ---
 
-# Getting Started
+# Getting Started with PHP DatePicker
 
 This section explains briefly about the necessary steps required to render and configure EJ DatePicker control using PHP wrapper classes.
 
