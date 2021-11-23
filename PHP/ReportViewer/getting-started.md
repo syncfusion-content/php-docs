@@ -33,7 +33,7 @@ The required scripts and CSS files can be copied into the above created sample f
 
 Copy the PHP class libraries into the sample folder, which are the collection of PHP wrapper files. The PHP wrapper files are created individually for all controls to access and process its server-side values and then send it back to the client-side. These libraries are available within the following installed location:
 
-* **(Installed Location)\\Syncfusion\\Essential Studio\\{{ site.releaseversion }}\\PHP\\Src** 
+* **(Installed Location)\\Syncfusion\\Essential Studio\\19.1.0.63\\PHP\\Src** 
 
 ## Create a PHP file
 
@@ -65,11 +65,11 @@ Refer the required scripts and CSS files in the PHP page as mentioned below to r
     <html>
         <head>
                 <title>Getting Started - ReportViewer</title>
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+                <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+                <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
                 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
                 <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+                <script src="http://cdn.syncfusion.com/19.1.0.63/js/web/ej.web.all.min.js"></script>
         </head>
         <body>
             <?php
@@ -89,11 +89,11 @@ Include the PHP AutoLoad file reference within the `body` section of the PHP pag
     <html>
         <head>
                 <title>Getting Started - ReportViewer</title>
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+                <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+                <link href="http://cdn.syncfusion.com/19.1.0.63/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
                 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
                 <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+                <script src="http://cdn.syncfusion.com/19.1.0.63/js/web/ej.web.all.min.js"></script>
         </head>
         <body>
             <?php require_once 'EJ\AutoLoad.php'; ?>
