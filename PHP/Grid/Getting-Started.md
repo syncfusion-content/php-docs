@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Grid widget for Syncfusion Essential PHP
-description: Learn here all about Grid support in Syncfusion PHP Grid control, its elements and more
+description: Learn here all about getting started with Syncfusion PHP Grid control, and its feature such as data bind, enable paging, grouping, filtering and add summaries
 platform: php
 control: Grid
 documentation: ug
