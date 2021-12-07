@@ -92,7 +92,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->rende
 
 {% endhighlight %}
 
-![PHP Grid Getting Started Create Grid](Getting-Started_images/Grid_GettingStarted_img1.png)
+![Creating grid using PHP Grid](Getting-Started_images/Grid_GettingStarted_img1.png)
 
 ## Data Binding
 
@@ -149,7 +149,7 @@ echo $grid -> dataSource( $Json)->columns($gridColumns)->allowPaging(true)->rend
 
 {% endhighlight %}
 
-![PHP Grid Getting Started Data Binding](Getting-Started_images/Grid_GettingStarted_img2.png)
+![Data Binding in PHP Grid](Getting-Started_images/Grid_GettingStarted_img2.png)
 
 ## Enable Filtering
 
