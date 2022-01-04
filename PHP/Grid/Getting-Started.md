@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Getting started with Grid widget for Syncfusion Essential PHP
-description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
+description: Learn here all about getting started with Syncfusion PHP Grid control, and its feature such as data bind, enable paging, grouping, filtering and add summaries
 platform: php
 control: Grid
 documentation: ug
 ---
-# Getting started
+# Getting started in PHP Grid
 
 This section explains briefly about how to create a Grid in your application with PHP, and also explains about how to enable basic grid operations like Paging, Filtering, Grouping and Summary. The following screenshot illustrates the Grid control.
 
-![](Getting-Started_images/grid.png)
+![PHP Grid Getting Started](Getting-Started_images/grid.png)
 
 ## Adding JavaScript and CSS references
 
@@ -92,7 +92,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->rende
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img1.png)
+![Creating grid using PHP Grid](Getting-Started_images/Grid_GettingStarted_img1.png)
 
 ## Data Binding
 
@@ -149,7 +149,7 @@ echo $grid -> dataSource( $Json)->columns($gridColumns)->allowPaging(true)->rend
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img2.png)
+![Data Binding in PHP Grid](Getting-Started_images/Grid_GettingStarted_img2.png)
 
 ## Enable Filtering
 
@@ -206,7 +206,7 @@ echo $grid -> dataSource( $Json)->columns($gridColumns)->allowFiltering(true)->f
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img3.png)
+![Enable Filtering in PHP Grid](Getting-Started_images/Grid_GettingStarted_img3.png)
 
 
 ## Enable Grouping
@@ -264,7 +264,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->allowGrouping(true)->columns
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img4.png)
+![Enable grouping in PHP Grid](Getting-Started_images/Grid_GettingStarted_img4.png)
 
 
 Refer to the following code example for initial grouping.
@@ -322,7 +322,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->allowGrouping(true)->columns
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img5.png)
+![Code Initial grouping in PHP Grid](Getting-Started_images/Grid_GettingStarted_img5.png)
 
 
 ## Add Summaries
@@ -398,7 +398,7 @@ echo $grid -> dataSource( $Json)->allowPaging(true)->columns($gridColumns)->summ
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img6.png)
+![Add Summaries in PHP Grid](Getting-Started_images/Grid_GettingStarted_img6.png)
 
 
 ## Enable Editing
@@ -463,7 +463,7 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->editS
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img7.png)
+![Enable Editing in PHP Grid](Getting-Started_images/Grid_GettingStarted_img7.png)
 
 
 ## Enable Selection
@@ -521,8 +521,6 @@ echo $grid -> dataSource($Json)->columns($gridColumns)->allowPaging(true)->selec
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img10.png)
-
 
 ## Enable Sorting
 
@@ -579,6 +577,6 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->allow
 
 {% endhighlight %}
 
-![](Getting-Started_images/Grid_GettingStarted_img11.png)
+
 
 
