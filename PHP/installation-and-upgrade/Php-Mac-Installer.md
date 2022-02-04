@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP Mac| PHP | Syncfusion
+title: Mac installation process for Syncfusion Essential Studio PHP
 description: this section provides the information about Essential Studio PHP mac installer and steps for installation
 platform: aspnet-core
 control: Installation and Deployment
