@@ -12,16 +12,16 @@ documentation: ug
 
 ## How to download PHP Mac installer?
 
-1. PHP Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
+1. Essential Studio PHP Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
 
-2. In the downloads page, click the "Mac" button and download the required PHP Mac installer.
+2. In the downloads page, click the "Mac" button and download the required Essential Studio PHP Mac installer.
 
    ![Download Page](Mac-Installer_images/Mac_Download.png)  
 
 
 ## How to resolve the warning message in Catalina OS? 
 
-   While running Syncfusion PHP Mac Installer on Catalina MacOS or later, the below alert will be displayed.
+   While running Essential Studio PHP Mac Installer on Catalina MacOS or later, the below alert will be displayed.
 
    ![Alert Image](Mac-Installer_images/Mac_Catalina_MacOS_Alert.png)  
      
