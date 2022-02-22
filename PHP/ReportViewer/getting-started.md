@@ -1,13 +1,13 @@
 ---
-title: Getting Started for PHP ReportViewer
-description: ReportViewer
+title: Getting Started with PHP ReportViewer Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP ReportViewer Control, its elements, and more.
 platform: PHP
 control: ReportViewer
 documentation: ug
 keywords: ReportViewer, ReportViewer widget, php ReportViewer 
 ---
 
-# Getting Started
+# Getting Started with PHP ReportViewer
 
 To get start with the ReportViewer control by using PHP wrapper classes, any one of the following prerequisites need to be installed in your machine to deploy, and run those samples locally.
 
@@ -156,13 +156,13 @@ require_once '../EJ/AutoLoad.php';
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image: 
 
-![](Getting-Started_images/xampp-controlpanel.png)
+![PHP ReportViewer XAMPP control panel](Getting-Started_images/xampp-controlpanel.png)
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, if the Apache is configured to listen the port 8080, then type http://localhost:8080/ on the browser and press enter. Also, make sure that the sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
 The following ReportViewer output will be shown on the browser, when you type http://localhost:8080/ReportViewerTutorial/index.php and press enter. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![PHP ReportViewer Index PHP](Getting-Started_images/Getting-Started_img1.png)
 
 ReportViewer with Grouping Aggregate Report
 {:.caption}.
@@ -205,13 +205,13 @@ require_once '../EJ/AutoLoad.php';
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image: 
 
-![](Getting-Started_images/xampp-controlpanel.png)
+![PHP ReportViewer PHP Sample](Getting-Started_images/xampp-controlpanel.png)
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, if the Apache is configured to listen the port 8080, then type http://localhost:8080/ on the browser and press enter. Also, make sure that the sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
 The following ReportViewer output will be shown on the browser, when you type http://localhost:8080/ReportViewerTutorial/index.php and press enter.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![PHP ReportViewer PHP file](Getting-Started_images/Getting-Started_img2.png)
 
 Report from SSRS
 {:.caption}
@@ -280,13 +280,13 @@ N> Default RDLC report will be rendered, which is used in the online service.
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image:
 
-![](Getting-Started_images/xampp-controlpanel.png)
+![PHP ReportViewer Running the PHP file](Getting-Started_images/xampp-controlpanel.png)
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, if the Apache is configured to listen on the port 8080, then type http://localhost:8080/ on the browser and press enter. Also, make sure that the sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
 The following ReportViewer output will be shown on the browser, when you type http://localhost:8080/ReportViewerTutorial/index.php and press enter.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![PHP ReportViewer](Getting-Started_images/Getting-Started_img3.png)
 
 Area chart RDLC report
 {:.caption}
