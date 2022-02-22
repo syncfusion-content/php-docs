@@ -521,8 +521,6 @@ echo $grid -> dataSource($Json)->columns($gridColumns)->allowPaging(true)->selec
 
 {% endhighlight %}
 
-![PHP Grid Enable Selection](Getting-Started_images/Grid_GettingStarted_img10.png)
-
 
 ## Enable Sorting
 
@@ -578,7 +576,5 @@ echo $grid -> dataSource($Json)->allowPaging(true)->columns($gridColumns)->allow
 
 
 {% endhighlight %}
-
-![PHP Grid Enable Sorting](Getting-Started_images/Grid_GettingStarted_img11.png)
 
 
