@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting-started
-description: getting started
+title: Getting Started with Syncfusion PHP Navigation Drawer | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP Navigation Drawer Control, its elements, and more.
 platform: php
 control: Navigation Drawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP Navigation Drawer
 
 This section helps to get started of the Navigation Drawer control for PHP. 
 
@@ -83,7 +83,7 @@ To set the target icon image and with the correct position as using the below me
 
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started_img1.png)
+![PHP Navigation Drawer Create a Control](Getting-Started_images\getting-started_img1.png)
 
 You can open the list items by clicking on target element using the targetId property.  
 
@@ -95,7 +95,7 @@ You can open the list items by clicking on target element using the targetId pro
     
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started_img2.png)
+![PHP Navigation Drawer](Getting-Started_images\getting-started_img2.png)
 
 To set the images for list items of the Navigation Drawer by using the Image Class property as follows.
 
@@ -167,7 +167,7 @@ To set the images with the correct position by using the mentioned styles.
 
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started_img3.png)
+![PHP Navigation Drawer Getting Started](Getting-Started_images\getting-started_img3.png)
 
 To add desired page content while selecting the options in navigation drawer as follows.
 
@@ -238,7 +238,7 @@ In the mouse-up handler, it’s display the respective selected item’s content
 
 Run the above code to render the following output. 
 
-![](Getting-Started_images\getting-started_img4.png)
+![PHP Navigation Drawer selected items content](Getting-Started_images\getting-started_img4.png)
 
 ## Customize Direction
 
@@ -258,6 +258,6 @@ By using this property, to change the list view open direction. The possible dir
 
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started_img5.png)
+![PHP Navigation Drawer Customize Direction](Getting-Started_images\getting-started_img5.png)
 
 N> You can find the complete API list for all Syncfusion controls from the [API reference](https://help.syncfusion.com/api/js/ejnavigationdrawer)              

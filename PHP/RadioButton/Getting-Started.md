@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with PHP RadioButton Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP RadioButton Control, its elements, and more.
 platform: php
 control: RadioButton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP RadioButton
 
 This section explains briefly about the necessary steps required to render and configure EJ RadioButton control using PHP wrapper classes.
 
@@ -97,4 +97,4 @@ Add the following styles to show the **RadioButton** control in an order.
 
 The following screenshot illustrates the output of above code.
 
-![](/php/RadioButton/Getting-Started_images/Getting-Started_img1.JPG) 
+![PHP RadioButton Getting Started](Getting-Started_images/Getting-Started_img1.JPG) 
