@@ -10,7 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/php/installation-and-upgrade/download) section to learn how to get the PHP trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/php/installation-and-upgrade/download) section to learn how to get the PHP installer.
 
 ## Installing with UI   
 
