@@ -1,13 +1,13 @@
 ---
-title: Getting started with Kanban component	
-description: Rendering a basic Kanban with local data
+title: Getting started with PHP Kanban Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP Kanban Control, its elements, and more.
 platform: php
 control: kanban
 documentation: ug
 keywords: ejkanban, kanban, kanban widget, js kanban 
 ---
 
-# Getting Started
+# Getting Started with PHP Kanban
 
 To get start with the Kanban control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
@@ -268,12 +268,12 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image - 
 
-![](getting-started_images/getting-started_img1.png)
+![PHP Kanban Getting Started](getting-started_images/getting-started_img1.png)
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, say if the Apache is configured to listen on port 7777, then type http://localhost:7777/ on your browser and press enter. Also, make sure that your sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
 The following Kanban output shows up on the browser, when you type http://localhost:7777/KanbanPHP/index.php and press enter - 
 
-![](getting-started_images/getting-started_img2.png)
+![PHP Kanban Running the PHP file](getting-started_images/getting-started_img2.png)
 
 N> In case, if you face any problem with default port 80 while running your sample, make the Apache to listen on some other different ports. The port number changes needs to be done on both the `httpd.conf` and `httpd-ssl.conf` files, in order to get rid of this problem.(Refer [here](http://stackoverflow.com/questions/20558410/xampp-port-80-in-use-by-unable-to-open-process-with-pid-4-12)) 
