@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with PHP Gantt Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP Gantt Control, its elements, and more.
 platform: php
 control: Gantt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP Gantt
 
 This section explains briefly about how to create a Gantt chart in your application with PHP.
 
@@ -15,7 +15,7 @@ This section explains briefly about how to create a Gantt chart in your applicat
 
 In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img4.png)
+![PHP Gantt Getting Started](/Getting-Started_images/Getting-Started_img4.png)
 
 ## Adding script references
 Create an HTML file and add the following necessary script and CSS files to the HTML file.
@@ -129,7 +129,7 @@ Create an HTML file and add the following necessary script and CSS files to the 
 
 A Gantt chart is created as shown in the following screen shot.
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img5.png)
+![PHP Gantt with JSON data from external file](/Getting-Started_images/Getting-Started_img5.png)
 
 ## Enable Toolbar
 
@@ -155,7 +155,7 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 The following screen shot displays a Tool bar in Gantt chart control:
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img6.png)
+![PHP Gantt Enable Toolbar](/Getting-Started_images/Getting-Started_img6.png)
 
 N>  Add, edit, delete, indent and outdent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the edit Options.
 
@@ -224,7 +224,7 @@ Modify the predecessor details of a task using mouse interactions by setting [`a
 
 The following screen shot displays a Gantt chart control with Enable Editing options.
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img7.png)
+![PHP Gantt Predecessor Editing](/Getting-Started_images/Getting-Started_img7.png)
 
 N>  Both cellEditing and  normal  editing operations are performed through double-click action.
 
@@ -249,7 +249,7 @@ You can enable the context menu in Gantt, by setting the [`enableContextMenu`](h
 
 The following screen shot displays Gantt chart in which Context menu option is enabled:
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img8.png)
+![PHP Gantt Enable Context Menu](/Getting-Started_images/Getting-Started_img8.png)
 
 ## Enable Column Menu
 
@@ -272,7 +272,7 @@ You can enable the column menu in Gantt, by setting the [`showColumnChooser`](ht
 
 The following screen shot displays Gantt chart in which column chooser option is enabled:
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img11.png)
+![PHP Gantt Enable Column Menu](/Getting-Started_images/Getting-Started_img11.png)
 
 ## Provide tasks relationship
 
@@ -304,7 +304,7 @@ You can show the relationship in tasks, by using the [`predecessorsMapping`](htt
 
 The following screenshot displays the relationship between tasks.
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img9.png)
+![PHP Gantt Provide tasks relationship](/Getting-Started_images/Getting-Started_img9.png)
 
 ## Provide Resources
 
@@ -343,7 +343,7 @@ In Gantt control, you can display and assign the resource for each task. Create 
 
 The following screenshot displays resource allocation for tasks in Gantt chart.
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img10.png)
+![PHP Gantt Provide Resources](/Getting-Started_images/Getting-Started_img10.png)
 
 By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
@@ -370,4 +370,4 @@ In Gantt, you can on or off weekends high lighting by setting the [`highlightWee
 
 The following screen shot displays Gantt chart in which highlight weekends is disabled:
 
-![](/PHP/Gantt/Getting-Started_images/Getting-Started_img12.png)
+![PHP Gantt Highlight Weekend](/Getting-Started_images/Getting-Started_img12.png)
