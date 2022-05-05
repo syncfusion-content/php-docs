@@ -1,13 +1,13 @@
 ---
-title: Load on Demand in PHP Ribbon Control | Syncfusion
-description: Learn here all about Load on Demand support in Syncfusion Essential PHP Ribbon Control, its elements, and more.
+title: Load on Demand
+description: Overview of Load on Demand ribbon control.
 platform: php
 control: ribbon
 documentation: ug
 keywords: ribbon features, key features, ribbon overview 
 ---
 
-# Load on Demand in PHP Ribbon
+# Load on Demand
 
 Set enableOnDemand as true to enable load tab and backstage contents dynamically. Loading content on demand improves the initial rendering time of the ribbon by rendering tab and backstage content when tabs and backstage items are clicked.
 
@@ -135,7 +135,7 @@ Set enableOnDemand as true to enable load tab and backstage contents dynamically
 
 {% endhighlight %}
 
-![PHP Ribbon load on demand](Ondemand/ondemand_img1.png)
+![](Ondemand/ondemand_img1.png)
 
 ## Initially Collapsible
 
@@ -265,4 +265,4 @@ Set collapsible'](https://help.syncfusion.com/api/js/ejribbon#members:collapsibl
 
 {% endhighlight %}
 
-![PHP Ribbon Initially Collapsible](Ondemand/ondemand_img2.png)
+![](Ondemand/ondemand_img2.png)
