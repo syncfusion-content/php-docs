@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  Overview with Grid widget for Syncfusion Essential PHP
-description: Learn here all about Overview of Syncfusion Essential PHP Grid Control, its elements, features, and more.
+description: Overview for Grid
 platform: php
 control: Grid
 documentation: ug
 ---
-# Overview of Syncfusion PHP Grid
+# Overview
 
 The Grid control for PHP is an efficient display engine for tabular data. It will pull data from a datasource, such as array of JSON objects, OData web services, or `DataManager`, binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This Grid is very useful for generating complex grid-based reports with rich formatting. The most important features available in the Grid control for PHP are paging, sorting, filtering, searching, grouping, and editing.
 
