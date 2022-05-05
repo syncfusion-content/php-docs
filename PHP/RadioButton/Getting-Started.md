@@ -97,4 +97,4 @@ Add the following styles to show the **RadioButton** control in an order.
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_images/Getting-Started_img1.JPG) 
+![](/php/RadioButton/Getting-Started_images/Getting-Started_img1.JPG) 
