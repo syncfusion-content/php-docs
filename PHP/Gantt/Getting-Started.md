@@ -15,7 +15,7 @@ This section explains briefly about how to create a Gantt chart in your applicat
 
 In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
 
-![PHP Gantt Getting Started](/PHP/Gantt/Getting-Started_images/Getting-Started_img4.png)
+![PHP Gantt Getting Started](Getting-Started_images/Getting-Started_img4.png)
 
 ## Adding script references
 Create an HTML file and add the following necessary script and CSS files to the HTML file.
