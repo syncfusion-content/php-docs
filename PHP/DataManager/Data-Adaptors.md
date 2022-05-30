@@ -1,6 +1,6 @@
 ---
 title: Data Adaptors Php Data Manager | Syncfusion 
-description: Learn about Easy Customization support in Syncfusion Php Data Manager Control its elements and more
+description: Learn about Easy Customization support in Syncfusion Php Data Manager Control, its elements and more
 platform: php
 control: DataManager
 documentation: ug
