@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Downloading Syncfusion PHP Mac installer - Syncfusion
-description: Learn here about the how to download Syncfusion PHP mac installer packages from syncfusion website.
+description: Learn here about the how to download the Syncfusion PHP mac installer packages from syncfusion website.
 platform: php
 control: Installation and Deployment
 documentation: ug

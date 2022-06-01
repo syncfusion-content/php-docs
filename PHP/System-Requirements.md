@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System Requirements in PHP - Syncfusion
-description: Checkout and learn here all about the system requirements needed to use Syncfusion PHP Components.
+description: Checkout and learn here all about the system requirements needed to use the Syncfusion PHP Components.
 platform: php
 control: System Requirement
 documentation: ug
