@@ -1,12 +1,12 @@
 ---
-title: Getting Started with TreeView | TreeView | PHP | Syncfusion
-description: To get start with TreeView by adding references
+title: Getting Started with PHP TreeView Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP TreeView Control, its elements, and more.
 platform: php
 control: TreeView
 documentation: UG
 keywords: 
 ---
-# Getting started
+# Getting started with PHP TreeView
 
 This section explains briefly about how to create a **TreeView** in your application with **PHP** wrapper classes of EJ controls.	
 
