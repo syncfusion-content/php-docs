@@ -7,7 +7,7 @@ documentation: ug
 keywords: ReportViewer, ReportViewer widget, php ReportViewer 
 ---
 
-# Getting Started with PHP ReportViewer
+# Getting Started in PHP ReportViewer
 
 To get start with the ReportViewer control by using PHP wrapper classes, any one of the following prerequisites need to be installed in your machine to deploy, and run those samples locally.
 
