@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation for Syncfusion Essential Studio PHP products
-description: Learn how to install Syncfusion Essential PHP installer and deploy the Syncfusion Essential PHP installer component
+title: Installation Errors in PHP - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion PHP Components installation.
 platform: php
 control: Installation and Deployment
 documentation: ug
