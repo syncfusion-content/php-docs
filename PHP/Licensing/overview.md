@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Essential Studio PHP Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio PHP license key, how to generate the license key, how to register the license key, and more details.
+title: Overview of Syncfusion license and unlock keys - Syncfusion
+description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
 platform: php
 control: Essential Studio
 documentation: ug
 ---
 
 
-# License Key Registration
+# Syncfusion Licensing Overview
 
 There is no need to generate and register any Syncfusion license keys for PHP platform.
 
