@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Downloading Syncfusion PHP installer - Syncfusion
-description: Learn here about the how to download Syncfusion PHP offline installer from our syncfusion website.
+description: Learn here about how to download the Syncfusion PHP offline installer from our syncfusion website with the license.
 platform: php
 control: Installation and Deployment
 documentation: ug
