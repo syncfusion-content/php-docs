@@ -149,7 +149,7 @@ Initialize the Toolbar items with **LI** template as follows.
 
 Apply the given styles in the code table to show the **toolbar items** as follows. You can refer images from any location. In the following code sample, the images are referred from the given location.
 
-[http://js.syncfusion.com/UG/Web/Content/](http://js.syncfusion.com/UG/Web/Content/)
+[https://js.syncfusion.com/demos/jquery/](https://js.syncfusion.com/demos/jquery/)
 
 {% highlight css %}
 

@@ -2,10 +2,10 @@
 layout: post
 title: Getting Started with PHP Menu Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential PHP Menu Control, its elements, and more.
-platform:php
+platform: php
 control: Menu
 documentation: ug
-keywords:ejmenu, php menu, menu
+keywords: ejmenu, php menu, menu
 ---
 
 # Getting Started with PHP Menu
