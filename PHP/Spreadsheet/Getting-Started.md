@@ -1,12 +1,12 @@
 ---
-title: Getting Started for Essential JavaScript Spreadsheet
-description: How to create a Spreadsheet with data source, apply format and export it as excel file.
+title: Getting Started with PHP SpreadSheet Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP SpreadSheet Control, its elements, and more.
 platform: PHP
 control: Spreadsheet
 documentation: ug
 keywords: 
 ---
-# Getting started
+# Getting started with PHP SpreadSheet
 
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
