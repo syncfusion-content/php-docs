@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OverView of the Toolbar 
-description: OverView of the Toolbar 
+title: OverView of PHP Toolbar Control | Syncfusion
+description: Learn here all about overview of Syncfusion Essential PHP Toolbar Control, its elements, features, and more.
 platform: php
 control: Toolbar
 documentation: ug
 ---
 
-# Overview
+# Overview of PHP Toolbar
       The Toolbar control supports displaying a list of tools within a page. This control is capable of customizing toolbar items with any functionality by using enriched client-side methods. This control is composed of collection of unordered lists containing text and images contained into a div.
 
 ## Key Features
