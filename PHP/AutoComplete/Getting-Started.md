@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with PHP AutoComplete Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP AutoComplete Control, its elements, and more.
 platform: php
 control: Autocomplete 
 documentation: ug
 ---
 
-#Overview
+# Overview of PHP AutoComplete
 
 The PHP AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
-# Getting Started
+## Getting Started
 
 Using the following steps, you can create a PHP AutoComplete control. The basic rendering of PHP AutoComplete is achieved with default functionality.
 
@@ -48,7 +48,7 @@ The data for the suggestion list can be populated using the dataSource property.
 
 {% endhighlight %}
 
-![](Getting-Started images\datasource.png)
+![PHP AutoComplete dataSource](Getting-Started images\datasource.png)
 
 ## Enable Popup Button
 
@@ -69,4 +69,4 @@ This button helps you to show all the available suggestions on clicking it.
 
 {% endhighlight %}
 
-![](Getting-Started images\showPopupButton.png)
+![PHP AutoComplete show Popup Button](Getting-Started images\showPopupButton.png)
