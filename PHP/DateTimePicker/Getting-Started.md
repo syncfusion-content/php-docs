@@ -1,13 +1,13 @@
 ---
-title: Getting Started with DateTimePicker | DateTimePicker | PHP | Syncfusion
-description: Getting Started with DateTimePicker
+title: Getting Started with PHP DateTimePicker Control | Syncfusion
+description: Learn here about Getting Started with Syncfusion Essential PHP DateTimePicker Control, its elements, and more.
 platform: php
 control: DateTimePicker
 documentation: ug
 keywords: Datetimepicker getting started, php datetimepicker
 ---
 
-# Getting Started
+# Getting Started with PHP DateTimePicker
 
 This section illustrates the details on how to render and configure a DateTimePicker control using the methods available in PHP wrapper classes.
 
@@ -28,7 +28,7 @@ Create a DateTimePicker control by instantiating the PHP wrapper class available
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/datetime.png)   
+![PHP DateTimePicker datetime](getting-started_images/datetime.png)   
 
 ## Configuring DateTimePicker
 
@@ -47,7 +47,7 @@ The following screenshot illustrates the output of above code.
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/minmax.png) 
+![PHP DateTimePicker minmax](getting-started_images/minmax.png) 
 
 ### Customize button text
 
@@ -64,4 +64,4 @@ You can customize the value in DateTimepicker control by using the buttonText pr
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/buttontext.png) 
+![PHP DateTimePicker buttonText](getting-started_images/buttontext.png) 
