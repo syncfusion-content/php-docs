@@ -1,13 +1,13 @@
 ---
-title: Overview about NumericTextBox
-description: overview
+title: Overview of PHP NumericTextBox Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential PHP NumericTextBox Control, its elements, and more.
 platform: php
 control: NumericTextbox
 documentation: ug
 keywords: 
 ---
 
-# Overview
+# Overview of PHP NumericTextBox
 **EJ PHP NumericTextBox** component provides all the functionalities that is available in EJ NumericTextBox, since it is a server side wrapper of EJ NumericTextBox widget. It is used to display only numeric values. It has Spin buttons to increase or decrease the values in the Text Box.
 
 **Key Features**
