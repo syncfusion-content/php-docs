@@ -1,5 +1,5 @@
 ---
-title: Data Adaptors in PHP DataManager Control | Syncfusion
+title: Data-Adaptors in PHP DataManager Control | Syncfusion
 description: Learn here all more about Data Adaptors support in Syncfusion Essential PHP DataManager control, its elements, and more.
 platform: php
 control: DataManager
