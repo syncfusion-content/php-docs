@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting-Started with PHP Accordion Control | Syncfusion
+description: Learn here all about Getting Started in Syncfusion Essential PHP Accordion control, its elements, and more.
 platform: php
 control: Accordion 
 documentation: ug
 keywords: ejaccordion,accordion, php accordion 
 ---
 
-# Getting Started
+# Getting Started with Essential PHP Accordion
 
 This section explains briefly about how to create an **Accordion** in your application with **PHP** wrapper classes of EJ controls..
 
@@ -20,7 +20,7 @@ This section encompasses the details on how you can configure the **Accordion** 
 
 The following screenshot illustrates you the usage of **Accordion** control in listing the controls under the Essential Studio products. 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Configure Accordion in PHP](Getting-Started_images/Getting-Started_img1.png) 
 
 The usage of **Accordion** control is described in the following sections.
 
@@ -143,7 +143,7 @@ Create an Accordion control as shown below
 
 You can execute the above code example to display the Accordion control with simple control list.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Create a Simple Accordion in PHP](Getting-Started_images/Getting-Started_img2.png) 
 
 You can customize the Accordion control using various properties. The Accordion control properties and its default values are described in the following section.
 
@@ -245,7 +245,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control with **enableMultipleOpen** property is illustrated in the following screen shot.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![Configure Multiple Open in PHP Accordion](Getting-Started_images/Getting-Started_img3.png) 
 
 ### Setting rounded corner
 
@@ -343,7 +343,7 @@ N> showRoundedCorner property is False by default.
 
 The following screenshot illustrates the **Accordion** control with rounded corners.
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![Setting Rounded Corner in PHP Accordion](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Customize Icon
 
@@ -447,5 +447,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![Customize Icon in PHP Accordion](Getting-Started_images/Getting-Started_img5.png) 
 
