@@ -1,13 +1,13 @@
 ---
-title: Getting started with Ribbon component	
-description: Rendering a basic Ribbon
+title: Getting started | Ribbon | PHP | Syncfusion	
+description: Learn here more about Rendering a basic Ribbon in Syncfusion Essential PHP Ribbon Control, its elements, and more
 platform: php
 control: ribbon
 documentation: ug
 keywords: ejribbon, ribbon, ribbon widget, js ribbon 
 ---
 
-# Getting Started
+# Getting Started with Essential PHP Ribbon
 
 To get start with the Ribbon control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
