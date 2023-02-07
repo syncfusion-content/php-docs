@@ -1,6 +1,6 @@
 ---
 title: Getting started with PHP Ribbon | Syncfusion 	
-description: Learn here about Getting Started with Ribbon in Syncfusion Essential PHP Application, its elements, and more.
+description: Learn here more about getting started with Syncfusion Essential PHP Ribbon Control, its elements, and more.
 platform: php
 control: ribbon
 documentation: ug

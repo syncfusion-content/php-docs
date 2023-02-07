@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with PHP Rating | Syncfusion
-description: Learn here about Getting Started with Rating in Syncfusion Essential PHP Application, its elements, and more. 
+description: Learn here more about getting started with Syncfusion Essential PHP Rating Control, its elements, and more.
 platform: php
 control: Rating
 documentation: ug
