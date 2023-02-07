@@ -1,5 +1,5 @@
 ---
-title: Getting started with Ribbon component | Syncfusion 	
+title: Getting started with PHP Ribbon | Syncfusion 	
 description: Learn here about Getting Started with Ribbon in Syncfusion Essential PHP Application, its elements, and more.
 platform: php
 control: ribbon
@@ -7,7 +7,7 @@ documentation: ug
 keywords: ejribbon, ribbon, ribbon widget, js ribbon 
 ---
 
-# Getting Started with Ribbon component
+# Getting Started with PHP Ribbon 
 
 To get start with the Ribbon control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
@@ -281,7 +281,7 @@ Create button controls as array of objects as mentioned with the following code.
 
 The above created sample is now ready to run. Therefore, open the **XAMPP control panel** and start the **Apache** module as shown in the below image - 
 
-![Running the PHP file](getting-started_images/getting-started_img.png)
+![Running sample file in PHP Ribbon](getting-started_images/getting-started_img.png)
 
 Now, the sample can be run directly on the browser through localhost with appropriate port numbers, on which the Apache server is currently listening. For example, say if the Apache is configured to listen on port 7777, then type http://localhost:7777/ on your browser and press enter. Also, make sure that your sample folder is present within this location `C:\\xampp\\htdocs` as mentioned earlier.
 
