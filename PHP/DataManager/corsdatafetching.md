@@ -1,6 +1,6 @@
 ---
-title: CORS Data Fetching | DataManager | PHP | Syncfusion
-description: Learn here more about CORS Data Fetching in Syncfusion Essential PHP DataManager Control, its elements, and more
+title: CORS Data Fetching in PHP DataManager control | Syncfusion
+description: Learn here more about CORS Data Fetching in Syncfusion Essential PHP DataManager Control, its elements, and more.
 platform: php
 control: DataManager
 documentation: ug

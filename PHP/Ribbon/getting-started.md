@@ -1,6 +1,6 @@
 ---
-title: Getting started | Ribbon | PHP | Syncfusion	
-description: Learn here more about Rendering a basic Ribbon in Syncfusion Essential PHP Ribbon Control, its elements, and more
+title: Getting started with PHP Ribbon control | Syncfusion	
+description: Learn here more about Rendering a basic Ribbon in Syncfusion Essential PHP Ribbon Control, its elements, and more.
 platform: php
 control: ribbon
 documentation: ug
