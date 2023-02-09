@@ -6,7 +6,7 @@ control: DataManager
 documentation: ug
 keywords: CORS Data Fetching, SAME-ORIGIN POLICY, Access-Control-Allow-Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 ---
-# CORS Data Fetching in Essential PHP DataManager
+# CORS Data Fetching in PHP DataManager
 
 The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain data transfers.
 
