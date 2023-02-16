@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started | JavaScript | Button
+description: Learn here more about getting started with Syncfusion Essential JavaScript Button Control, its elements, and more.
 platform: js
 control: Button
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with JavaScript Button
 
 This section explains briefly about the necessary steps required to render and configure EJ Button control using PHP wrapper classes.
 
@@ -36,4 +36,4 @@ Create a Button control by instantiating the PHP wrapper class available in EJ n
 
 Execute the above code to render the following output.
 
-![](/php/Button/Getting-Started_images/Getting-Started_img1.JPG)
+![Create Button Widget in JavaScript](/php/Button/Getting-Started_images/Getting-Started_img1.JPG)
