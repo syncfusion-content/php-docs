@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | JavaScript | Button
+title: Getting Started | JavaScript | Button | Syncfusion
 description: Learn here more about getting started with Syncfusion Essential JavaScript Button Control, its elements, and more.
 platform: js
 control: Button

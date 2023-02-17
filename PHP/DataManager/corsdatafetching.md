@@ -1,5 +1,5 @@
 ---
-title: CORS Data Fetching | PHP | Data Manager
+title: CORS Data Fetching | PHP | Data Manager | Syncfusion
 description: Learn here about CORS Data Fetching in Syncfusion Essential PHP Data Manager Control, its elements, and more.
 platform: php
 control: Data Manager
