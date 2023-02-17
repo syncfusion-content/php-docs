@@ -7,7 +7,7 @@ documentation: ug
 keywords: ejribbon, ribbon, ribbon widget, js ribbon 
 ---
 
-# Getting Started with Essential PHP Ribbon
+# Getting Started with PHP Ribbon
 
 To get start with the Ribbon control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 

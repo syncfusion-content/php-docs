@@ -8,7 +8,7 @@ documentation: ug
 keywords: Rating, rating
 ---
 
-# Getting Started with Essential PHP Rating
+# Getting Started with PHP Rating
 
 This section explains briefly about how to create a **Rating** control in your application with **PHP**. **Rating** helps to select the number of stars that represent Rating. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
 
