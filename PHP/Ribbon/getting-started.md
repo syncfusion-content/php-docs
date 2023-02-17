@@ -8,7 +8,6 @@ keywords: ejribbon, ribbon, ribbon widget, js ribbon
 ---
 
 # Getting started with PHP Ribbon 
-
 To get start with the Ribbon control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
 * [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
