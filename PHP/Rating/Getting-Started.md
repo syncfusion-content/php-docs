@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting started with Rating 
-description: To get start with Rating 
+title: Getting started with PHP Rating control | Syncfusion
+description: Learn here more about Getting Started with Syncfusion Essential PHP Rating Control, its elements, and more.
 platform: php
 control: Rating
 documentation: ug
 keywords: Rating, rating
 ---
 
-# Getting Started
+# Getting Started with PHP Rating
 
 This section explains briefly about how to create a **Rating** control in your application with **PHP**. **Rating** helps to select the number of stars that represent Rating. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
 
 The following screenshot illustrates the functionality of a Rating widget with a Rating range of 0 to 5. 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with PHP Rating](Getting-Started_images/Getting-Started_img1.png) 
 
 The external script dependencies of the Rating widget is,
 
@@ -213,7 +213,7 @@ The Rating can be created in **PHP** by using the below given code.
 
  The following screenshot displays a Rating widget.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Create a Rating Widget in PHP Rating](Getting-Started_images/Getting-Started_img2.png) 
 
 ##Set the Min and Max Value
 
@@ -250,7 +250,7 @@ In a real-time scenario, you can extend the range by using the properties **minV
 
 The above code example displays the following output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Set the Min and Max Value in PHP Rating](Getting-Started_images/Getting-Started_img3.png)
 
 ##Set Precision
 
@@ -316,7 +316,7 @@ In a real-time movie **Rating** scenario, you can set precision in between two w
 
 The above code example displays the following output.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![PHP Rating Set Precision](Getting-Started_images/Getting-Started_img4.jpeg)
 
 You can also add additional functionalities such as orientation, event tracer and API’s to the **Rating**. 
 
