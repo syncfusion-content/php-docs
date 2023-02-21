@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-> Syncfusion jQuery based widgets are no longer in active development. Switch to our pure JavaScript based next generation Essential JS 2 library.
+> The Syncfusion JSP components of Essential JS 1 controls (jQuery-based widgets) are no longer actively developed, and 2022 Volume 4 marks the last release of the Syncfusion JSP components.
 
 # Welcome to Syncfusion Essential JS for PHP
 
