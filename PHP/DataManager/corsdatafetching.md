@@ -1,12 +1,12 @@
 ---
-title: CORS Data Fetching
-description: CORS Data Fetching
+title: CORS Data Fetching in PHP DataManager control | Syncfusion
+description: Learn here more about CORS Data Fetching in Syncfusion Essential PHP DataManager Control, its elements, and more.
 platform: php
 control: DataManager
 documentation: ug
 keywords: CORS Data Fetching, SAME-ORIGIN POLICY, Access-Control-Allow-Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 ---
-# CORS Data Fetching
+# CORS Data Fetching in PHP DataManager
 
 The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain data transfers.
 
@@ -14,7 +14,7 @@ The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain da
 
 This policy defined the rule for, “how a web page can be accessed by an external resource”. Browsers wont permits a request to access the resources who origin is differ than the current page. To overcome the restriction of same-origin policy, we can use a technique called Cross-origin resource sharing.
 
-![](CORS_images/SAME-ORIGIN1.png) 
+![PHP DataManager SAME-ORIGIN POLICY](CORS_images/SAME-ORIGIN1.png) 
 
 ## Access-Control-Allow-Origin
 
