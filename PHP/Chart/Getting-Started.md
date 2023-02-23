@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started for Essential PHP Chart
-description: How to create a chart, add series, enable tooltip and other features in Chart.
+description: Learn here about getting started with Syncfusion Essential PHP Chart Control, its elements, and more.
 platform: php
 control: Chart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP Chart
 
 This section explains you the steps required to populate the Chart with data, add data labels, tooltips and title to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
@@ -62,7 +62,7 @@ Add the following code in the index.php file to create the Chart control in inde
 
 Now, the Chart is rendered with some auto-generated random values and with default Column chart type.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![PHP Initialize Chart](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Populate chart with data
@@ -132,7 +132,7 @@ Now, map the month and sales values in the data source to the line series by set
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![PHP Chart with data](Getting-Started_images/Getting-Started_img2.png)
 
 
 Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the *labelFormat* option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
@@ -151,7 +151,7 @@ Since the data is related to sales, format the vertical axis labels by adding �
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![PHP Chart Add Data Labels](Getting-Started_images/Getting-Started_img3.png)
 
 
 Refer to the Axis section to know more about axis types, adding multiple axes and other customization options.
@@ -184,7 +184,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![PHP Chart Add Data Labels](Getting-Started_images/Getting-Started_img4.png)
 
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the *template* option to format the label content with some additional information.
@@ -228,7 +228,7 @@ The following code example shows how to set the id of the above template to *tem
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![PHP Chart data markers](Getting-Started_images/Getting-Started_img5.png)
 
 
 Refer to the Data Markers section to know more about the options available to customize it.
@@ -257,7 +257,7 @@ You can enable or disable the legend by using the *visible* option in the **lege
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![PHP Chart Enable Legend](Getting-Started_images/Getting-Started_img6.png)
 
 
 Refer to the Legend section to know more about how to position legend and customize its appearance.
@@ -287,7 +287,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![PHP Chart Enable Tooltip](Getting-Started_images/Getting-Started_img7.png)
 
 
 Refer to the Tooltip section to know more about formatting tooltip contents and customizing its appearance.
@@ -311,7 +311,7 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![PHP Chart add title](Getting-Started_images/Getting-Started_img8.png)
 
 
 Refer to the Chart Title section to know more about aligning title, customizing its appearance and adding subtitle to the chart.
