@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential PHP Chart
+title: Getting Started with PHP Chart Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential PHP Chart Control, its elements, and more.
 platform: php
 control: Chart
