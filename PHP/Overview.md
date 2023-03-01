@@ -7,9 +7,9 @@ control: Introduction
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential JS for PHP
-
 > The Syncfusion PHP components of Essential JS 1 controls (jQuery-based widgets) are no longer actively developed, and 2022 Volume 4 marks the last release of the Syncfusion PHP components.
+
+# Welcome to Syncfusion Essential JS for PHP
 
 Syncfusion PHP server side wrapper with over 40+ controls provides the enhanced way to create the rich web applications effortlessly. Components offered with this package are JavaScript UI controls which lets to customize the functionality and looks via altered options and themes.
 
