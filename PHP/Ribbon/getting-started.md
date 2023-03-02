@@ -1,7 +1,7 @@
 ---
 title: Getting started with PHP Ribbon component | Syncfusion 	
 description: Learn here more about getting started with Syncfusion Essential PHP Ribbon component, its elements, and more.
-platform: php
+platform: PHP
 control: ribbon
 documentation: ug
 keywords: ejribbon, ribbon, ribbon widget, js ribbon 
