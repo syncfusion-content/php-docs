@@ -1,14 +1,8 @@
 ---
 layout: post
-<<<<<<< Updated upstream
 title: Getting Started with PHP Button Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential PHP Button Control, its elements, and more.
 platform: js
-=======
-title: Getting Started | PHP | Button | Syncfusion
-description: Learn here more about getting started with Syncfusion Essential PHP Button Control, its elements, and more.
-platform: PHP
->>>>>>> Stashed changes
 control: Button
 documentation: ug
 ---
@@ -42,8 +36,4 @@ Create a Button control by instantiating the PHP wrapper class available in EJ n
 
 Execute the above code to render the following output.
 
-<<<<<<< Updated upstream
-![PHP Button Widget](Getting-Started_images/Getting-Started_img1.JPG)
-=======
 ![Create Button Widget in PHP](/php/Button/Getting-Started_images/Getting-Started_img1.JPG)
->>>>>>> Stashed changes
