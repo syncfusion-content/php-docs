@@ -32,6 +32,7 @@ Create a Button control by instantiating the PHP wrapper class available in EJ n
     </tr>
 </table>
 
+
 {% endhighlight %}
 
 Execute the above code to render the following output.
