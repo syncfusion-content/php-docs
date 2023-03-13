@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy Customization in Essential PHP Button
+title: Easy Customization in PHP Button Control | Syncfusion
 description: Learn here about easy customization support in Syncfusion Essential PHP Button Control, its elements, and more.
 platform: PHP
 control: Button
