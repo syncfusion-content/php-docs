@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Easy-Customization
-description: getting started
+title: Easy Customization in PHP Button Control | Syncfusion
+description: Learn here about easy customization support in Syncfusion Essential PHP Button Control, its elements, and more.
 platform: PHP
 control: Button
 documentation: ug
 ---
 
-# Easy Customization
+# Easy Customization in Essential PHP Button
 
 Button is used in all applications. Button size, content type, and image position is varied according to each application. Here you can see some customizable option for button that can perform easily.
 
@@ -127,7 +127,7 @@ In the **PHP** page, add the following button elements to configure button widge
 
 Execute the above code to render the following output.
 
-![](/php/Button/Easy-Customization_images/Easy-Customization_img1.JPG) 
+![Button size in PHP Button](/php/Button/Easy-Customization_images/Easy-Customization_img1.JPG) 
 
 ## Content Type
 
@@ -265,7 +265,7 @@ In the **PHP** page, add the following button elements to configure **Button** w
 
 Execute the above code to render the following output.
 
-![](/php/Button/Easy-Customization_images/Easy-Customization_img2.JPG)
+![Suffix icon in PHP Button](/php/Button/Easy-Customization_images/Easy-Customization_img2.JPG)
 
 ## Image Position
 
@@ -362,7 +362,7 @@ In the **PHP** page, add the following button elements to configure **Button** w
 
 Execute the above code to render the following output.
 
-![](/php/Button/Easy-Customization_images/Easy-Customization_img3.JPG)
+![Image position in PHP Button](/php/Button/Easy-Customization_images/Easy-Customization_img3.JPG)
 
 ## Theme support
 
@@ -483,5 +483,5 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-![](/php/Button/Easy-Customization_images/Easy-Customization_img4.JPG)
+![Custom CSS in PHP Button](/php/Button/Easy-Customization_images/Easy-Customization_img4.JPG)
 
