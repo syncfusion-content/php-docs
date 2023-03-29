@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of PHP Split Button Control | Syncfusion
+description: Learn here all about overview of Syncfusion Essential PHP SplitButton Control, its elements, and more.
 platform: PHP
 control: Split Button
 documentation: ug
 ---
 
-# Overview
+# Overview of PHP Split Button
 
 The **Split Button** allows you to perform an action by clicking the button and choosing extra options from the dropdown button. The **Split Button** can also display both text and images. The drop down button option is given to the right most corner of the button.
 
