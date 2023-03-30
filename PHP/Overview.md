@@ -23,13 +23,13 @@ Syncfusion PHP server side wrapper with over 40+ controls provides the enhanced 
 
 ## Additional help resources
 
-* The [Knowledge Base](http://www.syncfusion.com/kb/php) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+* The [Knowledge Base](https://www.syncfusion.com/kb/php) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](http://www.syncfusion.com/kb/php), the [forum](https://www.syncfusion.com/forums/php) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/php), the [forum](https://www.syncfusion.com/forums/php) section also contains responses to questions that other customers have asked us in the past.
 
 * And, you can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio).
 
 ## Create a support incidents
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://support.syncfusion.com/support/tickets) by creating a support ticket.
 
