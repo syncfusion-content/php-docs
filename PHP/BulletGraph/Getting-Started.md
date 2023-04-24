@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with PHP BulletGraph Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP BulletGraph Control, its elements, and more.
 platform: php
 control: BulletGraph	
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP BulletGraph
 
 This section explains briefly about how to create a **BulletGraph** in your application with **PHP**.
 
@@ -17,7 +17,7 @@ This section encompasses the details on how to configure the **BulletGraph** con
 
 In the following screenshot, a **BulletGraph** is used to compare the actual monsoon rainfall received in a state versus its forecasted values for the years ranging from 1988 to 2013. 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![PHP BulletGraph adding EJ source](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Adding PHP EJ source and script reference
 
@@ -73,7 +73,7 @@ Add the following code in the index.php file to create the BulletGraph control i
 
 Run the above code and the **BulletGraph** is displayed. In order to customize the measure bars within the BulletGraph, either local or remote data should be passed to it.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![PHP BulletGraph initialize](Getting-Started_images/Getting-Started_img2.png) 
 
 
 ## Provide Required Data
@@ -253,7 +253,7 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![PHP BulletGraph scale value](Getting-Started_images/Getting-Started_img3.png) 
 
 As you can see in the image above, the bullet graph without any ranges is displayed in the background. The steps to add the **qualitativeRanges** are described in the next section.
 
@@ -293,7 +293,7 @@ By default, 3 ranges are displayed in the **BulletGraph** control during the ini
 
 After adding **qualitativeRanges** to the **BulletGraph**, the control will be rendered as follows.
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![PHP BulletGraph ranges](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Ticks and Measure Bars Customization
 
@@ -347,7 +347,7 @@ You have to do the following code changes in the quantitative scale in order to 
 
 When customization of ticks and measure bars is done, **BulletGraph** looks as follows
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![PHP BulletGraph ticks](Getting-Started_images/Getting-Started_img5.png) 
 
 ## Add Caption and Subtitle
 
@@ -417,7 +417,7 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph** by ad
 
 The following screenshot displays a **BulletGraph** in the caption and title in the **BulletGraph**.
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![PHP BulletGraph add caption and subTitle](Getting-Started_images/Getting-Started_img6.png) 
 
 ## Show Tooltip
 
@@ -460,5 +460,5 @@ You can use a Tooltip in your application to display any information. In this ex
 
 By using the customization options discussed in this section, the **BulletGraph** is rendered as displayed on the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img7.png) 
+![PHP BulletGraph show tooltip](Getting-Started_images/Getting-Started_img7.png) 
 
