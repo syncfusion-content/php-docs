@@ -1,13 +1,13 @@
 ---
-title: CRUD Data Operations
-description: CRUD Data Operations
+title: CRUD Data Operations in PHP DataManager Control | Syncfusion
+description: Learn here about CRUD Data Operations in Syncfusion Essential PHP DataManager control, its elements, and more.
 platform: php
 control: DataManager
 documentation: ug
 keywords: Insert of Records, Delete, Update, Read, Remove, Add Fields
 ---
 
-# CRUD Data Operations
+# CRUD Data Operations in PHP DataManager
 
 The DataManager fully supports the CRUD (Create, Read, Update, Destroy) data operations. However, it must be combined with some user interface or another Syncfusion UI widget such as the Grid, ListView, etc.
 
