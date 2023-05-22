@@ -1,5 +1,5 @@
 ---
-title: CRUD Data Operations in PHP DataManager
+title: CRUD Data Operations in PHP DataManager Control | Syncfusion
 description: Learn here about CRUD Data Operations in Syncfusion Essential PHP DataManager control, its elements, and more.
 platform: php
 control: DataManager
