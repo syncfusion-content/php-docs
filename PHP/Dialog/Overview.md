@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of PHP Dialog control | Syncfusion
+title: Overview of PHP Dialog Control | Syncfusion
 description: Learn here more about overview of Syncfusion Essential PHP Dialog Control, its elements, and more.
 platform: php
 control: Dialog
