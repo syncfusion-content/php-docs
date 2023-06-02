@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of PHP Dialog control | Syncfusion
+description: Learn here more about overview of Syncfusion Essential PHP Dialog Control, its elements, and more.
 platform: php
 control: Dialog
 documentation: ug
 ---
 
-# Overview
+# Overview of PHP Dialog
 
 The Essential PHP Dialog control displays a Dialog window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms. 
 

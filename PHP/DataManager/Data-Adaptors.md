@@ -1,13 +1,13 @@
 ---
-title: Data-Adaptors
-description: data adaptors
+title: Data Adaptors in PHP DataManager control | Syncfusion
+description: Learn here more about data adaptors support in Syncfusion Essential PHP DataManager Control, its elements, and more.
 platform: php
 control: DataManager
 documentation: ug
 keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adaptor, Cache Adaptor, Custom Adaptor, RemoteSave Adaptor
 ---
 
-# Data Adaptors
+# Data Adaptors in PHP DataManager
 
 **DataManger** uses adaptors to process data. There are three types of adaptors in **DataManger**. They are
 
