@@ -11,7 +11,7 @@ keywords: ribbon dependency files
 
 The Ribbon control has the following external JavaScript dependency.
 
-* [`jQuery 1.7.1`](http://jquery.com) and later versions.
+* [`jQuery 1.7.1`](https://jquery.com/) and later versions.
 
 **ej.web.all.js** is a bundle of all Essential JavaScript controls. When you use ej.web.all.js in your application, you can leave this section or else you can try to render ej ribbon in your application by using ej.ribbon file. You can refer to the following frameworks and controls in your project.
 

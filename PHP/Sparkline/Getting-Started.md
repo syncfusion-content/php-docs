@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Essential PHP Sparkline
-description: How to create a sparkline.
+title: Getting Started with PHP Sparkline Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential PHP Sparkline Control, its elements, and more.
 platform: php
 control: Sparkline
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PHP Sparkline
 
 This section explains you the steps required to populate the Sparkline with data. This section covers only the minimal features that you need to know to get started with the Sparkline.
 
@@ -37,7 +37,7 @@ Refer the required scripts files in your PHP page as mentioned below in order to
 
 {% endhighlight %}
 
-In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](https://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
 
 
 ## Initialize Sparkline
@@ -64,4 +64,4 @@ Add the following code in the index.php file to create the Sparkline control in 
 {% endhighlight %}
 Now, the Sparkline is rendered with some auto-generated random values and with default Line type.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![PHP Sparkline initialization](Getting-Started_images/Getting-Started_img1.png)

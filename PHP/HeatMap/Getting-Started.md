@@ -11,7 +11,7 @@ keywords: HeatMap, PHP heatmap, Populating data
 
 To get start with the HeatMap control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
-* [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
+* [PHP tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.PHPToolsforVisualStudio)
 * [Xampp](https://www.apachefriends.org/download.html)
 
 In this section, let's see how to get started of the HeatMap component for PHP using Xampp server.

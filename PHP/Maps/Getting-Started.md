@@ -21,7 +21,7 @@ You can configure an **Essential PHP** Map in simple steps. In this example, you
 
 To use ejMap, refer the following libraries in **HTML** page. 
 
-* [jQuery](http://jquery.com/) version  1.10.1 and above,
+* [jQuery](https://jquery.com/) version  1.10.1 and above,
 * ej.web.all.min  
 * JsRender
 
@@ -54,11 +54,11 @@ Refer the required scripts files in your PHP page as mentioned below in order to
 
 {% endhighlight %}
 
-In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](https://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ### Prepare Shape Data
 
-The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
+The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](https://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
 
 In this example, USA shape is used as shape data and this shape data JSON string is converted into PHP object using getUSAMap() method. 
 
@@ -319,4 +319,4 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
-The complete code sample can be found [here](http://www.syncfusion.com/uploads/user/directTrac/General/Getting_Started1888184355.zip).
+The complete code sample can be found [here](https://www.syncfusion.com/uploads/user/directTrac/General/Getting_Started1888184355.zip).

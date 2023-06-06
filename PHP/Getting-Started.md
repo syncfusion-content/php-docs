@@ -50,4 +50,4 @@ To use Essential JS for PHP in your PHP web site, follow the below steps:
 
    ![PHP datepicker control](/PHP/Getting-Started_images/Getteing-Started_img1.JPG)
 
-N> You can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio/php).
+N> You can explore the release history of Essential PHP from [`here`](https://www.syncfusion.com/products/release-history/estudio).

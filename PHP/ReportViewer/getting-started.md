@@ -11,7 +11,7 @@ keywords: ReportViewer, ReportViewer widget, php ReportViewer
 
 To get start with the ReportViewer control by using PHP wrapper classes, any one of the following prerequisites need to be installed in your machine to deploy, and run those samples locally.
 
-* [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
+* [PHP tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.PHPToolsforVisualStudio)
 * [Xampp](https://www.apachefriends.org/download.html)
 
 In this section, you can see how to create, deploy, and run the ReportViewer samples using the Xampp server.
