@@ -50,7 +50,7 @@ Refer the required scripts files in your PHP page as mentioned below in order to
 
 {% endhighlight %}
 
-In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](https://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize TreeMap
 
@@ -130,7 +130,7 @@ Populate the TreeMap data in PHP JSON object. For example, you can use populatio
 {% endhighlight %}
 
 
-N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+N> Population data is referred from [List of continents by population](https://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 ![Initialize TreeMap in PHP](Getting-Started_images/Getting-Started_img2.png)
 
@@ -296,7 +296,7 @@ The following screenshot displays labels in a **TreeMap** control.
 
 ![Enable Legend using TreeMap in PHP](Getting-Started_images/Getting-Started_img6.png)
 
-N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+N> Population data is referred from [List of continents by population](https://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 
 

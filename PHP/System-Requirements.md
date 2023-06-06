@@ -33,7 +33,7 @@ The system requirements for using our Syncfusion PHP platform are as follows
 
 ### Development Environment
 
-* PHP [5.3.3+ version](http://php.net/downloads.php). Unzip the downloaded file and move the unzipped folder to the desired drive.
+* PHP [5.3.3+ version](https://php.net/downloads.php). Unzip the downloaded file and move the unzipped folder to the desired drive.
 * Apache Tomcat
 * MySQL (optional. Necessary for DataBase related functionalities)
 
