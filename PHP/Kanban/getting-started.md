@@ -11,7 +11,7 @@ keywords: ejkanban, kanban, kanban widget, js kanban
 
 To get start with the Kanban control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
-* [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
+* [PHP tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.PHPToolsforVisualStudio)
 * [Xampp](https://www.apachefriends.org/download.html)
 
 In this section, let's see how to create, deploy and run the Kanban samples using Xampp server.
@@ -133,9 +133,9 @@ N> 2.It is mandatory to define the render() method at last as given in the above
 
 ## Data Binding
 
-`Data binding` in the Kanban is achieved by using the [ej.DataManager](http://help.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding. To set the data source to Kanban, the `dataSource` property is assigned with the instance of the `ej.DataManger`. 
+`Data binding` in the Kanban is achieved by using the [ej.DataManager](https://help.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding. To set the data source to Kanban, the `dataSource` property is assigned with the instance of the `ej.DataManger`. 
 
-For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+For demonstration purpose, [Northwind OData service](https://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
 
 {% highlight html %}
 
@@ -160,7 +160,7 @@ For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/S
 
 {% endhighlight %}
 
-N>  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
+N>  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 ## Mapping Values
 
@@ -229,7 +229,7 @@ N>  `primaryKey` field is mandatory for “Drag and Drop” ,”Selection” and
 
 ## Adding Filters
 
-Filters allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the filters collection. To enable filtering, define `filterSettings` collection with display `text` and [ej.Query](http://help.syncfusion.com/js/datamanager/query).
+Filters allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the filters collection. To enable filtering, define `filterSettings` collection with display `text` and [ej.Query](https://help.syncfusion.com/js/datamanager/query).
  
 {% highlight html %}
         
