@@ -37,6 +37,6 @@ Should be referred when using rotator control.</td></tr>
 </table>
 
 To get the real appearance of the Rotator, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the controls) should also needs to be referred.
-Note: Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com/).
+Note: Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](https://csg.syncfusion.com/).
 
 
