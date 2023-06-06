@@ -127,7 +127,7 @@ JSON file content
 
 ## Create Instance for TreeView
 
-You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](https://help.syncfusion.com/js/api/ejtreeview#) of TreeView to control its behavior.
+You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](https://help.syncfusion.com/api/js/ejtreeview) of TreeView to control its behavior.
 
 
     {% highlight php %}
@@ -149,7 +149,7 @@ N>To configure the API settings after TreeView creation, please refer [API confi
 
 ## TreeView events
 
-EJ PHP TreeView supports all the client side [events](https://help.syncfusion.com/js/api/ejtreeview#events) which is available in EJ TreeView. Refer following code example to specify an event using EJ PHP TreeView element.
+EJ PHP TreeView supports all the client side [events](https://help.syncfusion.com/api/js/ejtreeview#events) which is available in EJ TreeView. Refer following code example to specify an event using EJ PHP TreeView element.
 
 
     {% highlight php %}

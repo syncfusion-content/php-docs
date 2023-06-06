@@ -11,7 +11,7 @@ keywords: ejribbon, ribbon, ribbon widget, js ribbon
 
 To get start with the Ribbon control using PHP wrapper classes, either of the following prerequisites needs to be installed in your machine to deploy and run those samples locally.
 
-* [PHP tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/6eb51f05-ef01-4513-ac83-4c5f50c95fb5)
+* [PHP tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.PHPToolsforVisualStudio)
 * [Xampp](https://www.apachefriends.org/download.html)
 
 In this section, let's see how to create, deploy and run the Ribbon samples using Xampp server.
@@ -59,9 +59,9 @@ Create a first PHP file in Xampp and name it appropriately with `.php` extension
 
 Ribbon has the following external script dependency and these should be referred before `ej` Script files
 
-* [`jQuery`](http://jquery.com) 1.7.1 and later versions
+* [`jQuery`](https://jquery.com/) 1.7.1 and later versions
 
-Also Ribbon have internal dependencies which includes `ej.core` libraries and [`child controls`](http://help.syncfusion.com/js/api/ejribbon#requires). For getting started, you can refer `ej.web.all.min.js` which includes `ej.core` and all Syncfusion JavaScript controls.
+Also Ribbon have internal dependencies which includes `ej.core` libraries and [`child controls`](https://help.syncfusion.com/api/js/ejribbon#requires). For getting started, you can refer `ej.web.all.min.js` which includes `ej.core` and all Syncfusion JavaScript controls.
 
 Add the specific theme reference to your HTML file by referring the appropriate `ej.web.all.min.css` which contains `ej.widgets.core.min.css` (layout related CSS) and `ej.theme.min.css` (theme related CSS) for all the Syncfusion controls.
 
@@ -89,7 +89,7 @@ Refer the required scripts and CSS files in your PHP page as mentioned below in 
 
 Here, the CDN links are used. In case, if the individual scripts are required to render the Ribbon control, refer [here](/dependencies).
 
-N> 1. In case if you don’t want to use `ej.web.all.min.js` file, you can use our [`custom script generator`](http://help.syncfusion.com/js/api/ejribbon#requires) to create custom script file with required controls and its dependencies only
+N> 1. In case if you don’t want to use `ej.web.all.min.js` file, you can use our [`custom script generator`](https://help.syncfusion.com/api/js/ejribbon#requires) to create custom script file with required controls and its dependencies only
 N> 2. Ribbon’s sample level icons can be loaded using `ej.icons.CSS` from [this](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ribbon-css/ej.icons.css) CDN or from the location **(installed location)**\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css\web\ribbon-css”.
 
 ## AutoLoad file reference

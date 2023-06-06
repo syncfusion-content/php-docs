@@ -13,9 +13,9 @@ keywords : ejTooltip, Tooltip, js Tooltip, php Tooltip
 
 The Tooltip control has the following list of external JavaScript dependencies. 
 
-* [jQuery](http://jquery.com/) 1.7.1 and later versions
+* [jQuery](https://jquery.com/) 1.7.1 and later versions
 
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
+* [jQuery.easing](https://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
 
 Refer to the internal dependencies in the following table.
 
@@ -61,7 +61,7 @@ Refer the required scripts and CSS files in your PHP page as mentioned below in 
 
 {% endhighlight %}
 
-For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
+For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Create a Tooltip
 
@@ -115,7 +115,7 @@ Apply the following style sheet
 
 ## Setting Dimensions
 
-Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ejtooltip#members:width) and [height](http://help.syncfusion.com/js/api/ejtooltip#members:height) API.
+Tooltip dimensions can be set using [width](https://help.syncfusion.com/js/api/ejtooltip#members:width) and [height](https://help.syncfusion.com/js/api/ejtooltip#members:height) API.
 
 {% highlight html %}
  

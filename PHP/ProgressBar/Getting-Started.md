@@ -12,7 +12,7 @@ keywords: ProgressBar, progressbar
 
 The external script dependencies of the ProgressBar widget is,
 
-* [jQuery 1.7.1](http://jquery.com/) and later versions.
+* [jQuery 1.7.1](https://jquery.com/) and later versions.
 
 And the internal script dependencies of the ProgressBar widget are:
 
@@ -33,7 +33,7 @@ And the internal script dependencies of the ProgressBar widget are:
 
 For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
 
-For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
+For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
 
 ## Preparing HTML document
