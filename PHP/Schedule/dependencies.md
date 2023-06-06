@@ -11,7 +11,7 @@ keywords: schedule dependency files
 
 The following list of external dependencies are mandatory in order to render any of the Syncfusion controls -
 
-* [jQuery](http://jquery.com) - 1.7.1 and later versions
+* [jQuery](https://jquery.com/) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 
 The other required internal dependencies of Scheduler are tabulated below,
@@ -47,4 +47,4 @@ N> Scheduler uses one or more sub-controls, therefore refer the `ej.web.all.min.
 
 To get the real appearance of the Scheduler, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
-N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
+N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](https://csg.syncfusion.com/).
