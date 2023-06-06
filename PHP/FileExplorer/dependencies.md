@@ -11,7 +11,7 @@ keywords: FileExplorer dependency files
 
 The FileExplorer control has the following list of external JavaScript dependencies.
 
-* [`jQuery 1.7.1`](http://jquery.com) and later versions
+* [`jQuery 1.7.1`](https://jquery.com/) and later versions
 * [`jsRender`](https://github.com/borismoore/jsrender) - to render the grid view
 
 Refer to the internal dependencies in the following table.
@@ -100,4 +100,4 @@ N> FileExplorer uses one or more sub-controls, therefore refer the `ej.web.all.m
 
 To get the real appearance of the FileExplorer, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
-N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
+N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](https://csg.syncfusion.com/).
