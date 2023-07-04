@@ -1,6 +1,6 @@
 ---
 title: Overview about TreeView
-description: overview
+description: Learn here more about hierarchical data in a tree-like structure and allows to edit supporting data binding, loading on demand, drag and drop, and more.
 platform: php
 control: TreeView
 documentation: ug
