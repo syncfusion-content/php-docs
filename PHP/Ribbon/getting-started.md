@@ -87,7 +87,7 @@ Refer the required scripts and CSS files in your PHP page as mentioned below in 
 
 {% endhighlight %}
 
-Here, the CDN links are used. In case, if the individual scripts are required to render the Ribbon control, refer [here](/dependencies).
+Here, the CDN links are used. In case, if the individual scripts are required to render the Ribbon control, refer [here](/ribbon/dependencies).
 
 N> 1. In case if you don’t want to use `ej.web.all.min.js` file, you can use our [`custom script generator`](https://help.syncfusion.com/api/js/ejribbon#requires) to create custom script file with required controls and its dependencies only
 N> 2. Ribbon’s sample level icons can be loaded using `ej.icons.CSS` from [this](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ribbon-css/ej.icons.css) CDN or from the location **(installed location)**\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css\web\ribbon-css”.
