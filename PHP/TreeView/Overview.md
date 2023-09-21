@@ -1,6 +1,6 @@
 ---
 title: Overview about TreeView
-description: overview
+description: Learn here all about overview of Syncfusion Essential PHP TreeView(SfTreeView) control, It's elements and more.
 platform: php
 control: TreeView
 documentation: ug
