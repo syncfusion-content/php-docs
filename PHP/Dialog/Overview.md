@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of PHP Dialog Control | Syncfusion
-description: Learn here all about overview of Syncfusion Essential PHP Dialog control, its elements, and more.
+description: Learn here more about overview of Syncfusion Essential PHP Dialog control, suplementary and interactive content, its elements, and more.
 platform: php
 control: Dialog
 documentation: ug
