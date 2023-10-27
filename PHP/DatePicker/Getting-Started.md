@@ -1,5 +1,5 @@
 ---
-title: Getting Started with DatePicker | DatePicker | PHP | Syncfusion
+title: Getting Started with PHP DatePicker | Syncfusion
 description: Learn here all about getting started with Syncfusion Essential PHP DatePicker Control, its elements, and more.
 platform: php
 control: DatePicker
@@ -29,7 +29,7 @@ Create a PHP DatePicker control by instantiating the PHP wrapper class available
 
 The following screenshot illustrates the output of above code.
 
-![Getting_Started_Image1](getting-started_images/datePicker.png) 
+![Create DatePicker in PHP](getting-started_images/php-datepicker-creation.png) 
 
 ## Configuring DatePicker
 
@@ -48,7 +48,7 @@ EJ DatePicker provides API through which you can set the maximum and minimum all
 
 The following screenshot illustrates the output of above code.
 
-![Getting_Started_Image2](getting-started_images/minmaxDate.png) 
+![Set min and max date in PHP DatePicker](getting-started_images/php-datepicker-min-and-max-date.png) 
 
 ## Blackout Dates
 
@@ -65,7 +65,7 @@ You can disable a set of Dates in Datepicker calendar by using this API. Refer t
 
 The following screenshot illustrates the output of above code.
 
-![Getting_Started_Image3](getting-started_images/blackout.png) 
+![Blackout dates in PHP DatePicker](getting-started_images/php-datepicker-blackout-dates.png) 
 
 ## Special Dates
 
@@ -90,4 +90,4 @@ The fields API lets you customize the Special dates in calendar.
 
 The following screenshot illustrates the output of above code.
 
-![Getting_Started_Image4](getting-started_images/specialdates.png) 
+![Special dates in PHP DatePicker](getting-started_images/php-datepicker-special-dates.png)
