@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of PHP Gantt control | Syncfusion
+description: Learn here about overview support in Syncfusion Essential PHP Gantt control, its elements and more details.
 platform: php
 control: Gantt
 documentation: ug
 ---
 
-# Overview
+# Overview of PHP Gantt Control
 
 The Essential PHP Gantt control is designed to visualize and edit the project schedule, and track the project progress. It helps to organize and schedule the projects and also you can update the project schedule through interactions like editing, dragging and resizing.
 
