@@ -7,7 +7,7 @@ control: ListView
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started
 
 The **Essential PHP ListView** widget builds an interactive list view interface. This control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.
 
